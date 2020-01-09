@@ -2,27 +2,28 @@
     "compilerOptions": {
         "target": "esnext",
         "module": "commonjs",
-        "jsx": "react-native",
-        "lib": ["es6"],
+        "jsx": "react",
+        "lib": ["es5", "es2015", "es2017", "dom"],
         "allowSyntheticDefaultImports": true,
         "moduleResolution": "node",
         "baseUrl": ".",
-        "outDir": "./lib",
         "paths": {
             "*": ["./src/*"]
         },
+        "outDir": "./lib",
         "strict": true,
         "incremental": true,
         "esModuleInterop": true,
         "declaration": true,
-        "allowJs": true
+        "allowJs": true,
+        "skipLibCheck": true
     },
     "include": ["src/**/*"],
     "exclude": [
         "node_modules",
         "babel.config.js",
         "metro.config.js",
-        "jest.config.js",
+        "src/stories",
         "lib"
     ]
 }

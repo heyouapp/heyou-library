@@ -1,6 +1,6 @@
 {
     "name": "heyou-library",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "main": "lib/index.js",
     "license": "MIT",
     "repository": {
@@ -14,28 +14,37 @@
         "build": "yarn build:types && yarn build:js",
         "build:types": "tsc --emitDeclarationOnly",
         "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" -D --source-maps inline",
-        "prepublish": "yarn build"
+        "prepublish": "yarn build",
+        "storybook": "start-storybook -p 9009 -s public",
+        "build-storybook": "build-storybook -s public",
+        "deploy-storybook": "storybook-to-ghpages"
     },
     "peerDependencies": {
-        "react": "16.9.0",
-        "react-native": "0.61.5"
+        "react": "^16.12.0"
     },
     "devDependencies": {
         "@babel/cli": "^7.7.7",
         "@babel/core": "^7.7.7",
-        "@babel/runtime": "^7.6.2",
-        "@react-native-community/eslint-config": "^0.0.5",
-        "@types/jest": "^24.0.24",
-        "@types/node": "^13.1.4",
-        "@types/react-native": "^0.60.25",
+        "@babel/runtime": "^7.7.7",
+        "@storybook/addon-actions": "^5.2.8",
+        "@storybook/addon-info": "^5.2.8",
+        "@storybook/addon-links": "^5.2.8",
+        "@storybook/addons": "^5.2.8",
+        "@storybook/preset-create-react-app": "^1.5.0",
+        "@storybook/react": "^5.2.8",
+        "@storybook/storybook-deployer": "^2.8.1",
+        "@types/react": "^16.9.0",
+        "@types/react-dom": "^16.9.0",
+        "@types/react-native": "^0.60.30",
         "@types/react-test-renderer": "16.9.1",
-        "@typescript-eslint/eslint-plugin": "^2.12.0",
-        "@typescript-eslint/parser": "^2.12.0",
-        "babel-jest": "^24.9.0",
+        "@types/storybook__addon-info": "^5.2.1",
         "babel-plugin-module-resolver": "^4.0.0",
-        "eslint": "^6.5.1",
-        "jest": "^24.9.0",
         "metro-react-native-babel-preset": "^0.56.0",
+        "react-docgen-typescript-loader": "^3.6.0",
+        "react-dom": "^16.12.0",
+        "react-native": "^0.61.5",
+        "react-native-web": "^0.11.7",
+        "react-scripts": "3.3.0",
         "react-test-renderer": "16.9.0",
         "typescript": "^3.7.3"
     },
