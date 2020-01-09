@@ -1,5 +1,11 @@
 import * as React from 'react';
-import { StyleSheet, StyleProp, ViewStyle, View } from 'react-native';
+import {
+    StyleSheet,
+    StyleProp,
+    ViewStyle,
+    View,
+    TouchableWithoutFeedback
+} from 'react-native';
 
 // Library
 import { Colors, Shadows } from 'utils';
@@ -7,10 +13,13 @@ import { Colors, Shadows } from 'utils';
 export interface CardProps {
     children?: React.ReactNode;
     style?: StyleProp<ViewStyle>;
+    onPress?: () => void;
 }
 
 const Card: React.FC<CardProps> = props => (
-    <View style={[styles.container, props.style]}>{props.children}</View>
+    <TouchableWithoutFeedback onPress={props.onPress} disabled={!props.onPress}>
+        <View style={[styles.container, props.style]}>{props.children}</View>
+    </TouchableWithoutFeedback>
 );
 
 const styles = StyleSheet.create({

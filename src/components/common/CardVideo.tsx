@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { StyleSheet, View } from 'react-native';
+import moment from 'moment';
 
 // Library
 import { Text, Card, Video, VideoProps } from 'components/core';
@@ -7,7 +8,11 @@ import { Share } from 'components/common';
 import { ProfilePicture } from 'components/account';
 import { Colors } from 'utils';
 
-export interface CardVideoProps extends VideoProps {}
+export interface CardVideoProps extends VideoProps {
+    createdAt: string;
+    recipientName: string;
+    onShare: () => void;
+}
 
 const CardVideo: React.FC<CardVideoProps> = props => (
     <Card>
@@ -16,14 +21,14 @@ const CardVideo: React.FC<CardVideoProps> = props => (
                 <ProfilePicture />
                 <View style={styles.label}>
                     <Text>
-                        For: <Text type="semibold">Quiche Holandaise</Text>
+                        For: <Text type="semibold">{props.recipientName}</Text>
                     </Text>
                     <Text style={styles.time} small>
-                        15 minutes ago
+                        {moment(props.createdAt).fromNow()}
                     </Text>
                 </View>
             </View>
-            <Share />
+            <Share onPress={props.onShare} />
         </View>
         <Video {...props} />
     </Card>

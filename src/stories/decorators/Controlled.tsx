@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 // Library
-import { InputProps } from 'components/core';
+import { InputProps } from '../../components/core';
 
 interface Props extends InputProps {
     children: any;

@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 // Library
-import { PageCounter } from 'components/core';
+import { PageCounter } from '../../components/core';
 
 export default {
     title: 'Core|PageCounter'

@@ -52,5 +52,8 @@
         "tabWidth": 4,
         "singleQuote": true,
         "htmlWhitespaceSensitivity": "strict"
+    },
+    "dependencies": {
+        "moment": "^2.24.0"
     }
 }

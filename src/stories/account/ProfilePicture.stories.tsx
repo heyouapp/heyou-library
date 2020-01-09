@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 // Library
-import { ProfilePicture } from 'components/account';
+import { ProfilePicture } from '../../components/account';
 
 export default {
     title: 'Account|ProfilePicture'

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { action } from '@storybook/addon-actions';
 
 // Library
-import { Tag } from 'components/core';
+import { Tag } from '../../components/core';
 
 // Decorators
 import { Container } from '../decorators';

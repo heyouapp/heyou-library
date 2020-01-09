@@ -8,23 +8,25 @@ import { Colors } from 'utils';
 
 export interface ReviewProps {
     style?: StyleProp<ViewStyle>;
+    fullName: string;
+    userName: string;
+    rating: number;
+    description: string;
 }
 
 const Review: React.FC<ReviewProps> = props => (
     <View style={props.style}>
-        <User fullName="" username="" />
+        <User fullName={props.fullName} userName={props.userName} />
         <View style={styles.stars}>
-            <Icon name="starFull" color={Colors.primary} style={styles.star} />
-            <Icon name="starFull" color={Colors.primary} style={styles.star} />
-            <Icon name="starEmpty" color={Colors.primary} style={styles.star} />
-            <Icon name="starEmpty" color={Colors.primary} style={styles.star} />
-            <Icon name="starEmpty" color={Colors.primary} style={styles.star} />
+            {[...new Array(5)].map((_item, index: number) => (
+                <Icon
+                    name={index < props.rating ? 'starFull' : 'starEmpty'}
+                    color={Colors.primary}
+                    style={styles.star}
+                />
+            ))}
         </View>
-        <Text style={styles.text}>
-            “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            imperdiet lacus ac lectus porttitor vehicula. Cras ultricies, justo
-            eu fermentum condimentum.”
-        </Text>
+        <Text style={styles.text}>“{props.description}”</Text>
     </View>
 );
 

@@ -1,7 +1,6 @@
 export * from './Text';
 export * from './Button';
 export * from './Input';
-export * from './Autocomplete';
 export * from './Icon';
 export * from './Selector';
 export * from './Card';

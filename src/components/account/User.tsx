@@ -9,7 +9,7 @@ import { Colors } from 'utils';
 export interface UserProps {
     style?: StyleProp<ViewStyle>;
     fullName: string;
-    username: string;
+    userName: string;
 }
 
 const User: React.FC<UserProps> = props => (
@@ -17,8 +17,8 @@ const User: React.FC<UserProps> = props => (
         <ProfilePicture size="small" />
         <View style={styles.content}>
             <Text type="semibold">{props.fullName}</Text>
-            <Text small style={styles.username}>
-                @{props.username}
+            <Text small style={styles.userName}>
+                @{props.userName}
             </Text>
         </View>
     </View>
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     content: {
         marginLeft: 10
     },
-    username: {
+    userName: {
         color: Colors.neutralLight
     }
 });

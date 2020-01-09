@@ -6,17 +6,18 @@ import { Icon } from 'components/core';
 import { Colors, ColorOpacity } from 'utils';
 
 export interface VideoProps {
-    volume?: boolean;
-    onVolumeChange?: () => void;
+    volume: boolean;
+    onVolumeChange: (volume: boolean) => void;
+    children: React.ReactNode;
 }
 
 const Video: React.FC<VideoProps> = props => (
     <TouchableWithoutFeedback
-        onPress={props.onVolumeChange}
+        onPress={() => props.onVolumeChange(!props.volume)}
         disabled={!props.onVolumeChange}
     >
         <View style={styles.container}>
-            {/*Here goes the video component {style: styles.video} */}
+            {props.children}
             {props.volume !== undefined && (
                 <View style={styles.volume}>
                     <Icon
@@ -33,10 +34,8 @@ const Video: React.FC<VideoProps> = props => (
 const styles = StyleSheet.create({
     container: {
         backgroundColor: Colors.placeholder,
-        height: 200
-    },
-    video: {
-        flex: 1
+        height: 200,
+        overflow: 'hidden'
     },
     volume: {
         position: 'absolute',

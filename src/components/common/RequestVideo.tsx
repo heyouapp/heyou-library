@@ -1,12 +1,15 @@
 import * as React from 'react';
 import { StyleSheet, View } from 'react-native';
+import moment from 'moment';
 
 // Library
 import { Text, Card, Video, VideoProps } from 'components/core';
-import { Share, Review } from 'components/common';
+import { Share, Review, ReviewProps } from 'components/common';
 
 export interface RequestVideoProps extends VideoProps {
-    review?: boolean;
+    review?: ReviewProps;
+    completedAt: string;
+    onShare: () => void;
 }
 
 const RequestVideo: React.FC<RequestVideoProps> = props => (
@@ -15,13 +18,13 @@ const RequestVideo: React.FC<RequestVideoProps> = props => (
             <Text small>
                 Video completed on{' '}
                 <Text type="semibold" small>
-                    11/10/2019
+                    {moment(props.completedAt).format('DD-MM-YYYY')}
                 </Text>
             </Text>
-            <Share />
+            <Share onPress={props.onShare} />
         </View>
         <Video {...props} />
-        {props.review && <Review style={styles.review} />}
+        {props.review && <Review {...props.review} style={styles.review} />}
     </Card>
 );
 

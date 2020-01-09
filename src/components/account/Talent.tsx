@@ -16,8 +16,8 @@ export interface TalentProps {
     style?: StyleProp<ViewStyle>;
     onPress?: () => void;
     fullName: string;
-    principalTag: string;
-    price: number;
+    mainTopic: string;
+    talentFeeAmount: number;
 }
 
 const Talent: React.FC<TalentProps> = props => (
@@ -29,12 +29,12 @@ const Talent: React.FC<TalentProps> = props => (
         <ProfilePicture size="large" squared>
             <View style={styles.price}>
                 <Text type="semibold" style={styles.price_inner} small>
-                    {props.price}€
+                    {props.talentFeeAmount}€
                 </Text>
             </View>
         </ProfilePicture>
         <Text style={styles.type} uppercase small>
-            {props.principalTag}
+            {props.mainTopic}
         </Text>
         <Text>{props.fullName}</Text>
     </TouchableOpacity>

@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { StyleSheet, View } from 'react-native';
+import moment from 'moment';
 
 // Library
 import { Text, Card } from 'components/core';
@@ -7,26 +8,26 @@ import { ProfilePicture } from 'components/account';
 import { Colors } from 'utils';
 
 export interface NotificationProps {
-    review?: boolean;
+    label: string;
+    description: string;
+    createdAt: string;
+    onPress?: () => void;
 }
 
-const Notification: React.FC<NotificationProps> = _props => (
-    <Card style={styles.container}>
+const Notification: React.FC<NotificationProps> = props => (
+    <Card style={styles.container} onPress={props.onPress}>
         <View style={styles.header}>
             <View style={styles.content}>
                 <ProfilePicture />
                 <Text style={styles.label} type="semibold">
-                    Notification Label
+                    {props.label}
                 </Text>
             </View>
             <Text style={styles.time} small>
-                5 min
+                {moment(props.createdAt).fromNow()}
             </Text>
         </View>
-        <Text>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            imperdiet lacus ac lectus porttitor vehicula.
-        </Text>
+        <Text>{props.description}</Text>
     </Card>
 );
 

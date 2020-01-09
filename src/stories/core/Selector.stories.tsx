@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 // Library
-import { Selector } from 'components/core';
+import { Selector } from '../../components/core';
 import { Controlled } from '../decorators';
 
 export default {
