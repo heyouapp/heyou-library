@@ -114,7 +114,7 @@
         "signature": "0c9ea8c2028047f39a3f66752682604f543c08be8806258c3d95c93e75a43255"
       },
       "../src/utils/colors.tsx": {
-        "version": "549d333d2924875e3da0adb0f482dc994186ae50e7ed81b2081c7e18867f762f",
+        "version": "d4aea61a106169d9baa52b2aff9c6bb7b575d73e7e29a815c8a62a3cd173cb87",
         "signature": "675c5d488fc38aad2e6ffe5b30a2d5393efc405df975a7750fa3d2b0b41bfd28"
       },
       "../src/utils/shadows.tsx": {
@@ -182,76 +182,76 @@
         "signature": "b1fc44aa95d4322f16ac8b24e7635f0cd6d4d44cc3392473e46102595ebe546e"
       },
       "../src/components/core/input.tsx": {
-        "version": "72f1f0fc42690de5dfdfc386bf641f90bf04d2a40a8a9ee4b79a11760728df8c",
+        "version": "848a86206a17bf252d5e21b578fa660800a30f1c3c3ce9ac9193b24549245f3c",
         "signature": "94576b2708471887fa4244e97a728fcb979c5b806a6c9bf270446e49c187e46b"
-      },
-      "../src/components/core/tag.tsx": {
-        "version": "925193e479be9a771c62bc27ec0d44a59d8a689ebc6a598e302bcacb73161c20",
-        "signature": "a27cd2447eb867deaf094c75b6460653d217c70978e053c709df15895bf311d1"
-      },
-      "../src/components/core/autocomplete.tsx": {
-        "version": "47bf9353bd342afb573ffd2808e4e87f1388e5894a3c860e0f2b1c3801b1091d",
-        "signature": "cfe9d35df94085ee336bed746243c97c73c62084dd73f3620bafb0628c65ad3d"
       },
       "../src/components/core/icon.tsx": {
         "version": "d493c8944296a0c45dc6dd1b95fab0994efc7b604a2647e31d383dd2ac2fed21",
         "signature": "16d2e5349182b66b670fc484c71a9782e960ad24065df57ed78a3f4be1e148fa"
       },
       "../src/components/core/selector.tsx": {
-        "version": "6c42a59964f8d19b65cf06940f3c7179fed83523e661320941c15b34043a6a73",
-        "signature": "7e8d6890758e6911babe774e42b8568ddfed794c3cfe8a13ec6b2c44362f915a"
+        "version": "5287f5934eb1e4c40f9c624860cfaafd1cafabc415ccc80f57af99c6a36b4803",
+        "signature": "ed39cdd3978c0762fd3af241a52caa2aa68f80e6fbcbdf71ebaf1013abd4c39d"
       },
       "../src/components/core/card.tsx": {
-        "version": "0b5e8de7ba423dac6a60d969b82e76213e9cbdc31425e06c9bb27d21a0129708",
-        "signature": "73af7baba0bad45e398a59342adc1b53f3f0fba8cce701742a5612d1efb2a8b2"
+        "version": "0642a55de55504f0cf6cb9667bc599ff8531bd468defe005b7bd54847381fb69",
+        "signature": "d678ab21955541295a4cceee7ec82988c264905421f3cd54b59f0cf809956ddf"
       },
       "../src/components/core/pagecounter.tsx": {
-        "version": "74d597fad06ba9491059ee985e6b70702a9874bf5f2f66390b52d4a6cdeee7aa",
-        "signature": "12bcb247c75d57440039077dad92f06a08f3be8bbf0f3dd4605910015647c74e"
+        "version": "3b8d37d4a104036f47dbcfe797686528b682b565be210f33861fc92232008861",
+        "signature": "25f1b5a09fc1514e23c4913c438a7cceffa003ad5a8cea43bca009ddff48c801"
+      },
+      "../src/components/core/tag.tsx": {
+        "version": "e818579fd7a57add2423f016e3e89f84761b322b0b7dca5665a002ff6e6cedc0",
+        "signature": "42f5607c8d65b5020ac44c5844ef21d5c933a4f5d98da5dd6a4c0e1d5dc2e053"
       },
       "../src/components/core/video.tsx": {
-        "version": "07237b8115bef9072f3466bb1f8984bc84e6b6a69198f61273b62048bb032aa9",
-        "signature": "541c36319deb725850e089f59634717ad6583b4688c280663f602e57ecb72a17"
+        "version": "fdac6f5ad4e3d33c51f9a91fe00b5ea309c970ef53a6c1ee5b033ce8813140ae",
+        "signature": "ddef1ed74c73654b90075b3ff5eb5eea5cd01a6c6019e9c9cd8a7afeee093c63"
       },
       "../src/components/core/index.tsx": {
-        "version": "cd47ed9764b452a2399ef90b17d3110b20def757132e90ded37f5c43b91caeab",
-        "signature": "cd47ed9764b452a2399ef90b17d3110b20def757132e90ded37f5c43b91caeab"
+        "version": "e16711122c1edea74ab8c9d5e898308019b0bfaecddb4bf3bbd54d9ec14773c7",
+        "signature": "e16711122c1edea74ab8c9d5e898308019b0bfaecddb4bf3bbd54d9ec14773c7"
       },
       "../src/components/account/user.tsx": {
-        "version": "4e27026baaa54163da6eb5c489fb76ec9deca319f325d7e388628eba81174e6a",
-        "signature": "8703955a8e70bb0e4223a1ec69325dc14731ca806e3450208cc052b24ae285b5"
+        "version": "8832305d7db2fcb7a33c01fb1d5c1ca2e486a7df3a50abeb0bef43b34a7d1d5e",
+        "signature": "501688922b4b89e8d16e32a0f59dc7f2b1292f9c83c9b4ec33f6ba40bf636e39"
       },
       "../src/components/account/talent.tsx": {
-        "version": "245ab207f777ca5e183a5108c0ea2d5af9de505379f118310ff9b81989becc94",
-        "signature": "03f7da487d4d4527e4374bbd63ceb63ffc4cd9f1cd4bb242799e4cadc7ce52aa"
+        "version": "6cbd16ddcea231a4e5d98cde72bab13bcbef819c03ad24c83be299562e8873e5",
+        "signature": "95ccef88df129335c882206ed14e7b609c19b39b3b29afff179e09832c6113d5"
       },
       "../src/components/account/index.tsx": {
         "version": "db1446535004843323d1eae6f0ea45f8caf79d7c8f8245449932160815689f38",
         "signature": "db1446535004843323d1eae6f0ea45f8caf79d7c8f8245449932160815689f38"
       },
+      "../node_modules/moment/moment.d.ts": {
+        "version": "d62fa6fe33566fa743b3d6715a1a2fe46e937ba9d2ba158563c5744315d438a7",
+        "signature": "d62fa6fe33566fa743b3d6715a1a2fe46e937ba9d2ba158563c5744315d438a7"
+      },
       "../src/components/common/request.tsx": {
-        "version": "3549fa5b87411a9a00dea7567570c3830e74b321e18ba3bd658c732bdf8a4428",
-        "signature": "4a9e506175eed04584c3b587c8f9637a93baa325eceb57792e36fc488448a055"
+        "version": "056522ad0d507f8116a5be806d3e0b4efc28f74e642304280bd93ab37c498014",
+        "signature": "70bbf1bcd314895efbe9c217bcc8504f7f8aedb8d0930063a2a614999467d517"
       },
       "../src/components/common/requestvideo.tsx": {
-        "version": "0bf67c6c7b6b1681bd1e62041f2a6fb029a56d57500f2f63126b61ece0aa5f3f",
-        "signature": "dc8129fa27fdf76dd9db1f6210fdf378b0c0391f65f7d3df7a2951d4e5b72830"
+        "version": "f41182baf1ce329233361075f2904d5368c1a75514624e7b22c61ccd441ac3fa",
+        "signature": "5af7d90a83fe457c468458bbac0db78e5b3d619976d96cba2c73cc6b61cd2cf3"
       },
       "../src/components/common/cardvideo.tsx": {
-        "version": "67ffb3d6230b0ae65e42d22c3c1650d3db2c66741f0ea4473bf20686cb1ea9d7",
-        "signature": "3993edb9cfb45a666ac7b7f6214311b7be434ea66a3ecb240f7026366b9f50a0"
+        "version": "8cd1b9d855b35c83977c1e0b73ef3f2f9f6f2b1297cb8c85210a5db59ae1c526",
+        "signature": "6a0c077e9bc27c63c68f5b92d21aecddaab38038bfd27c1a2b4d88e658c9c834"
       },
       "../src/components/common/notification.tsx": {
-        "version": "c3fa6984cb87237c6438126c065a4b455c4c17f282e1da188d746a36895081ae",
-        "signature": "268e734159b731f2a3e75d72f3f91b195ef80c3abc42c825247f59e2a6f47c49"
+        "version": "4d7710f798dc5126534d55fb7bc8d0ca4ca9291bcbbaf245f678c41cd933cece",
+        "signature": "3bd1c3e5df14490df11f4eff6d02bd199c7a59cdaec86ac55925058d0cdaf357"
       },
       "../src/components/common/share.tsx": {
-        "version": "bf75e575220a79f7da399721aa0d7e3f3c267ea05785601aba39573ca1eb85ca",
-        "signature": "51b8683d60b00fc83a642fa647e9e6bd53bb28541316ec9756e46346d563b191"
+        "version": "2421cfcf3a85523171ef1797353d32461f5acc5525b3f5646c1f56550b9a1e24",
+        "signature": "34f1b8fab267ea54e2e51a9408e8dc2bed9d5b587de3a279dbc9fadba97b1e09"
       },
       "../src/components/common/review.tsx": {
-        "version": "1e45aded9cfb0476a494d4ef31f10853c6fef0b0593744d0e4ffb659c20ebfd1",
-        "signature": "3afb9c40df659009be65246c33642b3b23408ef3dc6c765be5f812defb0cd1e2"
+        "version": "85dae31c38fe674b4031d34a22b330178934801808338c26663945892fa0e74a",
+        "signature": "9eee1bf2bd0c65b83da75a7d92055e91d247131ead984626160b5d84087bb5f0"
       },
       "../src/components/common/index.tsx": {
         "version": "ff3444963cb7d1d45868cfb0f57dbb903a9abeb00531b292ef51bdf448dc8cdd",
@@ -1114,27 +1114,6 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/components/core/tag.tsx": [
-        "../node_modules/@types/react/index.d.ts",
-        "../node_modules/@types/react-native/index.d.ts",
-        "../src/utils/index.tsx",
-        "../src/components/core/index.tsx",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/components/core/autocomplete.tsx": [
-        "../node_modules/@types/react/index.d.ts",
-        "../node_modules/@types/react-native/index.d.ts",
-        "../src/components/core/input.tsx",
-        "../src/components/core/tag.tsx",
-        "../src/utils/index.tsx",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "../src/components/core/icon.tsx": [
         "../node_modules/@types/react/index.d.ts",
         "../node_modules/@types/react-native/index.d.ts",
@@ -1172,6 +1151,16 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/components/core/tag.tsx": [
+        "../node_modules/@types/react/index.d.ts",
+        "../node_modules/@types/react-native/index.d.ts",
+        "../src/utils/index.tsx",
+        "../src/components/core/index.tsx",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/components/core/video.tsx": [
         "../node_modules/@types/react/index.d.ts",
         "../node_modules/@types/react-native/index.d.ts",
@@ -1186,7 +1175,6 @@
         "../src/components/core/text.tsx",
         "../src/components/core/button.tsx",
         "../src/components/core/input.tsx",
-        "../src/components/core/autocomplete.tsx",
         "../src/components/core/icon.tsx",
         "../src/components/core/selector.tsx",
         "../src/components/core/card.tsx",
@@ -1229,9 +1217,16 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../node_modules/moment/moment.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/components/common/request.tsx": [
         "../node_modules/@types/react/index.d.ts",
         "../node_modules/@types/react-native/index.d.ts",
+        "../node_modules/moment/moment.d.ts",
         "../src/components/core/index.tsx",
         "../src/components/account/index.tsx",
         "../src/utils/index.tsx",
@@ -1243,6 +1238,7 @@
       "../src/components/common/requestvideo.tsx": [
         "../node_modules/@types/react/index.d.ts",
         "../node_modules/@types/react-native/index.d.ts",
+        "../node_modules/moment/moment.d.ts",
         "../src/components/core/index.tsx",
         "../src/components/common/index.tsx",
         "../node_modules/@types/node/fs.d.ts",
@@ -1253,6 +1249,7 @@
       "../src/components/common/cardvideo.tsx": [
         "../node_modules/@types/react/index.d.ts",
         "../node_modules/@types/react-native/index.d.ts",
+        "../node_modules/moment/moment.d.ts",
         "../src/components/core/index.tsx",
         "../src/components/common/index.tsx",
         "../src/components/account/index.tsx",
@@ -1265,6 +1262,7 @@
       "../src/components/common/notification.tsx": [
         "../node_modules/@types/react/index.d.ts",
         "../node_modules/@types/react-native/index.d.ts",
+        "../node_modules/moment/moment.d.ts",
         "../src/components/core/index.tsx",
         "../src/components/account/index.tsx",
         "../src/utils/index.tsx",
@@ -2519,19 +2517,25 @@
       ],
       "../src/components/common/cardvideo.tsx": [
         "../src/components/core/index.tsx",
+        "../node_modules/@types/react-native/index.d.ts",
         "../node_modules/@types/react/index.d.ts"
       ],
       "../src/components/common/requestvideo.tsx": [
         "../src/components/core/index.tsx",
+        "../src/components/common/index.tsx",
+        "../node_modules/@types/react-native/index.d.ts",
         "../node_modules/@types/react/index.d.ts"
       ],
       "../src/components/common/share.tsx": [
+        "../node_modules/@types/react-native/index.d.ts",
         "../node_modules/@types/react/index.d.ts"
       ],
       "../src/components/common/notification.tsx": [
+        "../node_modules/@types/react-native/index.d.ts",
         "../node_modules/@types/react/index.d.ts"
       ],
       "../src/components/common/request.tsx": [
+        "../node_modules/@types/react-native/index.d.ts",
         "../node_modules/@types/react/index.d.ts"
       ],
       "../src/components/account/talent.tsx": [
@@ -2548,13 +2552,13 @@
         "../node_modules/@types/react/index.d.ts"
       ],
       "../src/components/core/video.tsx": [
-        "../node_modules/@types/react/index.d.ts"
+        "../node_modules/@types/react/index.d.ts",
+        "../node_modules/@types/react-native/index.d.ts"
       ],
       "../src/components/core/index.tsx": [
         "../src/components/core/text.tsx",
         "../src/components/core/button.tsx",
         "../src/components/core/input.tsx",
-        "../src/components/core/autocomplete.tsx",
         "../src/components/core/icon.tsx",
         "../src/components/core/selector.tsx",
         "../src/components/core/card.tsx",
@@ -2563,9 +2567,11 @@
         "../src/components/core/video.tsx"
       ],
       "../src/components/core/tag.tsx": [
+        "../node_modules/@types/react-native/index.d.ts",
         "../node_modules/@types/react/index.d.ts"
       ],
       "../src/components/core/pagecounter.tsx": [
+        "../node_modules/@types/react-native/index.d.ts",
         "../node_modules/@types/react/index.d.ts"
       ],
       "../src/components/core/card.tsx": [
@@ -2573,6 +2579,7 @@
         "../node_modules/@types/react-native/index.d.ts"
       ],
       "../src/components/core/selector.tsx": [
+        "../node_modules/@types/react-native/index.d.ts",
         "../node_modules/@types/react/index.d.ts"
       ],
       "../src/components/core/icon.tsx": [
@@ -2989,6 +2996,12 @@
       ],
       "../node_modules/@storybook/theming/dist/create.d.ts": [
         "../node_modules/@storybook/theming/dist/types.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/moment/moment.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -3688,17 +3701,17 @@
       "../src/components/core/text.tsx",
       "../src/components/core/button.tsx",
       "../src/components/core/input.tsx",
-      "../src/components/core/tag.tsx",
-      "../src/components/core/autocomplete.tsx",
       "../src/components/core/icon.tsx",
       "../src/components/core/selector.tsx",
       "../src/components/core/card.tsx",
       "../src/components/core/pagecounter.tsx",
+      "../src/components/core/tag.tsx",
       "../src/components/core/video.tsx",
       "../src/components/core/index.tsx",
       "../src/components/account/user.tsx",
       "../src/components/account/talent.tsx",
       "../src/components/account/index.tsx",
+      "../node_modules/moment/moment.d.ts",
       "../src/components/common/request.tsx",
       "../src/components/common/requestvideo.tsx",
       "../src/components/common/cardvideo.tsx",

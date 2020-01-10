@@ -4,8 +4,8 @@ export interface TalentProps {
     style?: StyleProp<ViewStyle>;
     onPress?: () => void;
     fullName: string;
-    principalTag: string;
-    price: number;
+    mainTopic: string;
+    talentFeeAmount: number;
 }
 declare const Talent: React.FC<TalentProps>;
 export { Talent };
