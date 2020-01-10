@@ -170,7 +170,7 @@
         "signature": "efdbc251980803743e8a155beb31b4da4c4823349e6a81a81137eeb6a48d6b51"
       },
       "../src/components/account/profilepicture.tsx": {
-        "version": "8face593d5118a9916bf809cdfc0460bb82ecabbe02412707a5ae89229d7570a",
+        "version": "dea37d5d583e3995a716a53201be9caf9afbd30ae5de2a064a1e0f0f40d3e5fc",
         "signature": "a5c4c242ced133eb2029d764cbfbc4833e11fd4bff9dff88c179d87c1eec4c3c"
       },
       "../src/components/core/text.tsx": {
