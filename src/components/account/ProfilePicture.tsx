@@ -5,7 +5,8 @@ import {
     View,
     ViewStyle,
     Image,
-    ImageSourcePropType
+    ImageSourcePropType,
+    Platform
 } from 'react-native';
 
 // Library
@@ -24,7 +25,11 @@ const ProfilePicture: React.FC<ProfilePictureProps> = props => (
         style={[
             styles.container,
             styles[
-                `${props.size || 'small'}${props.squared ? '_squared' : ''}`
+                `${props.size || 'small'}${
+                    props.squared
+                        ? `_squared${Platform.OS === 'web' ? '_web' : ''}`
+                        : ''
+                }`
             ],
             props.style
         ]}
@@ -66,6 +71,18 @@ const styles: { [key: string]: Object } = StyleSheet.create({
     large_squared: {
         height: 150,
         width: 120
+    },
+    small_squared_web: {
+        height: 90,
+        width: 90
+    },
+    medium_squared_web: {
+        height: 180,
+        width: 180
+    },
+    large_squared_web: {
+        height: 200,
+        width: 160
     }
 });
 
