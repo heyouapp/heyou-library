@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, StyleProp, View, ViewStyle } from 'react-native';
 import moment from 'moment';
 
 // Library
@@ -16,10 +16,11 @@ export interface RequestProps {
     refusedAt: string;
     status: 'pending' | 'completed' | 'rejected' | 'expired';
     onPress: () => void;
+    style?: StyleProp<ViewStyle>;
 }
 
 const Request: React.FC<RequestProps> = props => (
-    <Card style={styles.container} onPress={props.onPress}>
+    <Card style={[styles.container, props.style]} onPress={props.onPress}>
         <ProfilePicture size="medium" squared />
         <View style={styles.content}>
             <View>

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, StyleProp, View, ViewStyle } from 'react-native';
 import moment from 'moment';
 
 // Library
@@ -12,10 +12,11 @@ export interface CardVideoProps extends VideoProps {
     createdAt: string;
     recipientName: string;
     onShare: () => void;
+    style?: StyleProp<ViewStyle>;
 }
 
 const CardVideo: React.FC<CardVideoProps> = props => (
-    <Card>
+    <Card style={props.style}>
         <View style={styles.header}>
             <View style={styles.content}>
                 <ProfilePicture />

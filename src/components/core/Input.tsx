@@ -28,7 +28,7 @@ export const InputInnerStyle = {
 };
 
 const Input: React.FC<InputProps> = props => (
-    <View style={styles.container}>
+    <View style={props.style}>
         {props.label && <Text style={styles.label}>{props.label}</Text>}
         <View
             style={[
@@ -57,9 +57,6 @@ const Input: React.FC<InputProps> = props => (
 );
 
 const styles = StyleSheet.create({
-    container: {
-        marginVertical: 7.5
-    },
     label: {
         marginBottom: 7.5
     },

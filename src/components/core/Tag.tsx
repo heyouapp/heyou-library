@@ -1,5 +1,10 @@
 import * as React from 'react';
-import { StyleSheet, TouchableOpacity } from 'react-native';
+import {
+    StyleSheet,
+    StyleProp,
+    ViewStyle,
+    TouchableOpacity
+} from 'react-native';
 
 // Library
 import { Colors } from 'utils';
@@ -9,11 +14,16 @@ export interface TagProps {
     children: string;
     active?: boolean;
     onDelete?: () => void;
+    style?: StyleProp<ViewStyle>;
 }
 
 const Tag: React.FC<TagProps> = props => (
     <TouchableOpacity
-        style={[styles.tag, props.active ? styles.tag_active : null]}
+        style={[
+            styles.tag,
+            props.active ? styles.tag_active : null,
+            props.style
+        ]}
         onPress={props.onDelete}
         disabled={!props.onDelete}
         activeOpacity={0.7}

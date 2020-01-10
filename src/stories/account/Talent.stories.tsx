@@ -8,5 +8,5 @@ export default {
 };
 
 export const normal = () => (
-    <Talent fullName="Mario Rossi" principalTag="Comedian" price={50} />
+    <Talent fullName="Mario Rossi" mainTopic="Comedian" talentFeeAmount={50} />
 );

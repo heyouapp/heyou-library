@@ -23,7 +23,7 @@ export interface TalentProps {
 const Talent: React.FC<TalentProps> = props => (
     <TouchableOpacity
         onPress={props.onPress}
-        style={styles.container}
+        style={props.style}
         activeOpacity={0.7}
     >
         <ProfilePicture size="large" squared>
@@ -41,9 +41,6 @@ const Talent: React.FC<TalentProps> = props => (
 );
 
 const styles = StyleSheet.create({
-    container: {
-        margin: 7.5
-    },
     price: {
         position: 'absolute',
         top: 5,

@@ -1,5 +1,11 @@
 import * as React from 'react';
-import { StyleSheet, View, TouchableOpacity } from 'react-native';
+import {
+    StyleSheet,
+    StyleProp,
+    View,
+    ViewStyle,
+    TouchableOpacity
+} from 'react-native';
 
 // Library
 import { Colors } from 'utils';
@@ -9,6 +15,7 @@ export interface SelectorProps {
     data: string[];
     value?: number;
     onChange?: (index: number) => void;
+    style?: StyleProp<ViewStyle>;
 }
 
 const Selector: React.FC<SelectorProps> = props => {
@@ -17,7 +24,7 @@ const Selector: React.FC<SelectorProps> = props => {
     }
 
     return (
-        <View style={styles.container}>
+        <View style={[styles.container, props.style]}>
             {props.data.map((item: string, index: number) => (
                 <TouchableOpacity
                     onPress={() => props.onChange && props.onChange(index)}
@@ -51,7 +58,6 @@ const styles = StyleSheet.create({
     container: {
         height: 30,
         marginLeft: 1,
-        marginVertical: 7.5,
         flexDirection: 'row'
     },
     tab: {

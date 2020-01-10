@@ -1,5 +1,10 @@
 import * as React from 'react';
-import { StyleSheet, TouchableOpacity } from 'react-native';
+import {
+    StyleSheet,
+    StyleProp,
+    ViewStyle,
+    TouchableOpacity
+} from 'react-native';
 
 // Library
 import { Icon } from 'components/core';
@@ -7,12 +12,13 @@ import { Colors } from 'utils';
 
 export interface ShareProps {
     onPress?: () => void;
+    style?: StyleProp<ViewStyle>;
 }
 
 const Share: React.FC<ShareProps> = props => (
     <TouchableOpacity
         onPress={props.onPress}
-        style={styles.container}
+        style={[styles.container, props.style]}
         activeOpacity={0.7}
     >
         <Icon name="share" color={Colors.white} style={styles.icon} />

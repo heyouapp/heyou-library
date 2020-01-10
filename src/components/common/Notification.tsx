@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, StyleProp, View, ViewStyle } from 'react-native';
 import moment from 'moment';
 
 // Library
@@ -12,10 +12,11 @@ export interface NotificationProps {
     description: string;
     createdAt: string;
     onPress?: () => void;
+    style?: StyleProp<ViewStyle>;
 }
 
 const Notification: React.FC<NotificationProps> = props => (
-    <Card style={styles.container} onPress={props.onPress}>
+    <Card style={[styles.container, props.style]} onPress={props.onPress}>
         <View style={styles.header}>
             <View style={styles.content}>
                 <ProfilePicture />

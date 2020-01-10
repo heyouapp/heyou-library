@@ -1,5 +1,11 @@
 import * as React from 'react';
-import { StyleSheet, View, TouchableWithoutFeedback } from 'react-native';
+import {
+    StyleSheet,
+    StyleProp,
+    View,
+    ViewStyle,
+    TouchableWithoutFeedback
+} from 'react-native';
 
 // Library
 import { Icon } from 'components/core';
@@ -9,6 +15,7 @@ export interface VideoProps {
     volume: boolean;
     onVolumeChange: (volume: boolean) => void;
     children: React.ReactNode;
+    style?: StyleProp<ViewStyle>;
 }
 
 const Video: React.FC<VideoProps> = props => (
@@ -16,7 +23,7 @@ const Video: React.FC<VideoProps> = props => (
         onPress={() => props.onVolumeChange(!props.volume)}
         disabled={!props.onVolumeChange}
     >
-        <View style={styles.container}>
+        <View style={[styles.container, props.style]}>
             {props.children}
             {props.volume !== undefined && (
                 <View style={styles.volume}>

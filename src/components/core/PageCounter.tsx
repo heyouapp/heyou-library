@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, StyleProp, View, ViewStyle } from 'react-native';
 
 // Library
 import { Colors } from 'utils';
@@ -7,10 +7,11 @@ import { Colors } from 'utils';
 export interface PageCounterProps {
     amount: number;
     active: number;
+    style?: StyleProp<ViewStyle>;
 }
 
 const PageCounter: React.FC<PageCounterProps> = props => (
-    <View style={styles.container}>
+    <View style={[styles.container, props.style]}>
         {[...new Array(props.amount)].map((_item, index: number) => (
             <View
                 style={[
@@ -25,7 +26,6 @@ const PageCounter: React.FC<PageCounterProps> = props => (
 
 const styles = StyleSheet.create({
     container: {
-        marginVertical: 7.5,
         marginHorizontal: -3,
         flexDirection: 'row'
     },

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, StyleProp, View, ViewStyle } from 'react-native';
 import moment from 'moment';
 
 // Library
@@ -10,10 +10,11 @@ export interface RequestVideoProps extends VideoProps {
     review?: ReviewProps;
     completedAt: string;
     onShare: () => void;
+    style?: StyleProp<ViewStyle>;
 }
 
 const RequestVideo: React.FC<RequestVideoProps> = props => (
-    <Card style={styles.container}>
+    <Card style={[styles.container, props.style]}>
         <View style={styles.header}>
             <Text small>
                 Video completed on{' '}
