@@ -1,9 +1,8 @@
 import * as React from 'react';
 import {
     StyleSheet,
-    StyleProp,
     View,
-    ViewStyle,
+    ViewProps,
     TouchableWithoutFeedback
 } from 'react-native';
 
@@ -11,11 +10,9 @@ import {
 import { Icon } from 'components/core';
 import { Colors, ColorOpacity } from 'utils';
 
-export interface VideoProps {
+export interface VideoProps extends ViewProps {
     volume: boolean;
     onVolumeChange: (volume: boolean) => void;
-    children: React.ReactNode;
-    style?: StyleProp<ViewStyle>;
 }
 
 const Video: React.FC<VideoProps> = props => (

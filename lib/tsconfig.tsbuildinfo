@@ -206,8 +206,8 @@
         "signature": "42f5607c8d65b5020ac44c5844ef21d5c933a4f5d98da5dd6a4c0e1d5dc2e053"
       },
       "../src/components/core/video.tsx": {
-        "version": "fdac6f5ad4e3d33c51f9a91fe00b5ea309c970ef53a6c1ee5b033ce8813140ae",
-        "signature": "ddef1ed74c73654b90075b3ff5eb5eea5cd01a6c6019e9c9cd8a7afeee093c63"
+        "version": "9332338484866edfdecc41143146144ce11d99be4050b179593c361d828ba09c",
+        "signature": "180fcc1930d27fc374231c9c30da1a59c4388d091add0fd108968eea1dad01e2"
       },
       "../src/components/core/index.tsx": {
         "version": "e16711122c1edea74ab8c9d5e898308019b0bfaecddb4bf3bbd54d9ec14773c7",
@@ -2575,8 +2575,8 @@
         "../node_modules/@types/react/index.d.ts"
       ],
       "../src/components/core/video.tsx": [
-        "../node_modules/@types/react/index.d.ts",
-        "../node_modules/@types/react-native/index.d.ts"
+        "../node_modules/@types/react-native/index.d.ts",
+        "../node_modules/@types/react/index.d.ts"
       ],
       "../src/components/core/index.tsx": [
         "../src/components/core/text.tsx",
