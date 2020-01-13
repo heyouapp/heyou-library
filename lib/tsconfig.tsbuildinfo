@@ -113,6 +113,10 @@
         "version": "0c9ea8c2028047f39a3f66752682604f543c08be8806258c3d95c93e75a43255",
         "signature": "0c9ea8c2028047f39a3f66752682604f543c08be8806258c3d95c93e75a43255"
       },
+      "../node_modules/tslib/tslib.d.ts": {
+        "version": "4984b48a97160eac5282ffeae690315420a626de83ccf6045c36d934c5c957c0",
+        "signature": "4984b48a97160eac5282ffeae690315420a626de83ccf6045c36d934c5c957c0"
+      },
       "../src/utils/colors.tsx": {
         "version": "d4aea61a106169d9baa52b2aff9c6bb7b575d73e7e29a815c8a62a3cd173cb87",
         "signature": "675c5d488fc38aad2e6ffe5b30a2d5393efc405df975a7750fa3d2b0b41bfd28"
@@ -811,6 +815,7 @@
       "declaration": true,
       "allowJs": true,
       "skipLibCheck": true,
+      "importHelpers": true,
       "emitDeclarationOnly": true,
       "configFilePath": "../tsconfig.json"
     },
@@ -978,6 +983,12 @@
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../node_modules/typescript/lib/lib.esnext.bigint.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/tslib/tslib.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -2511,6 +2522,12 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../node_modules/tslib/tslib.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/utils/index.tsx": [
         "../src/utils/colors.tsx",
         "../src/utils/shadows.tsx",
@@ -3720,6 +3737,7 @@
       ]
     },
     "semanticDiagnosticsPerFile": [
+      "../node_modules/tslib/tslib.d.ts",
       "../src/utils/colors.tsx",
       "../src/utils/shadows.tsx",
       "../node_modules/@types/react-native/globals.d.ts",
