@@ -45,9 +45,9 @@
         "react-docgen-typescript-loader": "^3.6.0",
         "react-dom": "^16.12.0",
         "react-native": "^0.61.5",
-        "react-native-web": "^0.11.7",
+        "react-native-web": "^0.12.0-rc.1",
         "react-scripts": "3.3.0",
-        "react-test-renderer": "16.9.0",
+        "react-test-renderer": "16.12.0",
         "typescript": "^3.7.3"
     },
     "prettier": {
