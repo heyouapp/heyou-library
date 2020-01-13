@@ -170,8 +170,8 @@
         "signature": "efdbc251980803743e8a155beb31b4da4c4823349e6a81a81137eeb6a48d6b51"
       },
       "../src/components/account/profilepicture.tsx": {
-        "version": "dea37d5d583e3995a716a53201be9caf9afbd30ae5de2a064a1e0f0f40d3e5fc",
-        "signature": "a5c4c242ced133eb2029d764cbfbc4833e11fd4bff9dff88c179d87c1eec4c3c"
+        "version": "7e6e2523211400a6094183b06e7611fb5fb407a691da9b2568471697b0803a69",
+        "signature": "f16a64bb63b229d87c961494411d5baa730dfd25c3fa47ffd86f0d020fbcd379"
       },
       "../src/components/core/text.tsx": {
         "version": "766cf5f35a0637ea5834182c192af266edbb6a4505346231bcfbce21dfd45adb",
@@ -218,8 +218,8 @@
         "signature": "501688922b4b89e8d16e32a0f59dc7f2b1292f9c83c9b4ec33f6ba40bf636e39"
       },
       "../src/components/account/talent.tsx": {
-        "version": "6cbd16ddcea231a4e5d98cde72bab13bcbef819c03ad24c83be299562e8873e5",
-        "signature": "95ccef88df129335c882206ed14e7b609c19b39b3b29afff179e09832c6113d5"
+        "version": "999c9ff8e2654f568e0446524aea9f626b73fbba0c1c3c0d54d46daf9212604f",
+        "signature": "4c019c67567213405f5f030f175f1159b62d121b308b2ee4e7245681f063d7e7"
       },
       "../src/components/account/index.tsx": {
         "version": "db1446535004843323d1eae6f0ea45f8caf79d7c8f8245449932160815689f38",
@@ -270,8 +270,8 @@
         "signature": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76"
       },
       "../node_modules/@babel/types/lib/index.d.ts": {
-        "version": "9cebab89871446e2e9f2c8599cb22696c08207cf5bc21adb8f9752d582c5055e",
-        "signature": "9cebab89871446e2e9f2c8599cb22696c08207cf5bc21adb8f9752d582c5055e"
+        "version": "bf8f90f33b4925f0d9d013fd42995ba6f0602997d348fcb21d4a40b30e1310a5",
+        "signature": "bf8f90f33b4925f0d9d013fd42995ba6f0602997d348fcb21d4a40b30e1310a5"
       },
       "../node_modules/@types/babel__generator/index.d.ts": {
         "version": "b25c5f2970d06c729f464c0aeaa64b1a5b5f1355aa93554bb5f9c199b8624b1e",
@@ -292,6 +292,10 @@
       "../node_modules/@types/babel__core/index.d.ts": {
         "version": "8b6748f9e15ad7bac494dc3cd3b13ba0a8be195aca97f7c10a96b1c74a956f32",
         "signature": "8b6748f9e15ad7bac494dc3cd3b13ba0a8be195aca97f7c10a96b1c74a956f32"
+      },
+      "../node_modules/@types/color-name/index.d.ts": {
+        "version": "f0cb4b3ab88193e3e51e9e2622e4c375955003f1f81239d72c5b7a95415dad3e",
+        "signature": "f0cb4b3ab88193e3e51e9e2622e4c375955003f1f81239d72c5b7a95415dad3e"
       },
       "../node_modules/@types/eslint-visitor-keys/index.d.ts": {
         "version": "725d9be2fd48440256f4deb00649adffdbc5ecd282b09e89d4e200663792c34c",
@@ -374,8 +378,8 @@
         "signature": "4218ced3933a31eed1278d350dd63c5900df0f0904f57d61c054d7a4b83dbe4c"
       },
       "../node_modules/@types/node/module.d.ts": {
-        "version": "ac33cdc80df487d154ad9bc3ff31333416e9ecb040c25036fa69da49c0aee476",
-        "signature": "ac33cdc80df487d154ad9bc3ff31333416e9ecb040c25036fa69da49c0aee476"
+        "version": "66ff62a91941fe3ad4af94ef48e51fbeb06ea3e035f448dbc48e4693a2f74917",
+        "signature": "66ff62a91941fe3ad4af94ef48e51fbeb06ea3e035f448dbc48e4693a2f74917"
       },
       "../node_modules/@types/node/net.d.ts": {
         "version": "ffe8912b7c45288810c870b768190c6c097459930a587dd6ef0d900a5529a811",
@@ -554,8 +558,8 @@
         "signature": "1923cbe22fe3f5005de4192f014b558a88e0fdec16726bb4f94ac76dd1a82c92"
       },
       "../node_modules/@types/react-syntax-highlighter/index.d.ts": {
-        "version": "3d6385f386c22bd429b0a74439de02881946157378d749ca1dd93d4daf2f89e9",
-        "signature": "3d6385f386c22bd429b0a74439de02881946157378d749ca1dd93d4daf2f89e9"
+        "version": "c6d8434b402c2a47c6d04d59030d9aad99d7fd02eebbb89d1ed5adb8d301299a",
+        "signature": "c6d8434b402c2a47c6d04d59030d9aad99d7fd02eebbb89d1ed5adb8d301299a"
       },
       "../node_modules/@types/react-test-renderer/index.d.ts": {
         "version": "d255704f3310198e567665abb2d45ae4edaa3d5b3e16d86dee18a7d88c944815",
@@ -574,16 +578,20 @@
         "signature": "41422586881bcd739b4e62d9b91cd29909f8572aa3e3cdf316b7c50f14708d49"
       },
       "../node_modules/@storybook/channels/dist/index.d.ts": {
-        "version": "4301e4d34cf72a55205d0cae410ba0e732f5f051def71f4fac07991053dd7d93",
-        "signature": "4301e4d34cf72a55205d0cae410ba0e732f5f051def71f4fac07991053dd7d93"
+        "version": "a7a310980b9651c1aeb0064a80ed838ce014d7de054a408048e8173c8a1a94cd",
+        "signature": "a7a310980b9651c1aeb0064a80ed838ce014d7de054a408048e8173c8a1a94cd"
+      },
+      "../node_modules/@storybook/csf/dist/index.d.ts": {
+        "version": "684b85855b7a97e7bd926b03dc14184089877cad0fcfa7cfd6a4e22de2db65df",
+        "signature": "684b85855b7a97e7bd926b03dc14184089877cad0fcfa7cfd6a4e22de2db65df"
       },
       "../node_modules/@storybook/router/dist/utils.d.ts": {
-        "version": "7453cafdea127837723b3e6a30ca6a04516e1b37e5688e215d59adf5ad27a7e1",
-        "signature": "7453cafdea127837723b3e6a30ca6a04516e1b37e5688e215d59adf5ad27a7e1"
+        "version": "eba9e0c00d9bd9b6ebe8f924b6f932a816d4c3c1e868ae1398756fc643270d36",
+        "signature": "eba9e0c00d9bd9b6ebe8f924b6f932a816d4c3c1e868ae1398756fc643270d36"
       },
       "../node_modules/@storybook/router/dist/router.d.ts": {
-        "version": "dd7be0c3de98a64d4dbc438e13a78fe5a5f24eb27ed82c1f287f73197829ef05",
-        "signature": "dd7be0c3de98a64d4dbc438e13a78fe5a5f24eb27ed82c1f287f73197829ef05"
+        "version": "8eafc0d184b8d20c194a94c373584ba531ed385c94d50b513a5ef98d4792afc3",
+        "signature": "8eafc0d184b8d20c194a94c373584ba531ed385c94d50b513a5ef98d4792afc3"
       },
       "../node_modules/@storybook/router/dist/index.d.ts": {
         "version": "f321ad7076d4b945a2aff9976d2f3cb4d8f5143968aaa483b61668130ca74646",
@@ -602,16 +610,16 @@
         "signature": "8441bd7055a69ecb25ed851b6dcef64cbd4c6ee97f87da4f575efb07efa01b4f"
       },
       "../node_modules/@storybook/api/dist/modules/channel.d.ts": {
-        "version": "4563bce0d7056a889ab3d128a9637c929e3f74f798f436dadfa17aecdb3bd692",
-        "signature": "4563bce0d7056a889ab3d128a9637c929e3f74f798f436dadfa17aecdb3bd692"
+        "version": "e235c980cded69e339a8feb4a7579fbae1151f31cf06246fde257ddc5457e525",
+        "signature": "e235c980cded69e339a8feb4a7579fbae1151f31cf06246fde257ddc5457e525"
       },
       "../node_modules/@storybook/api/dist/modules/notifications.d.ts": {
         "version": "c977557c8858180cc7ef8127601707fc1a8646ade46e234ec962141ffb1469de",
         "signature": "c977557c8858180cc7ef8127601707fc1a8646ade46e234ec962141ffb1469de"
       },
       "../node_modules/@storybook/api/dist/modules/stories.d.ts": {
-        "version": "fbf07c383cee3bb7d5ef15d413779933a8b6cdf1c3f26f267596027c1b193957",
-        "signature": "fbf07c383cee3bb7d5ef15d413779933a8b6cdf1c3f26f267596027c1b193957"
+        "version": "8fb1e9f295b5ad1c46a4fb992939ac97a5a1dbfc6cfe4b6ae8ebf1beec25f4e5",
+        "signature": "8fb1e9f295b5ad1c46a4fb992939ac97a5a1dbfc6cfe4b6ae8ebf1beec25f4e5"
       },
       "../node_modules/@emotion/utils/types/index.d.ts": {
         "version": "b950589996caafaa1638f139de73257f6b47a3dc965c8c2a7e5b56138f427dfa",
@@ -690,44 +698,44 @@
         "signature": "71a1c07f9f0b9f040fcb86ac9cc3087449d335859f7335ca5baf388f2c7367b2"
       },
       "../node_modules/@storybook/theming/dist/utils.d.ts": {
-        "version": "19c0c50119bdc4173efdd72febfcec1fa7b623d603efe6b785211f58142b7584",
-        "signature": "19c0c50119bdc4173efdd72febfcec1fa7b623d603efe6b785211f58142b7584"
+        "version": "ffbaef657629da502dbd63133e28c23549ab9e6da5bc517b47bfd663d574888f",
+        "signature": "ffbaef657629da502dbd63133e28c23549ab9e6da5bc517b47bfd663d574888f"
       },
       "../node_modules/@storybook/theming/dist/index.d.ts": {
         "version": "99e14eef8acf9e7ccbf046379857128884301174d2dc79e014d3aee80ba2e947",
         "signature": "99e14eef8acf9e7ccbf046379857128884301174d2dc79e014d3aee80ba2e947"
       },
       "../node_modules/@storybook/api/dist/modules/layout.d.ts": {
-        "version": "a57c86de13641556c27bf1197696b1521581860090ea18b42e2fe8395cebaeca",
-        "signature": "a57c86de13641556c27bf1197696b1521581860090ea18b42e2fe8395cebaeca"
+        "version": "76b549e553cbba52c2da7e5825e9250b19bbca1709debb9fa7790f3892985b21",
+        "signature": "76b549e553cbba52c2da7e5825e9250b19bbca1709debb9fa7790f3892985b21"
       },
       "../node_modules/@storybook/api/dist/modules/shortcuts.d.ts": {
-        "version": "4549190a1b252239675c1c5876d6bc3be8e9cdf2c0dd6b3140056d607706e70a",
-        "signature": "4549190a1b252239675c1c5876d6bc3be8e9cdf2c0dd6b3140056d607706e70a"
+        "version": "7eb94b5cf39a30a666e80698052aacf2c160558d74350a09f9f7843847a196fe",
+        "signature": "7eb94b5cf39a30a666e80698052aacf2c160558d74350a09f9f7843847a196fe"
       },
       "../node_modules/@storybook/api/dist/modules/url.d.ts": {
-        "version": "574d9e4f3767b0bff33c8006b17cb91508b44d09f6bf1fe72c2947d09c5c4f1c",
-        "signature": "574d9e4f3767b0bff33c8006b17cb91508b44d09f6bf1fe72c2947d09c5c4f1c"
+        "version": "24dfbe3e51d2d5abb19f2d27b6224a510511c8d9dd6ab1bf9af67ea9de25e9d8",
+        "signature": "24dfbe3e51d2d5abb19f2d27b6224a510511c8d9dd6ab1bf9af67ea9de25e9d8"
       },
       "../node_modules/@storybook/api/dist/modules/versions.d.ts": {
-        "version": "9d6b51fe85934338f0aad35249ef78cd28b5e0e92315fe2b004aac43b78774d9",
-        "signature": "9d6b51fe85934338f0aad35249ef78cd28b5e0e92315fe2b004aac43b78774d9"
+        "version": "32a8ac3ac7165277f7527c3c01f33aa65d5529609f96cdfe1ea18a575d9ff117",
+        "signature": "32a8ac3ac7165277f7527c3c01f33aa65d5529609f96cdfe1ea18a575d9ff117"
       },
       "../node_modules/@storybook/api/dist/index.d.ts": {
-        "version": "86974b7c1585c568a6d7046689cbc15811d0ed5a1e08740b8ec2f2cb00ec023c",
-        "signature": "86974b7c1585c568a6d7046689cbc15811d0ed5a1e08740b8ec2f2cb00ec023c"
+        "version": "517a91a089270f66cc5d447840cdbb39b1d11abc2d51f9d614067e8066ee21a8",
+        "signature": "517a91a089270f66cc5d447840cdbb39b1d11abc2d51f9d614067e8066ee21a8"
       },
       "../node_modules/@storybook/addons/dist/hooks.d.ts": {
-        "version": "3604e0e53b9bd4b3e591b0a78bf458b3ff3405a371acf2be693b7c83d128871d",
-        "signature": "3604e0e53b9bd4b3e591b0a78bf458b3ff3405a371acf2be693b7c83d128871d"
+        "version": "0fde330e483fb49f59965c8070bfc9d116abc16513c40e89203db8c9d7824c11",
+        "signature": "0fde330e483fb49f59965c8070bfc9d116abc16513c40e89203db8c9d7824c11"
       },
       "../node_modules/@storybook/addons/dist/types.d.ts": {
-        "version": "5a107354efb8b93d3c41eb8d5fb69446d88cefbe5ba2b903a055b475a7b5708a",
-        "signature": "5a107354efb8b93d3c41eb8d5fb69446d88cefbe5ba2b903a055b475a7b5708a"
+        "version": "d44b8ce6e4b768d551c723623f64cc676eae59162f781ec087028042678c2dfb",
+        "signature": "d44b8ce6e4b768d551c723623f64cc676eae59162f781ec087028042678c2dfb"
       },
       "../node_modules/@storybook/addons/dist/index.d.ts": {
-        "version": "a98d0eff633a79046fab578de5fc96f1d946387b413cc9fe5e3aa422bcc85f3b",
-        "signature": "a98d0eff633a79046fab578de5fc96f1d946387b413cc9fe5e3aa422bcc85f3b"
+        "version": "969a18c26333e8d716a8307c86372112d5b162a0aa5ed784873bf463deaa59bf",
+        "signature": "969a18c26333e8d716a8307c86372112d5b162a0aa5ed784873bf463deaa59bf"
       },
       "../node_modules/@storybook/addons/dist/make-decorator.d.ts": {
         "version": "b9e8c38d4655bb870abddc52a16f8b1c7ac0e90cc640b81044b093f52d527368",
@@ -746,8 +754,8 @@
         "signature": "2377d233be4f0a548827a308338e788c9331f633c2bab4f47fe691fd33db4313"
       },
       "../node_modules/@types/tapable/index.d.ts": {
-        "version": "c3175d4a7894de56cdc5e62f4269f1f57c2f08da88d3a91ad47bc0652ac8cb46",
-        "signature": "c3175d4a7894de56cdc5e62f4269f1f57c2f08da88d3a91ad47bc0652ac8cb46"
+        "version": "963e0182287755a18c98493cd70f6747b776f1a54c8620353e1f8e2e17b6cd3a",
+        "signature": "963e0182287755a18c98493cd70f6747b776f1a54c8620353e1f8e2e17b6cd3a"
       },
       "../node_modules/source-map/source-map.d.ts": {
         "version": "2887592574fcdfd087647c539dcb0fbe5af2521270dad4a37f9d17c16190d579",
@@ -1373,6 +1381,12 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../node_modules/@types/color-name/index.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../node_modules/@types/eslint-visitor-keys/index.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -1915,7 +1929,14 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../node_modules/@storybook/csf/dist/index.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../node_modules/@storybook/router/dist/utils.d.ts": [
+        "../node_modules/@storybook/csf/dist/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -1979,7 +2000,7 @@
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../node_modules/@storybook/api/dist/modules/stories.d.ts": [
-        "../node_modules/@storybook/router/dist/index.d.ts",
+        "../node_modules/@storybook/csf/dist/index.d.ts",
         "../node_modules/@storybook/api/dist/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -2151,6 +2172,7 @@
         "../node_modules/@storybook/theming/dist/index.d.ts",
         "../node_modules/@storybook/api/dist/index.d.ts",
         "../node_modules/@storybook/api/dist/store.d.ts",
+        "../node_modules/@storybook/api/dist/init-provider-api.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -2164,9 +2186,9 @@
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../node_modules/@storybook/api/dist/modules/url.d.ts": [
+        "../node_modules/@types/reach__router/index.d.ts",
         "../node_modules/@storybook/api/dist/index.d.ts",
         "../node_modules/@storybook/api/dist/modules/layout.d.ts",
-        "../node_modules/@types/reach__router/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -2201,7 +2223,7 @@
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../node_modules/@storybook/addons/dist/hooks.d.ts": [
-        "../node_modules/@storybook/addons/dist/public_api.d.ts",
+        "../node_modules/@storybook/addons/dist/types.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -2540,6 +2562,7 @@
       ],
       "../src/components/account/talent.tsx": [
         "../node_modules/@types/react-native/index.d.ts",
+        "../src/components/account/profilepicture.tsx",
         "../node_modules/@types/react/index.d.ts"
       ],
       "../src/components/account/index.tsx": [
@@ -2694,13 +2717,6 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@storybook/addons/dist/hooks.d.ts": [
-        "../node_modules/@storybook/addons/dist/public_api.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "../node_modules/@storybook/addons/dist/types.d.ts": [
         "../node_modules/@storybook/addons/dist/hooks.d.ts",
         "../node_modules/@storybook/addons/dist/index.d.ts",
@@ -2711,6 +2727,13 @@
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../node_modules/@storybook/addons/dist/make-decorator.d.ts": [
+        "../node_modules/@storybook/addons/dist/types.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@storybook/addons/dist/hooks.d.ts": [
         "../node_modules/@storybook/addons/dist/types.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -2746,9 +2769,9 @@
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../node_modules/@storybook/api/dist/modules/url.d.ts": [
+        "../node_modules/@types/reach__router/index.d.ts",
         "../node_modules/@storybook/api/dist/index.d.ts",
         "../node_modules/@storybook/api/dist/modules/layout.d.ts",
-        "../node_modules/@types/reach__router/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -2765,13 +2788,14 @@
         "../node_modules/@storybook/theming/dist/index.d.ts",
         "../node_modules/@storybook/api/dist/index.d.ts",
         "../node_modules/@storybook/api/dist/store.d.ts",
+        "../node_modules/@storybook/api/dist/init-provider-api.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../node_modules/@storybook/api/dist/modules/stories.d.ts": [
-        "../node_modules/@storybook/router/dist/index.d.ts",
+        "../node_modules/@storybook/csf/dist/index.d.ts",
         "../node_modules/@storybook/api/dist/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -3066,6 +3090,12 @@
       ],
       "../node_modules/@types/babel__generator/index.d.ts": [
         "../node_modules/@babel/types/lib/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/color-name/index.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -3461,6 +3491,13 @@
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../node_modules/@storybook/router/dist/utils.d.ts": [
+        "../node_modules/@storybook/csf/dist/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@storybook/csf/dist/index.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -3728,6 +3765,7 @@
       "../node_modules/@babel/parser/typings/babel-parser.d.ts",
       "../node_modules/@types/babel__template/index.d.ts",
       "../node_modules/@types/babel__core/index.d.ts",
+      "../node_modules/@types/color-name/index.d.ts",
       "../node_modules/@types/eslint-visitor-keys/index.d.ts",
       "../node_modules/@types/events/index.d.ts",
       "../node_modules/@types/node/globals.d.ts",
@@ -3799,6 +3837,7 @@
       "../node_modules/@types/source-list-map/index.d.ts",
       "../node_modules/@types/stack-utils/index.d.ts",
       "../node_modules/@storybook/channels/dist/index.d.ts",
+      "../node_modules/@storybook/csf/dist/index.d.ts",
       "../node_modules/@storybook/router/dist/utils.d.ts",
       "../node_modules/@storybook/router/dist/router.d.ts",
       "../node_modules/@storybook/router/dist/index.d.ts",

@@ -9,7 +9,7 @@ import {
 
 // Library
 import { Text } from 'components/core';
-import { ProfilePicture } from './ProfilePicture';
+import { ProfilePicture, ProfilePictureSize } from './ProfilePicture';
 import { Colors, ColorOpacity } from 'utils';
 
 export interface TalentProps {
@@ -18,6 +18,7 @@ export interface TalentProps {
     fullName: string;
     mainTopic: string;
     talentFeeAmount: number;
+    size?: ProfilePictureSize;
 }
 
 const Talent: React.FC<TalentProps> = props => (
@@ -26,7 +27,7 @@ const Talent: React.FC<TalentProps> = props => (
         style={props.style}
         activeOpacity={0.7}
     >
-        <ProfilePicture size="large" squared>
+        <ProfilePicture size={props.size || 'large'} squared>
             <View style={styles.price}>
                 <Text type="semibold" style={styles.price_inner} small>
                     {props.talentFeeAmount}€

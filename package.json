@@ -1,6 +1,6 @@
 {
     "name": "heyou-library",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "main": "lib/index.js",
     "license": "MIT",
     "repository": {
@@ -12,9 +12,11 @@
         "type-check": "tsc --noEmit",
         "type-check:watch": "yarn type-check --watch",
         "build": "yarn build:types && yarn build:js",
+        "build:watch": "yarn build:typeswatch && yarn build:jswatch",
         "build:types": "tsc --emitDeclarationOnly",
+        "build:typeswatch": "tsc --emitDeclarationOnly --watch",
         "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" -D --source-maps inline",
-        "prepublish": "yarn build",
+        "build:jswatch": "babel src --out-dir lib --extensions \".ts,.tsx\" -D --source-maps inline --watch",
         "storybook": "start-storybook -p 9009 -s public",
         "build-storybook": "build-storybook -s public",
         "deploy-storybook": "storybook-to-ghpages"

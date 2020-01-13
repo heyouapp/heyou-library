@@ -5,17 +5,23 @@ import {
     View,
     ViewStyle,
     Image,
-    ImageSourcePropType,
-    Platform
+    ImageSourcePropType
 } from 'react-native';
 
 // Library
 import { Colors } from 'utils';
 
+export type ProfilePictureSize =
+    | 'small'
+    | 'medium'
+    | 'large'
+    | 'xlarge'
+    | 'xxlarge';
+
 export interface ProfilePictureProps {
     style?: StyleProp<ViewStyle>;
     children?: React.ReactNode;
-    size?: 'small' | 'medium' | 'large';
+    size?: ProfilePictureSize;
     squared?: boolean;
     src?: ImageSourcePropType;
 }
@@ -25,12 +31,8 @@ const ProfilePicture: React.FC<ProfilePictureProps> = props => (
         style={[
             styles.container,
             styles[
-                `${props.size || 'small'}${
-                    props.squared
-                        ? `_squared${Platform.OS === 'web' ? '_web' : ''}`
-                        : ''
-                }`
-            ],
+                `${props.size || 'small'}${props.squared ? `_squared` : ''}`
+            ] || styles.small,
             props.style
         ]}
     >
@@ -72,15 +74,11 @@ const styles: { [key: string]: Object } = StyleSheet.create({
         height: 150,
         width: 120
     },
-    small_squared_web: {
-        height: 90,
-        width: 90
-    },
-    medium_squared_web: {
+    xlarge_squared: {
         height: 180,
         width: 180
     },
-    large_squared_web: {
+    xxlarge_squared: {
         height: 200,
         width: 160
     }
