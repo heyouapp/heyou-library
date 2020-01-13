@@ -238,7 +238,7 @@
         "signature": "5af7d90a83fe457c468458bbac0db78e5b3d619976d96cba2c73cc6b61cd2cf3"
       },
       "../src/components/common/cardvideo.tsx": {
-        "version": "8cd1b9d855b35c83977c1e0b73ef3f2f9f6f2b1297cb8c85210a5db59ae1c526",
+        "version": "ce7ff5d9d940357794d0c8e93cbfccbd4a7ce7be68e81919ab807e531b528ad4",
         "signature": "6a0c077e9bc27c63c68f5b92d21aecddaab38038bfd27c1a2b4d88e658c9c834"
       },
       "../src/components/common/notification.tsx": {
