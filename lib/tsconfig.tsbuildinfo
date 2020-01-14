@@ -113,10 +113,6 @@
         "version": "0c9ea8c2028047f39a3f66752682604f543c08be8806258c3d95c93e75a43255",
         "signature": "0c9ea8c2028047f39a3f66752682604f543c08be8806258c3d95c93e75a43255"
       },
-      "../node_modules/tslib/tslib.d.ts": {
-        "version": "4984b48a97160eac5282ffeae690315420a626de83ccf6045c36d934c5c957c0",
-        "signature": "4984b48a97160eac5282ffeae690315420a626de83ccf6045c36d934c5c957c0"
-      },
       "../src/utils/colors.tsx": {
         "version": "d4aea61a106169d9baa52b2aff9c6bb7b575d73e7e29a815c8a62a3cd173cb87",
         "signature": "675c5d488fc38aad2e6ffe5b30a2d5393efc405df975a7750fa3d2b0b41bfd28"
@@ -171,7 +167,7 @@
       },
       "../src/utils/index.tsx": {
         "version": "efdbc251980803743e8a155beb31b4da4c4823349e6a81a81137eeb6a48d6b51",
-        "signature": "efdbc251980803743e8a155beb31b4da4c4823349e6a81a81137eeb6a48d6b51"
+        "signature": "782bc47c8bc5d62a22e940db28201664d72e7be55a8457cf24b51ada94a127b1"
       },
       "../src/components/account/profilepicture.tsx": {
         "version": "7e6e2523211400a6094183b06e7611fb5fb407a691da9b2568471697b0803a69",
@@ -215,7 +211,7 @@
       },
       "../src/components/core/index.tsx": {
         "version": "e16711122c1edea74ab8c9d5e898308019b0bfaecddb4bf3bbd54d9ec14773c7",
-        "signature": "e16711122c1edea74ab8c9d5e898308019b0bfaecddb4bf3bbd54d9ec14773c7"
+        "signature": "a45a21ee7522dcb45adb7901a73bd15c56305a3d0c59571e371bfa17260fc62c"
       },
       "../src/components/account/user.tsx": {
         "version": "8832305d7db2fcb7a33c01fb1d5c1ca2e486a7df3a50abeb0bef43b34a7d1d5e",
@@ -223,11 +219,11 @@
       },
       "../src/components/account/talent.tsx": {
         "version": "999c9ff8e2654f568e0446524aea9f626b73fbba0c1c3c0d54d46daf9212604f",
-        "signature": "4c019c67567213405f5f030f175f1159b62d121b308b2ee4e7245681f063d7e7"
+        "signature": "9278e2879da1a83980adac010c27b30419babcec14712460425360d6ea8d459f"
       },
       "../src/components/account/index.tsx": {
         "version": "db1446535004843323d1eae6f0ea45f8caf79d7c8f8245449932160815689f38",
-        "signature": "db1446535004843323d1eae6f0ea45f8caf79d7c8f8245449932160815689f38"
+        "signature": "58ea3cad2c0a1eb4eec4d1ff6a73620e9fefd71cf5dcfbae6b2686cb0711fadb"
       },
       "../node_modules/moment/moment.d.ts": {
         "version": "d62fa6fe33566fa743b3d6715a1a2fe46e937ba9d2ba158563c5744315d438a7",
@@ -239,11 +235,11 @@
       },
       "../src/components/common/requestvideo.tsx": {
         "version": "f41182baf1ce329233361075f2904d5368c1a75514624e7b22c61ccd441ac3fa",
-        "signature": "5af7d90a83fe457c468458bbac0db78e5b3d619976d96cba2c73cc6b61cd2cf3"
+        "signature": "e151d23a1b0e55dc5c8e9f7e135b357aef52bad42597a495cc2247a9f9dced0e"
       },
       "../src/components/common/cardvideo.tsx": {
         "version": "ce7ff5d9d940357794d0c8e93cbfccbd4a7ce7be68e81919ab807e531b528ad4",
-        "signature": "6a0c077e9bc27c63c68f5b92d21aecddaab38038bfd27c1a2b4d88e658c9c834"
+        "signature": "ff9eafd698b18c82b1c5c3a5c034267bdf705c0b15304df015d8ccad851439e2"
       },
       "../src/components/common/notification.tsx": {
         "version": "4d7710f798dc5126534d55fb7bc8d0ca4ca9291bcbbaf245f678c41cd933cece",
@@ -259,23 +255,23 @@
       },
       "../src/components/common/index.tsx": {
         "version": "ff3444963cb7d1d45868cfb0f57dbb903a9abeb00531b292ef51bdf448dc8cdd",
-        "signature": "ff3444963cb7d1d45868cfb0f57dbb903a9abeb00531b292ef51bdf448dc8cdd"
+        "signature": "4ce06b9eaff89b5faf5df0c48ab7505956f6d54516436dd29f41e5c33cc52705"
       },
       "../src/components/index.tsx": {
         "version": "384d39c2141eaaf964bf8410f4576a8747e34b4f5ede1419e63395021b0a5ed4",
-        "signature": "384d39c2141eaaf964bf8410f4576a8747e34b4f5ede1419e63395021b0a5ed4"
+        "signature": "a3b2befad899c7a3b0d09b3bb9d106a93f180adcc1c717c0f8825e45018db895"
       },
       "../src/index.tsx": {
         "version": "ef789741a50bd68f6efb3ee0b32f12b2ecfc16aa415b5c41a65cc8c8c6ee9e1f",
-        "signature": "ef789741a50bd68f6efb3ee0b32f12b2ecfc16aa415b5c41a65cc8c8c6ee9e1f"
+        "signature": "870caf46802fa23ccfcc590fbab47109afd147c05ddb5d40a0fdc45953670f84"
       },
       "../node_modules/@types/anymatch/index.d.ts": {
         "version": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
         "signature": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76"
       },
       "../node_modules/@babel/types/lib/index.d.ts": {
-        "version": "bf8f90f33b4925f0d9d013fd42995ba6f0602997d348fcb21d4a40b30e1310a5",
-        "signature": "bf8f90f33b4925f0d9d013fd42995ba6f0602997d348fcb21d4a40b30e1310a5"
+        "version": "b05f0003bcf151be87491c83a4ba37b561798f1282b92cedb3a4e75a0224eb85",
+        "signature": "b05f0003bcf151be87491c83a4ba37b561798f1282b92cedb3a4e75a0224eb85"
       },
       "../node_modules/@types/babel__generator/index.d.ts": {
         "version": "b25c5f2970d06c729f464c0aeaa64b1a5b5f1355aa93554bb5f9c199b8624b1e",
@@ -778,8 +774,8 @@
         "signature": "f2c969343d25c5fdd5f08445395e1cc25658d6e0b0ea3cf3b3cf5629cf6a64c7"
       },
       "../node_modules/@types/yargs-parser/index.d.ts": {
-        "version": "e65fca93c26b09681d33dad7b3af32ae42bf0d114d859671ffed30a92691439c",
-        "signature": "e65fca93c26b09681d33dad7b3af32ae42bf0d114d859671ffed30a92691439c"
+        "version": "fdfbe321c556c39a2ecf791d537b999591d0849e971dd938d88f460fea0186f6",
+        "signature": "fdfbe321c556c39a2ecf791d537b999591d0849e971dd938d88f460fea0186f6"
       },
       "../node_modules/@types/yargs/index.d.ts": {
         "version": "989ea8e89ef2d6a07a1872fcee14be6b9e1920b04f19a4ab149d673f89af67e6",
@@ -801,7 +797,61 @@
       "baseUrl": "..",
       "paths": {
         "*": [
-          "./src/*"
+          "./src/*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*",
+          "*"
         ]
       },
       "outDir": "./",
@@ -811,7 +861,12 @@
       "declaration": true,
       "allowJs": true,
       "skipLibCheck": true,
-      "importHelpers": true,
+      "plugins": [
+        {
+          "transform": "typescript-transform-paths",
+          "afterDeclarations": true
+        }
+      ],
       "emitDeclarationOnly": true,
       "configFilePath": "../tsconfig.json"
     },
@@ -979,12 +1034,6 @@
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../node_modules/typescript/lib/lib.esnext.bigint.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/tslib/tslib.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -2511,126 +2560,6 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/tslib/tslib.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/utils/index.tsx": [
-        "../src/utils/colors.tsx",
-        "../src/utils/shadows.tsx",
-        "../src/utils/icons.tsx"
-      ],
-      "../src/index.tsx": [
-        "../src/utils/index.tsx",
-        "../src/components/index.tsx"
-      ],
-      "../src/components/common/review.tsx": [
-        "../node_modules/@types/react-native/index.d.ts",
-        "../node_modules/@types/react/index.d.ts"
-      ],
-      "../src/components/common/index.tsx": [
-        "../src/components/common/request.tsx",
-        "../src/components/common/requestvideo.tsx",
-        "../src/components/common/cardvideo.tsx",
-        "../src/components/common/notification.tsx",
-        "../src/components/common/share.tsx",
-        "../src/components/common/review.tsx"
-      ],
-      "../src/components/index.tsx": [
-        "../src/components/account/index.tsx",
-        "../src/components/common/index.tsx",
-        "../src/components/core/index.tsx"
-      ],
-      "../src/components/common/cardvideo.tsx": [
-        "../src/components/core/index.tsx",
-        "../node_modules/@types/react-native/index.d.ts",
-        "../node_modules/@types/react/index.d.ts"
-      ],
-      "../src/components/common/requestvideo.tsx": [
-        "../src/components/core/index.tsx",
-        "../src/components/common/index.tsx",
-        "../node_modules/@types/react-native/index.d.ts",
-        "../node_modules/@types/react/index.d.ts"
-      ],
-      "../src/components/common/share.tsx": [
-        "../node_modules/@types/react-native/index.d.ts",
-        "../node_modules/@types/react/index.d.ts"
-      ],
-      "../src/components/common/notification.tsx": [
-        "../node_modules/@types/react-native/index.d.ts",
-        "../node_modules/@types/react/index.d.ts"
-      ],
-      "../src/components/common/request.tsx": [
-        "../node_modules/@types/react-native/index.d.ts",
-        "../node_modules/@types/react/index.d.ts"
-      ],
-      "../src/components/account/talent.tsx": [
-        "../node_modules/@types/react-native/index.d.ts",
-        "../src/components/account/profilepicture.tsx",
-        "../node_modules/@types/react/index.d.ts"
-      ],
-      "../src/components/account/index.tsx": [
-        "../src/components/account/profilepicture.tsx",
-        "../src/components/account/user.tsx",
-        "../src/components/account/talent.tsx"
-      ],
-      "../src/components/account/user.tsx": [
-        "../node_modules/@types/react-native/index.d.ts",
-        "../node_modules/@types/react/index.d.ts"
-      ],
-      "../src/components/core/video.tsx": [
-        "../node_modules/@types/react-native/index.d.ts",
-        "../node_modules/@types/react/index.d.ts"
-      ],
-      "../src/components/core/index.tsx": [
-        "../src/components/core/text.tsx",
-        "../src/components/core/button.tsx",
-        "../src/components/core/input.tsx",
-        "../src/components/core/icon.tsx",
-        "../src/components/core/selector.tsx",
-        "../src/components/core/card.tsx",
-        "../src/components/core/pagecounter.tsx",
-        "../src/components/core/tag.tsx",
-        "../src/components/core/video.tsx"
-      ],
-      "../src/components/core/tag.tsx": [
-        "../node_modules/@types/react-native/index.d.ts",
-        "../node_modules/@types/react/index.d.ts"
-      ],
-      "../src/components/core/pagecounter.tsx": [
-        "../node_modules/@types/react-native/index.d.ts",
-        "../node_modules/@types/react/index.d.ts"
-      ],
-      "../src/components/core/card.tsx": [
-        "../node_modules/@types/react/index.d.ts",
-        "../node_modules/@types/react-native/index.d.ts"
-      ],
-      "../src/components/core/selector.tsx": [
-        "../node_modules/@types/react-native/index.d.ts",
-        "../node_modules/@types/react/index.d.ts"
-      ],
-      "../src/components/core/icon.tsx": [
-        "../node_modules/@types/react-native/index.d.ts",
-        "../node_modules/@types/react/index.d.ts"
-      ],
-      "../src/components/core/input.tsx": [
-        "../node_modules/@types/react-native/index.d.ts",
-        "../node_modules/@types/react/index.d.ts"
-      ],
-      "../src/components/core/button.tsx": [
-        "../node_modules/@types/react-native/index.d.ts",
-        "../node_modules/@types/react/index.d.ts"
-      ],
-      "../src/components/core/text.tsx": [
-        "../node_modules/@types/react-native/index.d.ts",
-        "../node_modules/@types/react/index.d.ts"
-      ],
-      "../src/components/account/profilepicture.tsx": [
-        "../node_modules/@types/react-native/index.d.ts",
-        "../node_modules/@types/react/index.d.ts"
-      ],
       "../node_modules/@types/react-native/globals.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -2656,9 +2585,6 @@
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/utils/icons.tsx": [
-        "../node_modules/@types/react-native/index.d.ts"
       ],
       "../node_modules/@types/react-native/batchedbridge.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
@@ -3719,7 +3645,6 @@
       ]
     },
     "semanticDiagnosticsPerFile": [
-      "../node_modules/tslib/tslib.d.ts",
       "../src/utils/colors.tsx",
       "../src/utils/shadows.tsx",
       "../node_modules/@types/react-native/globals.d.ts",

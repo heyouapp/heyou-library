@@ -1,3 +1,3 @@
-import * as Utils from 'utils';
-export * from 'components';
+import * as Utils from "./utils";
+export * from "./components";
 export { Utils };

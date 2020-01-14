@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { StyleProp, ViewStyle } from 'react-native';
-import { VideoProps } from 'components/core';
+import { VideoProps } from "../core";
 export interface CardVideoProps extends VideoProps {
     createdAt: string;
     recipientName: string;

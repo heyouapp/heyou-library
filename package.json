@@ -1,6 +1,6 @@
 {
     "name": "heyou-library",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "main": "lib/index.js",
     "license": "MIT",
     "repository": {
@@ -10,7 +10,7 @@
     "scripts": {
         "prebuild": "rm -rf lib",
         "build": "yarn build:types && yarn build:js",
-        "build:types": "tsc --emitDeclarationOnly",
+        "build:types": "ttsc --emitDeclarationOnly",
         "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" -D --source-maps inline",
         "storybook": "start-storybook -p 9009 -s public",
         "build-storybook": "build-storybook -s public",
@@ -44,7 +44,9 @@
         "react-native": "^0.61.5",
         "react-native-web": "^0.12.0-rc.1",
         "react-scripts": "3.3.0",
-        "typescript": "^3.7.3"
+        "ttypescript": "^1.5.10",
+        "typescript": "^3.7.3",
+        "typescript-transform-paths": "^1.1.14"
     },
     "prettier": {
         "tabWidth": 4,
