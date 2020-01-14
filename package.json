@@ -9,25 +9,23 @@
     },
     "scripts": {
         "prebuild": "rm -rf lib",
-        "type-check": "tsc --noEmit",
-        "type-check:watch": "yarn type-check --watch",
         "build": "yarn build:types && yarn build:js",
-        "build:watch": "yarn build:typeswatch && yarn build:jswatch",
         "build:types": "tsc --emitDeclarationOnly",
-        "build:typeswatch": "tsc --emitDeclarationOnly --watch",
         "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" -D --source-maps inline",
-        "build:jswatch": "babel src --out-dir lib --extensions \".ts,.tsx\" -D --source-maps inline --watch",
         "storybook": "start-storybook -p 9009 -s public",
         "build-storybook": "build-storybook -s public",
         "deploy-storybook": "storybook-to-ghpages"
+    },
+    "dependencies": {
+        "moment": "^2.24.0"
     },
     "peerDependencies": {
         "react": "^16.12.0"
     },
     "devDependencies": {
         "@babel/cli": "^7.7.7",
-        "@babel/core": "^7.7.7",
-        "@babel/runtime": "^7.7.7",
+        "@babel/core": "^7.8.3",
+        "@babel/runtime": "^7.8.3",
         "@storybook/addon-actions": "^5.2.8",
         "@storybook/addon-info": "^5.2.8",
         "@storybook/addon-links": "^5.2.8",
@@ -38,25 +36,19 @@
         "@types/react": "^16.9.0",
         "@types/react-dom": "^16.9.0",
         "@types/react-native": "^0.60.30",
-        "@types/react-test-renderer": "16.9.1",
         "@types/storybook__addon-info": "^5.2.1",
         "babel-plugin-module-resolver": "^4.0.0",
-        "metro-react-native-babel-preset": "^0.56.0",
+        "metro-react-native-babel-preset": "^0.56.4",
         "react-docgen-typescript-loader": "^3.6.0",
         "react-dom": "^16.12.0",
         "react-native": "^0.61.5",
         "react-native-web": "^0.12.0-rc.1",
         "react-scripts": "3.3.0",
-        "react-test-renderer": "16.12.0",
-        "tslib": "^1.10.0",
         "typescript": "^3.7.3"
     },
     "prettier": {
         "tabWidth": 4,
         "singleQuote": true,
         "htmlWhitespaceSensitivity": "strict"
-    },
-    "dependencies": {
-        "moment": "^2.24.0"
     }
 }

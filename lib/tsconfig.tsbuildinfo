@@ -266,8 +266,8 @@
         "signature": "384d39c2141eaaf964bf8410f4576a8747e34b4f5ede1419e63395021b0a5ed4"
       },
       "../src/index.tsx": {
-        "version": "8290bf2f0e0c7930bba28715a617fb3a90c5fd2a1cc4b2c2ea303320ebe0bb5e",
-        "signature": "8290bf2f0e0c7930bba28715a617fb3a90c5fd2a1cc4b2c2ea303320ebe0bb5e"
+        "version": "ef789741a50bd68f6efb3ee0b32f12b2ecfc16aa415b5c41a65cc8c8c6ee9e1f",
+        "signature": "ef789741a50bd68f6efb3ee0b32f12b2ecfc16aa415b5c41a65cc8c8c6ee9e1f"
       },
       "../node_modules/@types/anymatch/index.d.ts": {
         "version": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
@@ -564,10 +564,6 @@
       "../node_modules/@types/react-syntax-highlighter/index.d.ts": {
         "version": "c6d8434b402c2a47c6d04d59030d9aad99d7fd02eebbb89d1ed5adb8d301299a",
         "signature": "c6d8434b402c2a47c6d04d59030d9aad99d7fd02eebbb89d1ed5adb8d301299a"
-      },
-      "../node_modules/@types/react-test-renderer/index.d.ts": {
-        "version": "d255704f3310198e567665abb2d45ae4edaa3d5b3e16d86dee18a7d88c944815",
-        "signature": "d255704f3310198e567665abb2d45ae4edaa3d5b3e16d86dee18a7d88c944815"
       },
       "../node_modules/@types/react-textarea-autosize/index.d.ts": {
         "version": "654bd884851f74a93fc2165c9d3d7ec9a6346c5c4ca8a00caa49868c72ad2363",
@@ -1908,13 +1904,6 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@types/react-test-renderer/index.d.ts": [
-        "../node_modules/@types/react/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "../node_modules/@types/react-textarea-autosize/index.d.ts": [
         "../node_modules/@types/react/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
@@ -2947,13 +2936,6 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@types/react-test-renderer/index.d.ts": [
-        "../node_modules/@types/react/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "../node_modules/@types/react-syntax-highlighter/index.d.ts": [
         "../node_modules/@types/react-syntax-highlighter/index.d.ts",
         "../node_modules/@types/react/index.d.ts",
@@ -3850,7 +3832,6 @@
       "../node_modules/@types/reach__router/index.d.ts",
       "../node_modules/@types/react-dom/index.d.ts",
       "../node_modules/@types/react-syntax-highlighter/index.d.ts",
-      "../node_modules/@types/react-test-renderer/index.d.ts",
       "../node_modules/@types/react-textarea-autosize/index.d.ts",
       "../node_modules/@types/source-list-map/index.d.ts",
       "../node_modules/@types/stack-utils/index.d.ts",
