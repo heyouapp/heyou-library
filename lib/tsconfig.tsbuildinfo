@@ -269,21 +269,13 @@
         "version": "297a7f344f83426ca544095cee8d26487deda3a1372e2ac02b149d33511438c3",
         "signature": "1670bcd78d8127461f1877a11ff698f82856ce14bc1465747171187dcd7d4bed"
       },
-      "../node_modules/expo-blur/build/index.d.ts": {
-        "version": "6d6fe912dc110cc42c2861e3f51e33e7c29e297376dd20ce0be81c266d18e7ec",
-        "signature": "6d6fe912dc110cc42c2861e3f51e33e7c29e297376dd20ce0be81c266d18e7ec"
-      },
       "../src/components/structure/tabsbaricon.tsx": {
         "version": "0954e477b9e872aa7cd37ce3b36d3f9a1ffb6fc350dc2669c5f5a42a6a4e4877",
         "signature": "214a7398eab85d444c35439b238baf7c86abc365bde232c903973440581bc227"
       },
-      "../src/components/structure/tabsbar.tsx": {
-        "version": "54e113fdc173bbbfff005f96a2fbef7af3a3a00dd8b0de0adc2be1ff2a5d1974",
-        "signature": "13f0dce755ce31afdd2d851816d73d2286a346f2a85f259d535386888d2ca8b1"
-      },
       "../src/components/structure/index.tsx": {
-        "version": "d780e96cdf02c4a322b57d417e8b919c3e77ff46560c78ee8f4a49c717f0ce77",
-        "signature": "b3bcac8eb507b8b987c6fad93bfdfc372aaf2004dc5ffb876a4d2ad225093e10"
+        "version": "8ed7aa3ba1f015930a3fb0c54ab05f2c6dc4b23bca5e86e0d022b77b2ab1e0de",
+        "signature": "84c58c72a4daf4ae71f2c143b3710fa78be19e6989d9ee5e13111cacecfa0f64"
       },
       "../node_modules/@types/anymatch/index.d.ts": {
         "version": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
@@ -949,8 +941,6 @@
           "*",
           "*",
           "*",
-          "*",
-          "*",
           "*"
         ]
       },
@@ -1495,12 +1485,6 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/expo-blur/build/index.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "../src/components/structure/tabsbaricon.tsx": [
         "../node_modules/@types/react/index.d.ts",
         "../node_modules/@types/react-native/index.d.ts",
@@ -1511,19 +1495,7 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/components/structure/tabsbar.tsx": [
-        "../node_modules/@types/react/index.d.ts",
-        "../node_modules/@types/react-native/index.d.ts",
-        "../node_modules/expo-blur/build/index.d.ts",
-        "../src/utils/index.tsx",
-        "../src/components/structure/tabsbaricon.tsx",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "../src/components/structure/index.tsx": [
-        "../src/components/structure/tabsbar.tsx",
         "../src/components/structure/snaperror.tsx",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -3366,12 +3338,6 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/expo-blur/build/index.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "../node_modules/@types/anymatch/index.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -4365,9 +4331,7 @@
       "../src/components/index.tsx",
       "../src/index.tsx",
       "../src/components/structure/snaperror.tsx",
-      "../node_modules/expo-blur/build/index.d.ts",
       "../src/components/structure/tabsbaricon.tsx",
-      "../src/components/structure/tabsbar.tsx",
       "../src/components/structure/index.tsx",
       "../node_modules/@types/anymatch/index.d.ts",
       "../node_modules/@babel/types/lib/index.d.ts",
