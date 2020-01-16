@@ -265,17 +265,25 @@
         "version": "ef789741a50bd68f6efb3ee0b32f12b2ecfc16aa415b5c41a65cc8c8c6ee9e1f",
         "signature": "870caf46802fa23ccfcc590fbab47109afd147c05ddb5d40a0fdc45953670f84"
       },
+      "../src/components/structure/snaperror.tsx": {
+        "version": "297a7f344f83426ca544095cee8d26487deda3a1372e2ac02b149d33511438c3",
+        "signature": "1670bcd78d8127461f1877a11ff698f82856ce14bc1465747171187dcd7d4bed"
+      },
       "../node_modules/expo-blur/build/index.d.ts": {
         "version": "6d6fe912dc110cc42c2861e3f51e33e7c29e297376dd20ce0be81c266d18e7ec",
         "signature": "6d6fe912dc110cc42c2861e3f51e33e7c29e297376dd20ce0be81c266d18e7ec"
       },
+      "../src/components/structure/tabsbaricon.tsx": {
+        "version": "0954e477b9e872aa7cd37ce3b36d3f9a1ffb6fc350dc2669c5f5a42a6a4e4877",
+        "signature": "214a7398eab85d444c35439b238baf7c86abc365bde232c903973440581bc227"
+      },
       "../src/components/structure/tabsbar.tsx": {
-        "version": "e6250d9ad768f84cf38f7612106f9f6b30d8297b4c22e9df54c814d3619f21ed",
-        "signature": "7a14c808fc929286e1ae6e6e16f5e8b41d720183aa0ca40c4ea9a55d0eeaf53d"
+        "version": "54e113fdc173bbbfff005f96a2fbef7af3a3a00dd8b0de0adc2be1ff2a5d1974",
+        "signature": "13f0dce755ce31afdd2d851816d73d2286a346f2a85f259d535386888d2ca8b1"
       },
       "../src/components/structure/index.tsx": {
-        "version": "c12a2bbbc3d7a472dd35f34b3d8fed7ed186467872be4f8a98e5c1fb65feb861",
-        "signature": "f7d1d6ed96c912c3870dfa05b0efce9e994a59c5164f9052826900695487e5e1"
+        "version": "d780e96cdf02c4a322b57d417e8b919c3e77ff46560c78ee8f4a49c717f0ce77",
+        "signature": "b3bcac8eb507b8b987c6fad93bfdfc372aaf2004dc5ffb876a4d2ad225093e10"
       },
       "../node_modules/@types/anymatch/index.d.ts": {
         "version": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
@@ -939,6 +947,10 @@
           "*",
           "*",
           "*",
+          "*",
+          "*",
+          "*",
+          "*",
           "*"
         ]
       },
@@ -1473,7 +1485,27 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/components/structure/snaperror.tsx": [
+        "../node_modules/@types/react/index.d.ts",
+        "../node_modules/@types/react-native/index.d.ts",
+        "../src/components/core/index.tsx",
+        "../src/utils/index.tsx",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../node_modules/expo-blur/build/index.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/components/structure/tabsbaricon.tsx": [
+        "../node_modules/@types/react/index.d.ts",
+        "../node_modules/@types/react-native/index.d.ts",
+        "../src/components/core/index.tsx",
+        "../src/utils/index.tsx",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -1484,6 +1516,7 @@
         "../node_modules/@types/react-native/index.d.ts",
         "../node_modules/expo-blur/build/index.d.ts",
         "../src/utils/index.tsx",
+        "../src/components/structure/tabsbaricon.tsx",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -1491,6 +1524,7 @@
       ],
       "../src/components/structure/index.tsx": [
         "../src/components/structure/tabsbar.tsx",
+        "../src/components/structure/snaperror.tsx",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -4330,7 +4364,9 @@
       "../src/components/common/index.tsx",
       "../src/components/index.tsx",
       "../src/index.tsx",
+      "../src/components/structure/snaperror.tsx",
       "../node_modules/expo-blur/build/index.d.ts",
+      "../src/components/structure/tabsbaricon.tsx",
       "../src/components/structure/tabsbar.tsx",
       "../src/components/structure/index.tsx",
       "../node_modules/@types/anymatch/index.d.ts",
