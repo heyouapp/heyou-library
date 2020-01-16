@@ -1,29 +1,54 @@
 import * as React from 'react';
-import { StyleSheet, View, Image } from 'react-native';
+import { StyleSheet, StyleProp, ViewStyle } from 'react-native';
 import { BlurView } from 'expo-blur';
 
 // Library
 import { Shadows } from 'utils';
+import { TabsBarIcon } from './TabsBarIcon';
 
-const uri =
-    'https://s3.amazonaws.com/exp-icon-assets/ExpoEmptyManifest_192.png';
+export type TabsBarOption = {
+    iconName: string;
+    onPress: () => void;
+};
 
-const TabsBar = () => {
+export interface TabsBarProps {
+    data: TabsBarOption[];
+    style?: StyleProp<ViewStyle>;
+}
+
+const TabsBar = (props: TabsBarProps) => {
+    const [active, setActive] = React.useState(0);
+    React.useEffect(() => {
+        props.data[active].onPress();
+    }, [active]);
+
     return (
-        <View style={styles.container}>
-            <Image style={{ width: 192, height: 192 }} source={{ uri }} />
-
-            {/* Adjust the tint and intensity */}
-            <BlurView tint="light" intensity={50}>
-                <Image style={{ width: 96, height: 96 }} source={{ uri }} />
-            </BlurView>
-        </View>
+        <BlurView
+            tint="light"
+            intensity={10}
+            style={[styles.container, props.style]}
+        >
+            {props.data.map((item: TabsBarOption, index: number) => (
+                <TabsBarIcon
+                    name={item.iconName}
+                    active={active === index}
+                    onPress={() => setActive(index)}
+                    key={index.toString()}
+                />
+            ))}
+        </BlurView>
     );
 };
 
 const styles = StyleSheet.create({
-    container: {},
-    absolute: {}
+    container: {
+        borderRadius: 20,
+        height: 60,
+        alignItems: 'center',
+        justifyContent: 'space-around',
+        flexDirection: 'row',
+        ...Shadows.primary
+    }
 });
 
 export { TabsBar };
