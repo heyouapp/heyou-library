@@ -370,8 +370,8 @@
         "signature": "cd6f4f8a318da5a62e65d033f7567f9969107d397c5a9c856d1d82d2ead9382c"
       },
       "../node_modules/@types/node/fs.d.ts": {
-        "version": "c8d5dc828d58651761ff4e7bc90c84d34bc3fbc783e31744c265b49c5ab01a80",
-        "signature": "c8d5dc828d58651761ff4e7bc90c84d34bc3fbc783e31744c265b49c5ab01a80"
+        "version": "c401255190dcb310e75a31d9a379d16502e3a681434b4f6a69857194c6a01748",
+        "signature": "c401255190dcb310e75a31d9a379d16502e3a681434b4f6a69857194c6a01748"
       },
       "../node_modules/@types/node/http.d.ts": {
         "version": "4a78ebdd7e156413225956925404741fb5fd9004f8980acd99a4e68076c698e5",
@@ -612,6 +612,10 @@
       "../node_modules/@types/lodash.zipobject/index.d.ts": {
         "version": "ffecdb264511535246733f0a615894af914cb9bd63b0a8b4121532f8ae19bf13",
         "signature": "ffecdb264511535246733f0a615894af914cb9bd63b0a8b4121532f8ae19bf13"
+      },
+      "../node_modules/@types/npmlog/index.d.ts": {
+        "version": "0d65b782b1a9b5891802ef2022c78481b19dfe133ba8d9f7596fe1320314342d",
+        "signature": "0d65b782b1a9b5891802ef2022c78481b19dfe133ba8d9f7596fe1320314342d"
       },
       "../node_modules/@types/parse-json/index.d.ts": {
         "version": "2b8264b2fefd7367e0f20e2c04eed5d3038831fe00f5efbc110ff0131aab899b",
@@ -2285,6 +2289,13 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../node_modules/@types/npmlog/index.d.ts": [
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../node_modules/@types/parse-json/index.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -3669,6 +3680,13 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../node_modules/@types/npmlog/index.d.ts": [
+        "../node_modules/@types/node/events.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../node_modules/@types/node/worker_threads.d.ts": [
         "../node_modules/@types/node/vm.d.ts",
         "../node_modules/@types/node/events.d.ts",
@@ -4438,6 +4456,7 @@
       "../node_modules/@types/lodash/ts3.1/common/util.d.ts",
       "../node_modules/@types/lodash/ts3.1/index.d.ts",
       "../node_modules/@types/lodash.zipobject/index.d.ts",
+      "../node_modules/@types/npmlog/index.d.ts",
       "../node_modules/@types/parse-json/index.d.ts",
       "../node_modules/@types/q/index.d.ts",
       "../node_modules/@types/qs/index.d.ts",
