@@ -1,5 +1,5 @@
 /// <reference types="react" />
-interface SnapErrorProps {
+export interface SnapErrorProps {
     message: string;
     closeText?: string;
     onClose: () => void;

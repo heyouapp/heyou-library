@@ -5,7 +5,7 @@ import { StyleSheet, View } from 'react-native';
 import { Text, Button } from 'components/core';
 import { Colors } from 'utils';
 
-interface SnapErrorProps {
+export interface SnapErrorProps {
     message: string;
     closeText?: string;
     onClose: () => void;

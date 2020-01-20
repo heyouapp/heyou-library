@@ -257,21 +257,25 @@
         "version": "ff3444963cb7d1d45868cfb0f57dbb903a9abeb00531b292ef51bdf448dc8cdd",
         "signature": "4ce06b9eaff89b5faf5df0c48ab7505956f6d54516436dd29f41e5c33cc52705"
       },
+      "../src/components/structure/header.tsx": {
+        "version": "f673f03c30cac8e09609a33f1b6c794ae08402a8a4bd8a7d00321cd61551997e",
+        "signature": "8757005827c355eb6cd029c59fdff02f0b4fff8b41fecb3649c89a76fcdbc871"
+      },
+      "../src/components/structure/snaperror.tsx": {
+        "version": "72f5e82fe8c05fdc73a02279691c285883a53980b233822d7ed783f3251f02a0",
+        "signature": "2f367241f3173baa45c5954fb372541d2ef2805fa35be9cb4775ebcc98eae62a"
+      },
+      "../src/components/structure/index.tsx": {
+        "version": "e7746b09590c74e4a9a4e2411f485af4b835f5cfc9e142b32e64cf402ff4a061",
+        "signature": "9b9f8f93be9f372fce213237d7d65831788436d6150d7404003558f182dea194"
+      },
       "../src/components/index.tsx": {
-        "version": "384d39c2141eaaf964bf8410f4576a8747e34b4f5ede1419e63395021b0a5ed4",
-        "signature": "a3b2befad899c7a3b0d09b3bb9d106a93f180adcc1c717c0f8825e45018db895"
+        "version": "67bc814f954b1510a903d75a0258dfba6ac3b8cc3b51ff0f85d7ec02b2a36938",
+        "signature": "1d464998aff392793e0fe8815759e33131f1d1f484f53b0155a07ccb4ef2adfe"
       },
       "../src/index.tsx": {
         "version": "ef789741a50bd68f6efb3ee0b32f12b2ecfc16aa415b5c41a65cc8c8c6ee9e1f",
         "signature": "870caf46802fa23ccfcc590fbab47109afd147c05ddb5d40a0fdc45953670f84"
-      },
-      "../src/components/structure/snaperror.tsx": {
-        "version": "297a7f344f83426ca544095cee8d26487deda3a1372e2ac02b149d33511438c3",
-        "signature": "1670bcd78d8127461f1877a11ff698f82856ce14bc1465747171187dcd7d4bed"
-      },
-      "../src/components/structure/index.tsx": {
-        "version": "8ed7aa3ba1f015930a3fb0c54ab05f2c6dc4b23bca5e86e0d022b77b2ab1e0de",
-        "signature": "84c58c72a4daf4ae71f2c143b3710fa78be19e6989d9ee5e13111cacecfa0f64"
       },
       "../node_modules/@types/anymatch/index.d.ts": {
         "version": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
@@ -947,6 +951,8 @@
           "*",
           "*",
           "*",
+          "*",
+          "*",
           "*"
         ]
       },
@@ -1469,18 +1475,11 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/components/index.tsx": [
-        "../src/components/account/index.tsx",
-        "../src/components/common/index.tsx",
-        "../src/components/core/index.tsx",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/index.tsx": [
-        "../src/utils/index.tsx",
+      "../src/components/structure/header.tsx": [
+        "../node_modules/@types/react/index.d.ts",
+        "../node_modules/@types/react-native/index.d.ts",
         "../src/components/index.tsx",
+        "../src/utils/index.tsx",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -1497,7 +1496,26 @@
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../src/components/structure/index.tsx": [
+        "../src/components/structure/header.tsx",
         "../src/components/structure/snaperror.tsx",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/components/index.tsx": [
+        "../src/components/account/index.tsx",
+        "../src/components/common/index.tsx",
+        "../src/components/core/index.tsx",
+        "../src/components/structure/index.tsx",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/index.tsx": [
+        "../src/utils/index.tsx",
+        "../src/components/index.tsx",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -4367,10 +4385,11 @@
       "../src/components/common/share.tsx",
       "../src/components/common/review.tsx",
       "../src/components/common/index.tsx",
-      "../src/components/index.tsx",
-      "../src/index.tsx",
+      "../src/components/structure/header.tsx",
       "../src/components/structure/snaperror.tsx",
       "../src/components/structure/index.tsx",
+      "../src/components/index.tsx",
+      "../src/index.tsx",
       "../node_modules/@types/anymatch/index.d.ts",
       "../node_modules/@babel/types/lib/index.d.ts",
       "../node_modules/@types/babel__generator/index.d.ts",

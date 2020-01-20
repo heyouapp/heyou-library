@@ -1,12 +1,19 @@
 import * as React from 'react';
-import { StyleSheet, View, Text } from 'react-native';
-import { Button } from 'heyou-library';
+import { StyleSheet, SafeAreaView, View } from 'react-native';
+import { Text, Button, Header } from 'heyou-library';
 
 const App = () => {
     return (
         <View style={styles.container}>
-            <Text>Prueba de texto</Text>
-            <Button>Prueba</Button>
+            <Header
+                title="Hola"
+                onPressBack={() => {}}
+                onPressClose={() => {}}
+            />
+            <View style={styles.content}>
+                <Text>Text test</Text>
+                <Button>Test</Button>
+            </View>
         </View>
     );
 };
@@ -14,6 +21,9 @@ const App = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1
+    },
+    content: {
+        paddingHorizontal: 15
     }
 });
 
