@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { StyleSheet, StyleProp, View, ViewStyle } from 'react-native';
-import moment from 'moment';
 
 // Library
 import { Text, Button, Card } from 'components/core';
@@ -9,12 +8,9 @@ import { Colors } from 'utils';
 
 export interface RequestProps {
     fullName: string;
-    recipientName: string;
-    createdAt: string;
-    completedAt: string;
-    expiresAt: string;
-    refusedAt: string;
-    status: 'pending' | 'completed' | 'rejected' | 'expired';
+    recipientLabel: string;
+    status: string;
+    buttonText: string;
     onPress: () => void;
     style?: StyleProp<ViewStyle>;
 }
@@ -24,24 +20,16 @@ const Request: React.FC<RequestProps> = props => (
         <ProfilePicture size="medium" squared />
         <View style={styles.content}>
             <View>
-                <Text type="semibold">{props.fullName}</Text>
-                <Text>For: {props.recipientName}</Text>
+                <Text type="semibold" style={styles.fullName}>
+                    {props.fullName}
+                </Text>
+                <Text>{props.recipientLabel}</Text>
                 <Text style={styles.time} small>
-                    {props.status === 'pending'
-                        ? `${moment(props.expiresAt).fromNow(
-                              true
-                          )} left to respond`
-                        : moment(
-                              props.status === 'completed'
-                                  ? props.completedAt
-                                  : props.status === 'expired'
-                                  ? props.expiresAt
-                                  : props.refusedAt
-                          ).format('DD-MM-YYYY')}
+                    {props.status}
                 </Text>
             </View>
             <Button type="secondary" small>
-                View Request
+                {props.buttonText}
             </Button>
         </View>
     </Card>
@@ -56,7 +44,11 @@ const styles = StyleSheet.create({
         marginLeft: 15,
         justifyContent: 'space-between'
     },
+    fullName: {
+        lineHeight: 18
+    },
     time: {
+        marginTop: 5,
         color: Colors.neutralLight
     }
 });

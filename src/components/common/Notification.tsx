@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { StyleSheet, StyleProp, View, ViewStyle } from 'react-native';
-import moment from 'moment';
 
 // Library
 import { Text, Card } from 'components/core';
@@ -10,7 +9,7 @@ import { Colors } from 'utils';
 export interface NotificationProps {
     label: string;
     description: string;
-    createdAt: string;
+    createdLabel: string;
     onPress?: () => void;
     style?: StyleProp<ViewStyle>;
 }
@@ -25,7 +24,7 @@ const Notification: React.FC<NotificationProps> = props => (
                 </Text>
             </View>
             <Text style={styles.time} small>
-                {moment(props.createdAt).fromNow()}
+                {props.createdLabel}
             </Text>
         </View>
         <Text>{props.description}</Text>

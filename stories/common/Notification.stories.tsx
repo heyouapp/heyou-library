@@ -13,7 +13,7 @@ export const normal = () => (
         label="Notification label"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
 imperdiet lacus ac lectus porttitor vehicula."
-        createdAt="Thu Jan 9 2020 03:00:00 GMT+0100"
+        createdLabel="15 minutes ago"
     />
 );
 
@@ -22,7 +22,7 @@ export const withAction = () => (
         label="Notification label"
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
 imperdiet lacus ac lectus porttitor vehicula."
-        createdAt="Thu Jan 9 2020 03:00:00 GMT+0100"
+        createdLabel="yesterday"
         onPress={action('clicked')}
     />
 );

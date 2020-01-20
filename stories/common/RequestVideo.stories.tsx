@@ -16,10 +16,7 @@ export const normal = () => (
         keyValue="volume"
         keyOnChange="onVolumeChange"
     >
-        <RequestVideo
-            completedAt="Thu Jan 9 2020 03:00:00 GMT+0100"
-            onShare={action('shared')}
-        >
+        <RequestVideo completedLabel="20/01/2020" onShare={action('shared')}>
             <View />
         </RequestVideo>
     </Controlled>
@@ -32,7 +29,7 @@ export const withReview = () => (
         keyOnChange="onVolumeChange"
     >
         <RequestVideo
-            completedAt="Thu Jan 9 2020 03:00:00 GMT+0100"
+            completedLabel="20/01/2020"
             onShare={action('shared')}
             review={{
                 fullName: 'Mario Rossi',

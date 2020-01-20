@@ -10,11 +10,8 @@
     "scripts": {
         "prebuild": "rm -rf lib",
         "build": "yarn build:types && yarn build:js",
-        "build:watch": "yarn build:types-watch && yarn build:js-watch",
         "build:types": "ttsc --emitDeclarationOnly",
-        "build:types-watch": "ttsc --emitDeclarationOnly --watch",
         "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" -D --source-maps inline",
-        "build:js-watch": "babel src --out-dir lib --extensions \".ts,.tsx\" -D --source-maps inline --watch",
         "sb": "start-storybook -p 9009 -s public",
         "sb:build": "build-storybook -s public",
         "sb:deploy": "storybook-to-ghpages",
@@ -27,7 +24,6 @@
     "dependencies": {
         "expo": "^36.0.2",
         "expo-blur": "^8.0.0",
-        "moment": "^2.24.0",
         "react": "16.9.0",
         "react-native": "0.61.5"
     },

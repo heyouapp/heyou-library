@@ -11,12 +11,9 @@ export default {
 export const normal = () => (
     <Request
         fullName="Mario Rossi"
-        recipientName="John Mark"
-        createdAt=""
-        completedAt=""
-        expiresAt="Thu Feb 9 2020 03:00:00 GMT+0100"
-        refusedAt=""
-        status="pending"
+        recipientLabel="For: John Mark"
+        status="10 days left to respond"
+        buttonText="View request"
         onPress={action('clicked')}
     />
 );

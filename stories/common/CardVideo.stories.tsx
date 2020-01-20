@@ -17,8 +17,8 @@ export const normal = () => (
         keyOnChange="onVolumeChange"
     >
         <CardVideo
-            createdAt="Thu Jan 9 2020 03:00:00 GMT+0100"
-            recipientName="Mario Rossi"
+            createdLabel="10/01/2020"
+            recipientLabel="For Mario Rossi"
             onShare={action('shared')}
         >
             <View />
