@@ -258,11 +258,11 @@
         "signature": "4ce06b9eaff89b5faf5df0c48ab7505956f6d54516436dd29f41e5c33cc52705"
       },
       "../src/components/structure/header.tsx": {
-        "version": "f673f03c30cac8e09609a33f1b6c794ae08402a8a4bd8a7d00321cd61551997e",
-        "signature": "8757005827c355eb6cd029c59fdff02f0b4fff8b41fecb3649c89a76fcdbc871"
+        "version": "d193bc4f97ef81171ac637cd8cbc373a5eefcbcff64e06857af2eb784703a8cc",
+        "signature": "f67296141ef065033cac6adb29534357781b1872f3494a3ef44ab9d6c758ba5c"
       },
       "../src/components/structure/snaperror.tsx": {
-        "version": "72f5e82fe8c05fdc73a02279691c285883a53980b233822d7ed783f3251f02a0",
+        "version": "c8b1964856d4a7d7449168bdaa961f6cac60af525e8c4cb53f8a6fec1d0ca625",
         "signature": "2f367241f3173baa45c5954fb372541d2ef2805fa35be9cb4775ebcc98eae62a"
       },
       "../src/components/structure/index.tsx": {

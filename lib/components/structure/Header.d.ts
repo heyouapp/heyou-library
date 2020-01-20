@@ -1,9 +1,9 @@
-/// <reference types="react" />
+import * as React from 'react';
 export interface HeaderProps {
+    title: React.ReactNode | string;
+    theme?: 'white' | 'primary';
     onPressBack?: () => void;
     onPressClose?: () => void;
-    title: Object | string;
-    theme?: 'white' | 'primary';
 }
 declare const Header: (props: HeaderProps) => JSX.Element;
 export { Header };
