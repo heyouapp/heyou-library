@@ -258,7 +258,7 @@
         "signature": "4ce06b9eaff89b5faf5df0c48ab7505956f6d54516436dd29f41e5c33cc52705"
       },
       "../src/components/structure/header.tsx": {
-        "version": "d193bc4f97ef81171ac637cd8cbc373a5eefcbcff64e06857af2eb784703a8cc",
+        "version": "648aa849d1c19762d6e3415f8c992a920db900a73b4b4c7bb798ab6f52cb9654",
         "signature": "f67296141ef065033cac6adb29534357781b1872f3494a3ef44ab9d6c758ba5c"
       },
       "../src/components/structure/snaperror.tsx": {

@@ -35,7 +35,7 @@ const Header = (props: HeaderProps) => {
                             <Icon name="arrowBack" style={styles.icon} />
                         </TouchableWithoutFeedback>
                     )}
-                    <Text style={styles.title} type="bold">
+                    <Text style={styles.title} type="bold" numberOfLines={1}>
                         {props.title}
                     </Text>
                     {!!props.onPressClose && (
@@ -75,8 +75,8 @@ const generateTheme = (principalColor: string, contentColor: string) =>
         },
         title: {
             position: 'absolute',
-            left: 0,
-            right: 0,
+            left: 45,
+            right: 45,
             fontSize: 16,
             color: contentColor,
             textAlign: 'center'
