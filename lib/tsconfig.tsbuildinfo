@@ -158,8 +158,8 @@
         "signature": "9290135198d502d92bdae0051b10294d121e38ea9a9beb3f71654b6b4bdf6d1d"
       },
       "../node_modules/@types/react-native/index.d.ts": {
-        "version": "67cab26afd402f10a5c10a9b871232fd494e2718dbc1ecfbb7bac5b21f929c89",
-        "signature": "67cab26afd402f10a5c10a9b871232fd494e2718dbc1ecfbb7bac5b21f929c89"
+        "version": "36315018fe3af7436aabf13006ce360c8be608b46f35591bb6b5e7e664b7e9a7",
+        "signature": "36315018fe3af7436aabf13006ce360c8be608b46f35591bb6b5e7e664b7e9a7"
       },
       "../src/utils/icons.tsx": {
         "version": "ab96e660edc63c70699d9aef8d9992ef6ac12db84473b44b3910de7856e0aa6e",
@@ -269,10 +269,6 @@
         "version": "297a7f344f83426ca544095cee8d26487deda3a1372e2ac02b149d33511438c3",
         "signature": "1670bcd78d8127461f1877a11ff698f82856ce14bc1465747171187dcd7d4bed"
       },
-      "../src/components/structure/tabsbaricon.tsx": {
-        "version": "0954e477b9e872aa7cd37ce3b36d3f9a1ffb6fc350dc2669c5f5a42a6a4e4877",
-        "signature": "214a7398eab85d444c35439b238baf7c86abc365bde232c903973440581bc227"
-      },
       "../src/components/structure/index.tsx": {
         "version": "8ed7aa3ba1f015930a3fb0c54ab05f2c6dc4b23bca5e86e0d022b77b2ab1e0de",
         "signature": "84c58c72a4daf4ae71f2c143b3710fa78be19e6989d9ee5e13111cacecfa0f64"
@@ -308,6 +304,10 @@
       "../node_modules/@types/color-name/index.d.ts": {
         "version": "f0cb4b3ab88193e3e51e9e2622e4c375955003f1f81239d72c5b7a95415dad3e",
         "signature": "f0cb4b3ab88193e3e51e9e2622e4c375955003f1f81239d72c5b7a95415dad3e"
+      },
+      "../node_modules/@types/eslint-visitor-keys/index.d.ts": {
+        "version": "725d9be2fd48440256f4deb00649adffdbc5ecd282b09e89d4e200663792c34c",
+        "signature": "725d9be2fd48440256f4deb00649adffdbc5ecd282b09e89d4e200663792c34c"
       },
       "../node_modules/@types/events/index.d.ts": {
         "version": "400db42c3a46984118bff14260d60cec580057dc1ab4c2d7310beb643e4f5935",
@@ -553,6 +553,10 @@
         "version": "93b59bc67329d5add033e3198583c39aa939cef891e6a2b763e0bea2b514ea9b",
         "signature": "93b59bc67329d5add033e3198583c39aa939cef891e6a2b763e0bea2b514ea9b"
       },
+      "../node_modules/@types/json-schema/index.d.ts": {
+        "version": "92bc43ea5584457c9325a3d5b2ce5af77df6d2653be7e4c2e9a626f89293c3c1",
+        "signature": "92bc43ea5584457c9325a3d5b2ce5af77df6d2653be7e4c2e9a626f89293c3c1"
+      },
       "../node_modules/@types/lodash/ts3.1/common/common.d.ts": {
         "version": "4025cf62742c5bb3d383c8a62342481622c87e3397ea5e7b7baab18b9efd5798",
         "signature": "4025cf62742c5bb3d383c8a62342481622c87e3397ea5e7b7baab18b9efd5798"
@@ -701,27 +705,27 @@
         "version": "bba67c6ad655bea5737646b2cd68e760ac46e64cbe660c64f12529b6459ee7a3",
         "signature": "bba67c6ad655bea5737646b2cd68e760ac46e64cbe660c64f12529b6459ee7a3"
       },
-      "../node_modules/@emotion/styled-base/types/helper.d.ts": {
+      "../node_modules/@storybook/api/node_modules/@emotion/styled-base/types/helper.d.ts": {
         "version": "6f2858fc93decd64fb996b1da328ebcef9fe63eda55defdc43b649b45fd9c737",
         "signature": "6f2858fc93decd64fb996b1da328ebcef9fe63eda55defdc43b649b45fd9c737"
       },
-      "../node_modules/@emotion/styled-base/types/index.d.ts": {
+      "../node_modules/@storybook/api/node_modules/@emotion/styled-base/types/index.d.ts": {
         "version": "27d901e961885823cb9c047e16537e99cec98593be47f201ebde5edea3b9cdec",
         "signature": "27d901e961885823cb9c047e16537e99cec98593be47f201ebde5edea3b9cdec"
       },
-      "../node_modules/@emotion/styled/types/index.d.ts": {
+      "../node_modules/@storybook/api/node_modules/@emotion/styled/types/index.d.ts": {
         "version": "0e0853ed5a5044ee38241a0ebbf60b1a019a788b05b94a58e1621d6d240965c4",
         "signature": "0e0853ed5a5044ee38241a0ebbf60b1a019a788b05b94a58e1621d6d240965c4"
       },
-      "../node_modules/@storybook/theming/dist/animation.d.ts": {
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/animation.d.ts": {
         "version": "1b553934782fbd493d905734d5d76715a49b28e1dfc4b93a2ab3951091ea4175",
         "signature": "1b553934782fbd493d905734d5d76715a49b28e1dfc4b93a2ab3951091ea4175"
       },
-      "../node_modules/@storybook/theming/dist/base.d.ts": {
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/base.d.ts": {
         "version": "078d2fa4fce431f56a99718cb734c2b14fa8c185b06551ab7f6709c063901ab7",
         "signature": "078d2fa4fce431f56a99718cb734c2b14fa8c185b06551ab7f6709c063901ab7"
       },
-      "../node_modules/@storybook/theming/dist/types.d.ts": {
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/types.d.ts": {
         "version": "d3da2a5dc38025e8afe802a654cdea02a622f7f48919eae4fe70db0c0db5a3d1",
         "signature": "d3da2a5dc38025e8afe802a654cdea02a622f7f48919eae4fe70db0c0db5a3d1"
       },
@@ -737,39 +741,39 @@
         "version": "96d85b3e22d9510ca311ae970b805b09aafc119edab321b1d821697db24a8824",
         "signature": "96d85b3e22d9510ca311ae970b805b09aafc119edab321b1d821697db24a8824"
       },
-      "../node_modules/@emotion/core/types/index.d.ts": {
+      "../node_modules/@storybook/api/node_modules/@emotion/core/types/index.d.ts": {
         "version": "1588826621a8167206324e72114918cfa71e9d1f91ae85145dec25e4b04a21b7",
         "signature": "1588826621a8167206324e72114918cfa71e9d1f91ae85145dec25e4b04a21b7"
       },
-      "../node_modules/emotion-theming/types/helper.d.ts": {
+      "../node_modules/@storybook/api/node_modules/emotion-theming/types/helper.d.ts": {
         "version": "7e78842d5f1f58ff069aeeb8c7211ccb29742ed652cd06e6846b33f6e10ecde1",
         "signature": "7e78842d5f1f58ff069aeeb8c7211ccb29742ed652cd06e6846b33f6e10ecde1"
       },
-      "../node_modules/emotion-theming/types/index.d.ts": {
+      "../node_modules/@storybook/api/node_modules/emotion-theming/types/index.d.ts": {
         "version": "01c33ff580322779804e1118d9e630877d0e697e3b85e99598fb0726976ec65d",
         "signature": "01c33ff580322779804e1118d9e630877d0e697e3b85e99598fb0726976ec65d"
       },
-      "../node_modules/@storybook/theming/dist/global.d.ts": {
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/global.d.ts": {
         "version": "8c47477d37c22eeb38ff52dd5aabbc04b0707db2adb37f4e657ce4c6f3a06749",
         "signature": "8c47477d37c22eeb38ff52dd5aabbc04b0707db2adb37f4e657ce4c6f3a06749"
       },
-      "../node_modules/@storybook/theming/dist/create.d.ts": {
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/create.d.ts": {
         "version": "b72b65034ea8076b876fb880a1f0c32c88e90a790838bc55bb4b2ffeb9286ff3",
         "signature": "b72b65034ea8076b876fb880a1f0c32c88e90a790838bc55bb4b2ffeb9286ff3"
       },
-      "../node_modules/@storybook/theming/dist/convert.d.ts": {
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/convert.d.ts": {
         "version": "bce6b3e85446b54b7edb260e2413054f28d105e720cdadccd443717c902f22bb",
         "signature": "bce6b3e85446b54b7edb260e2413054f28d105e720cdadccd443717c902f22bb"
       },
-      "../node_modules/@storybook/theming/dist/ensure.d.ts": {
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/ensure.d.ts": {
         "version": "71a1c07f9f0b9f040fcb86ac9cc3087449d335859f7335ca5baf388f2c7367b2",
         "signature": "71a1c07f9f0b9f040fcb86ac9cc3087449d335859f7335ca5baf388f2c7367b2"
       },
-      "../node_modules/@storybook/theming/dist/utils.d.ts": {
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/utils.d.ts": {
         "version": "ffbaef657629da502dbd63133e28c23549ab9e6da5bc517b47bfd663d574888f",
         "signature": "ffbaef657629da502dbd63133e28c23549ab9e6da5bc517b47bfd663d574888f"
       },
-      "../node_modules/@storybook/theming/dist/index.d.ts": {
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/index.d.ts": {
         "version": "99e14eef8acf9e7ccbf046379857128884301174d2dc79e014d3aee80ba2e947",
         "signature": "99e14eef8acf9e7ccbf046379857128884301174d2dc79e014d3aee80ba2e947"
       },
@@ -842,8 +846,8 @@
         "signature": "963e0182287755a18c98493cd70f6747b776f1a54c8620353e1f8e2e17b6cd3a"
       },
       "../node_modules/@types/webpack-sources/index.d.ts": {
-        "version": "7429e36c7e860a83e1166d6f0977fa4938b7a7a346255169a678939594394375",
-        "signature": "7429e36c7e860a83e1166d6f0977fa4938b7a7a346255169a678939594394375"
+        "version": "ab95c4625e16499b8181731576984bcdfd0438a9a87b5f7de8299de5c912a241",
+        "signature": "ab95c4625e16499b8181731576984bcdfd0438a9a87b5f7de8299de5c912a241"
       },
       "../node_modules/@types/webpack/index.d.ts": {
         "version": "ac5c629fbc699258ee8d5218d0daaaa2cdf8544ce6d826313ed74db23184e1e4",
@@ -939,8 +943,6 @@
           "*",
           "*",
           "*",
-          "*",
-          "*",
           "*"
         ]
       },
@@ -956,6 +958,11 @@
           "transform": "typescript-transform-paths",
           "afterDeclarations": true
         }
+      ],
+      "rootDirs": [
+        "../src",
+        "../test",
+        "../stories"
       ],
       "emitDeclarationOnly": true,
       "configFilePath": "../tsconfig.json"
@@ -1485,16 +1492,6 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/components/structure/tabsbaricon.tsx": [
-        "../node_modules/@types/react/index.d.ts",
-        "../node_modules/@types/react-native/index.d.ts",
-        "../src/components/core/index.tsx",
-        "../src/utils/index.tsx",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "../src/components/structure/index.tsx": [
         "../src/components/structure/snaperror.tsx",
         "../node_modules/@types/node/fs.d.ts",
@@ -1555,6 +1552,12 @@
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../node_modules/@types/color-name/index.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/eslint-visitor-keys/index.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -2035,6 +2038,12 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../node_modules/@types/json-schema/index.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../node_modules/@types/lodash/ts3.1/common/common.d.ts": [
         "../node_modules/@types/lodash/ts3.1/index.d.ts",
         "../node_modules/@types/lodash/ts3.1/common/array.d.ts",
@@ -2441,30 +2450,30 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@emotion/styled-base/types/helper.d.ts": [
+      "../node_modules/@storybook/api/node_modules/@emotion/styled-base/types/helper.d.ts": [
         "../node_modules/@types/react/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@emotion/styled-base/types/index.d.ts": [
+      "../node_modules/@storybook/api/node_modules/@emotion/styled-base/types/index.d.ts": [
         "../node_modules/@emotion/serialize/types/index.d.ts",
         "../node_modules/@types/react/index.d.ts",
-        "../node_modules/@emotion/styled-base/types/helper.d.ts",
+        "../node_modules/@storybook/api/node_modules/@emotion/styled-base/types/helper.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@emotion/styled/types/index.d.ts": [
-        "../node_modules/@emotion/styled-base/types/index.d.ts",
+      "../node_modules/@storybook/api/node_modules/@emotion/styled/types/index.d.ts": [
+        "../node_modules/@storybook/api/node_modules/@emotion/styled-base/types/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@storybook/theming/dist/animation.d.ts": [
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/animation.d.ts": [
         "../node_modules/@emotion/serialize/types/index.d.ts",
         "../node_modules/@emotion/utils/types/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
@@ -2472,15 +2481,15 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@storybook/theming/dist/base.d.ts": [
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/base.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@storybook/theming/dist/types.d.ts": [
-        "../node_modules/@storybook/theming/dist/animation.d.ts",
-        "../node_modules/@storybook/theming/dist/base.d.ts",
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/types.d.ts": [
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/animation.d.ts",
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/base.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -2507,7 +2516,7 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@emotion/core/types/index.d.ts": [
+      "../node_modules/@storybook/api/node_modules/@emotion/core/types/index.d.ts": [
         "../node_modules/@emotion/cache/types/index.d.ts",
         "../node_modules/@emotion/css/types/index.d.ts",
         "../node_modules/@emotion/serialize/types/index.d.ts",
@@ -2517,72 +2526,72 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/emotion-theming/types/helper.d.ts": [
+      "../node_modules/@storybook/api/node_modules/emotion-theming/types/helper.d.ts": [
         "../node_modules/@types/react/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/emotion-theming/types/index.d.ts": [
+      "../node_modules/@storybook/api/node_modules/emotion-theming/types/index.d.ts": [
         "../node_modules/@types/react/index.d.ts",
-        "../node_modules/emotion-theming/types/helper.d.ts",
+        "../node_modules/@storybook/api/node_modules/emotion-theming/types/helper.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@storybook/theming/dist/global.d.ts": [
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/global.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@storybook/theming/dist/create.d.ts": [
-        "../node_modules/@storybook/theming/dist/types.d.ts",
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/create.d.ts": [
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/types.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@storybook/theming/dist/convert.d.ts": [
-        "../node_modules/@storybook/theming/dist/types.d.ts",
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/convert.d.ts": [
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/types.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@storybook/theming/dist/ensure.d.ts": [
-        "../node_modules/@storybook/theming/dist/types.d.ts",
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/ensure.d.ts": [
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/types.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@storybook/theming/dist/utils.d.ts": [
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/utils.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@storybook/theming/dist/index.d.ts": [
-        "../node_modules/@emotion/styled/types/index.d.ts",
-        "../node_modules/@storybook/theming/dist/types.d.ts",
-        "../node_modules/@storybook/theming/dist/base.d.ts",
-        "../node_modules/@emotion/core/types/index.d.ts",
-        "../node_modules/emotion-theming/types/index.d.ts",
-        "../node_modules/@storybook/theming/dist/global.d.ts",
-        "../node_modules/@storybook/theming/dist/create.d.ts",
-        "../node_modules/@storybook/theming/dist/convert.d.ts",
-        "../node_modules/@storybook/theming/dist/ensure.d.ts",
-        "../node_modules/@storybook/theming/dist/utils.d.ts",
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/index.d.ts": [
+        "../node_modules/@storybook/api/node_modules/@emotion/styled/types/index.d.ts",
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/types.d.ts",
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/base.d.ts",
+        "../node_modules/@storybook/api/node_modules/@emotion/core/types/index.d.ts",
+        "../node_modules/@storybook/api/node_modules/emotion-theming/types/index.d.ts",
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/global.d.ts",
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/create.d.ts",
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/convert.d.ts",
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/ensure.d.ts",
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/utils.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../node_modules/@storybook/api/dist/modules/layout.d.ts": [
-        "../node_modules/@storybook/theming/dist/index.d.ts",
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/index.d.ts",
         "../node_modules/@storybook/api/dist/index.d.ts",
         "../node_modules/@storybook/api/dist/store.d.ts",
         "../node_modules/@storybook/api/dist/init-provider-api.d.ts",
@@ -2629,7 +2638,7 @@
         "../node_modules/@storybook/api/dist/modules/url.d.ts",
         "../node_modules/@storybook/api/dist/modules/versions.d.ts",
         "../node_modules/@types/reach__router/index.d.ts",
-        "../node_modules/@storybook/theming/dist/index.d.ts",
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -3069,7 +3078,7 @@
         "../node_modules/@storybook/api/dist/modules/url.d.ts",
         "../node_modules/@storybook/api/dist/modules/versions.d.ts",
         "../node_modules/@types/reach__router/index.d.ts",
-        "../node_modules/@storybook/theming/dist/index.d.ts",
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -3099,7 +3108,7 @@
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../node_modules/@storybook/api/dist/modules/layout.d.ts": [
-        "../node_modules/@storybook/theming/dist/index.d.ts",
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/index.d.ts",
         "../node_modules/@storybook/api/dist/index.d.ts",
         "../node_modules/@storybook/api/dist/store.d.ts",
         "../node_modules/@storybook/api/dist/init-provider-api.d.ts",
@@ -3157,38 +3166,38 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/emotion-theming/types/index.d.ts": [
+      "../node_modules/@storybook/api/node_modules/emotion-theming/types/index.d.ts": [
         "../node_modules/@types/react/index.d.ts",
-        "../node_modules/emotion-theming/types/helper.d.ts",
+        "../node_modules/@storybook/api/node_modules/emotion-theming/types/helper.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@storybook/theming/dist/index.d.ts": [
-        "../node_modules/@emotion/styled/types/index.d.ts",
-        "../node_modules/@storybook/theming/dist/types.d.ts",
-        "../node_modules/@storybook/theming/dist/base.d.ts",
-        "../node_modules/@emotion/core/types/index.d.ts",
-        "../node_modules/emotion-theming/types/index.d.ts",
-        "../node_modules/@storybook/theming/dist/global.d.ts",
-        "../node_modules/@storybook/theming/dist/create.d.ts",
-        "../node_modules/@storybook/theming/dist/convert.d.ts",
-        "../node_modules/@storybook/theming/dist/ensure.d.ts",
-        "../node_modules/@storybook/theming/dist/utils.d.ts",
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/index.d.ts": [
+        "../node_modules/@storybook/api/node_modules/@emotion/styled/types/index.d.ts",
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/types.d.ts",
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/base.d.ts",
+        "../node_modules/@storybook/api/node_modules/@emotion/core/types/index.d.ts",
+        "../node_modules/@storybook/api/node_modules/emotion-theming/types/index.d.ts",
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/global.d.ts",
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/create.d.ts",
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/convert.d.ts",
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/ensure.d.ts",
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/utils.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/emotion-theming/types/helper.d.ts": [
+      "../node_modules/@storybook/api/node_modules/emotion-theming/types/helper.d.ts": [
         "../node_modules/@types/react/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@emotion/core/types/index.d.ts": [
+      "../node_modules/@storybook/api/node_modules/@emotion/core/types/index.d.ts": [
         "../node_modules/@emotion/cache/types/index.d.ts",
         "../node_modules/@emotion/css/types/index.d.ts",
         "../node_modules/@emotion/serialize/types/index.d.ts",
@@ -3198,23 +3207,23 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@emotion/styled-base/types/index.d.ts": [
+      "../node_modules/@storybook/api/node_modules/@emotion/styled-base/types/index.d.ts": [
         "../node_modules/@emotion/serialize/types/index.d.ts",
         "../node_modules/@types/react/index.d.ts",
-        "../node_modules/@emotion/styled-base/types/helper.d.ts",
+        "../node_modules/@storybook/api/node_modules/@emotion/styled-base/types/helper.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@emotion/styled/types/index.d.ts": [
-        "../node_modules/@emotion/styled-base/types/index.d.ts",
+      "../node_modules/@storybook/api/node_modules/@emotion/styled/types/index.d.ts": [
+        "../node_modules/@storybook/api/node_modules/@emotion/styled-base/types/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@emotion/styled-base/types/helper.d.ts": [
+      "../node_modules/@storybook/api/node_modules/@emotion/styled-base/types/helper.d.ts": [
         "../node_modules/@types/react/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -3295,7 +3304,7 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@storybook/theming/dist/animation.d.ts": [
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/animation.d.ts": [
         "../node_modules/@emotion/serialize/types/index.d.ts",
         "../node_modules/@emotion/utils/types/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
@@ -3303,30 +3312,30 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@storybook/theming/dist/types.d.ts": [
-        "../node_modules/@storybook/theming/dist/animation.d.ts",
-        "../node_modules/@storybook/theming/dist/base.d.ts",
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/types.d.ts": [
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/animation.d.ts",
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/base.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@storybook/theming/dist/ensure.d.ts": [
-        "../node_modules/@storybook/theming/dist/types.d.ts",
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/ensure.d.ts": [
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/types.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@storybook/theming/dist/convert.d.ts": [
-        "../node_modules/@storybook/theming/dist/types.d.ts",
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/convert.d.ts": [
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/types.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@storybook/theming/dist/create.d.ts": [
-        "../node_modules/@storybook/theming/dist/types.d.ts",
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/create.d.ts": [
+        "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/types.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -3403,6 +3412,12 @@
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
       "../node_modules/@types/color-name/index.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/eslint-visitor-keys/index.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -3771,13 +3786,13 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@storybook/theming/dist/utils.d.ts": [
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/utils.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@storybook/theming/dist/global.d.ts": [
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/global.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -3797,7 +3812,7 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@storybook/theming/dist/base.d.ts": [
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/base.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -4105,6 +4120,12 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../node_modules/@types/json-schema/index.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../node_modules/@types/istanbul-reports/index.d.ts": [
         "../node_modules/@types/istanbul-lib-report/index.d.ts",
         "../node_modules/@types/istanbul-lib-coverage/index.d.ts",
@@ -4331,7 +4352,6 @@
       "../src/components/index.tsx",
       "../src/index.tsx",
       "../src/components/structure/snaperror.tsx",
-      "../src/components/structure/tabsbaricon.tsx",
       "../src/components/structure/index.tsx",
       "../node_modules/@types/anymatch/index.d.ts",
       "../node_modules/@babel/types/lib/index.d.ts",
@@ -4341,6 +4361,7 @@
       "../node_modules/@types/babel__template/index.d.ts",
       "../node_modules/@types/babel__core/index.d.ts",
       "../node_modules/@types/color-name/index.d.ts",
+      "../node_modules/@types/eslint-visitor-keys/index.d.ts",
       "../node_modules/@types/events/index.d.ts",
       "../node_modules/@types/fbemitter/index.d.ts",
       "../node_modules/@types/node/globals.d.ts",
@@ -4402,6 +4423,7 @@
       "../node_modules/@types/istanbul-lib-coverage/index.d.ts",
       "../node_modules/@types/istanbul-lib-report/index.d.ts",
       "../node_modules/@types/istanbul-reports/index.d.ts",
+      "../node_modules/@types/json-schema/index.d.ts",
       "../node_modules/@types/lodash/ts3.1/common/common.d.ts",
       "../node_modules/@types/lodash/ts3.1/common/array.d.ts",
       "../node_modules/@types/lodash/ts3.1/common/collection.d.ts",
@@ -4439,24 +4461,24 @@
       "../node_modules/@emotion/utils/types/index.d.ts",
       "../node_modules/@emotion/serialize/types/helper.d.ts",
       "../node_modules/@emotion/serialize/types/index.d.ts",
-      "../node_modules/@emotion/styled-base/types/helper.d.ts",
-      "../node_modules/@emotion/styled-base/types/index.d.ts",
-      "../node_modules/@emotion/styled/types/index.d.ts",
-      "../node_modules/@storybook/theming/dist/animation.d.ts",
-      "../node_modules/@storybook/theming/dist/base.d.ts",
-      "../node_modules/@storybook/theming/dist/types.d.ts",
+      "../node_modules/@storybook/api/node_modules/@emotion/styled-base/types/helper.d.ts",
+      "../node_modules/@storybook/api/node_modules/@emotion/styled-base/types/index.d.ts",
+      "../node_modules/@storybook/api/node_modules/@emotion/styled/types/index.d.ts",
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/animation.d.ts",
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/base.d.ts",
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/types.d.ts",
       "../node_modules/@emotion/stylis/types/index.d.ts",
       "../node_modules/@emotion/cache/types/index.d.ts",
       "../node_modules/@emotion/css/types/index.d.ts",
-      "../node_modules/@emotion/core/types/index.d.ts",
-      "../node_modules/emotion-theming/types/helper.d.ts",
-      "../node_modules/emotion-theming/types/index.d.ts",
-      "../node_modules/@storybook/theming/dist/global.d.ts",
-      "../node_modules/@storybook/theming/dist/create.d.ts",
-      "../node_modules/@storybook/theming/dist/convert.d.ts",
-      "../node_modules/@storybook/theming/dist/ensure.d.ts",
-      "../node_modules/@storybook/theming/dist/utils.d.ts",
-      "../node_modules/@storybook/theming/dist/index.d.ts",
+      "../node_modules/@storybook/api/node_modules/@emotion/core/types/index.d.ts",
+      "../node_modules/@storybook/api/node_modules/emotion-theming/types/helper.d.ts",
+      "../node_modules/@storybook/api/node_modules/emotion-theming/types/index.d.ts",
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/global.d.ts",
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/create.d.ts",
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/convert.d.ts",
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/ensure.d.ts",
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/utils.d.ts",
+      "../node_modules/@storybook/api/node_modules/@storybook/theming/dist/index.d.ts",
       "../node_modules/@storybook/api/dist/modules/layout.d.ts",
       "../node_modules/@storybook/api/dist/modules/shortcuts.d.ts",
       "../node_modules/@storybook/api/dist/modules/url.d.ts",
@@ -4510,5 +4532,5 @@
       "../node_modules/typescript/lib/lib.es5.d.ts"
     ]
   },
-  "version": "3.7.4"
+  "version": "3.7.5"
 }

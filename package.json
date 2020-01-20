@@ -1,6 +1,6 @@
 {
     "name": "heyou-library",
-    "version": "1.0.6",
+    "version": "0.0.1",
     "main": "lib/index.js",
     "license": "MIT",
     "repository": {
@@ -12,23 +12,28 @@
         "build": "yarn build:types && yarn build:js",
         "build:types": "ttsc --emitDeclarationOnly",
         "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" -D --source-maps inline",
-        "storybook": "start-storybook -p 9009 -s public",
-        "build-storybook": "build-storybook -s public",
-        "deploy-storybook": "storybook-to-ghpages"
+        "sb": "start-storybook -p 9009 -s public",
+        "sb:build": "build-storybook -s public",
+        "sb:deploy": "storybook-to-ghpages",
+        "android": "react-native run-android",
+        "ios": "react-native run-ios",
+        "start": "react-native start",
+        "test": "jest",
+        "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
     },
     "dependencies": {
         "expo": "^36.0.2",
         "expo-blur": "^8.0.0",
-        "moment": "^2.24.0"
-    },
-    "peerDependencies": {
-        "react": "^16.12.0"
+        "moment": "^2.24.0",
+        "react": "16.9.0",
+        "react-native": "0.61.5"
     },
     "devDependencies": {
         "@babel/cli": "^7.7.7",
         "@babel/core": "^7.8.3",
         "@babel/runtime": "^7.8.3",
         "@expo/webpack-config": "^0.10.10",
+        "@react-native-community/eslint-config": "^0.0.5",
         "@storybook/addon-actions": "^5.2.8",
         "@storybook/addon-info": "^5.2.8",
         "@storybook/addon-links": "^5.2.8",
@@ -40,22 +45,18 @@
         "@types/react-dom": "^16.9.0",
         "@types/react-native": "^0.60.30",
         "@types/storybook__addon-info": "^5.2.1",
+        "@typescript-eslint/eslint-plugin": "^2.12.0",
+        "@typescript-eslint/parser": "^2.12.0",
         "babel-plugin-module-resolver": "^4.0.0",
-        "babel-plugin-react-native-web": "^0.12.0-rc.1",
         "babel-preset-expo": "^8.0.0",
+        "eslint": "^6.5.1",
         "fork-ts-checker-webpack-plugin": "^3.1.1",
         "react-docgen-typescript-loader": "^3.6.0",
         "react-dom": "^16.12.0",
-        "react-native": "^0.61.5",
         "react-native-web": "^0.12.0-rc.1",
         "ts-loader": "^6.2.1",
         "ttypescript": "^1.5.10",
         "typescript": "^3.7.3",
         "typescript-transform-paths": "^1.1.14"
-    },
-    "prettier": {
-        "tabWidth": 4,
-        "singleQuote": true,
-        "htmlWhitespaceSensitivity": "strict"
     }
 }
