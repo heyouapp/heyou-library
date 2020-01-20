@@ -4,7 +4,7 @@ import { VideoProps } from "../core";
 import { ReviewProps } from "./";
 export interface RequestVideoProps extends VideoProps {
     review?: ReviewProps;
-    completedAt: string;
+    completedLabel: string;
     onShare: () => void;
     style?: StyleProp<ViewStyle>;
 }

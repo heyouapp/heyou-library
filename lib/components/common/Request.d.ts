@@ -2,12 +2,9 @@ import * as React from 'react';
 import { StyleProp, ViewStyle } from 'react-native';
 export interface RequestProps {
     fullName: string;
-    recipientName: string;
-    createdAt: string;
-    completedAt: string;
-    expiresAt: string;
-    refusedAt: string;
-    status: 'pending' | 'completed' | 'rejected' | 'expired';
+    recipientLabel: string;
+    status: string;
+    buttonText: string;
     onPress: () => void;
     style?: StyleProp<ViewStyle>;
 }

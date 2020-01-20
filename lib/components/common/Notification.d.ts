@@ -3,7 +3,7 @@ import { StyleProp, ViewStyle } from 'react-native';
 export interface NotificationProps {
     label: string;
     description: string;
-    createdAt: string;
+    createdLabel: string;
     onPress?: () => void;
     style?: StyleProp<ViewStyle>;
 }

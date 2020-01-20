@@ -225,25 +225,21 @@
         "version": "db1446535004843323d1eae6f0ea45f8caf79d7c8f8245449932160815689f38",
         "signature": "58ea3cad2c0a1eb4eec4d1ff6a73620e9fefd71cf5dcfbae6b2686cb0711fadb"
       },
-      "../node_modules/moment/moment.d.ts": {
-        "version": "d62fa6fe33566fa743b3d6715a1a2fe46e937ba9d2ba158563c5744315d438a7",
-        "signature": "d62fa6fe33566fa743b3d6715a1a2fe46e937ba9d2ba158563c5744315d438a7"
-      },
       "../src/components/common/request.tsx": {
-        "version": "056522ad0d507f8116a5be806d3e0b4efc28f74e642304280bd93ab37c498014",
-        "signature": "70bbf1bcd314895efbe9c217bcc8504f7f8aedb8d0930063a2a614999467d517"
+        "version": "89dc46c5abd96a68c34e1d2b208e16446f593cdda4189599c5c017210c488094",
+        "signature": "1f7aa6ed01a55a377fdf403574d50b102d7439d84944552e65544d1d45a64750"
       },
       "../src/components/common/requestvideo.tsx": {
-        "version": "f41182baf1ce329233361075f2904d5368c1a75514624e7b22c61ccd441ac3fa",
-        "signature": "e151d23a1b0e55dc5c8e9f7e135b357aef52bad42597a495cc2247a9f9dced0e"
+        "version": "e6b3b0a823ddd93a1b12aae8eef2b9184445ac7bef08ace5052c456fcd5a4bd1",
+        "signature": "001f8799c88702f6edd3abbc7bccd353fc1f802d7622badc9fd62489fdb1806a"
       },
       "../src/components/common/cardvideo.tsx": {
-        "version": "ce7ff5d9d940357794d0c8e93cbfccbd4a7ce7be68e81919ab807e531b528ad4",
-        "signature": "ff9eafd698b18c82b1c5c3a5c034267bdf705c0b15304df015d8ccad851439e2"
+        "version": "c0e05771425c2e4924ae877a200e2615f5891e10b4c0288011e92622ffa8dd39",
+        "signature": "b5d04f5404fdf6bedd22fa5d3d20c987c04dc6c60db0594f43031f9546fa3f5a"
       },
       "../src/components/common/notification.tsx": {
-        "version": "4d7710f798dc5126534d55fb7bc8d0ca4ca9291bcbbaf245f678c41cd933cece",
-        "signature": "3bd1c3e5df14490df11f4eff6d02bd199c7a59cdaec86ac55925058d0cdaf357"
+        "version": "df43ffa7266970e25e4158088185e179db78a8926d255dd89b19919ad4c4f113",
+        "signature": "b0a0d86e7b451eba25cb03e7f39a9fd2f8f0fffdf3cfa00441440a5618c22200"
       },
       "../src/components/common/share.tsx": {
         "version": "2421cfcf3a85523171ef1797353d32461f5acc5525b3f5646c1f56550b9a1e24",
@@ -1388,16 +1384,9 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/moment/moment.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "../src/components/common/request.tsx": [
         "../node_modules/@types/react/index.d.ts",
         "../node_modules/@types/react-native/index.d.ts",
-        "../node_modules/moment/moment.d.ts",
         "../src/components/core/index.tsx",
         "../src/components/account/index.tsx",
         "../src/utils/index.tsx",
@@ -1409,7 +1398,6 @@
       "../src/components/common/requestvideo.tsx": [
         "../node_modules/@types/react/index.d.ts",
         "../node_modules/@types/react-native/index.d.ts",
-        "../node_modules/moment/moment.d.ts",
         "../src/components/core/index.tsx",
         "../src/components/common/index.tsx",
         "../node_modules/@types/node/fs.d.ts",
@@ -1420,7 +1408,6 @@
       "../src/components/common/cardvideo.tsx": [
         "../node_modules/@types/react/index.d.ts",
         "../node_modules/@types/react-native/index.d.ts",
-        "../node_modules/moment/moment.d.ts",
         "../src/components/core/index.tsx",
         "../src/components/common/index.tsx",
         "../src/components/account/index.tsx",
@@ -1433,7 +1420,6 @@
       "../src/components/common/notification.tsx": [
         "../node_modules/@types/react/index.d.ts",
         "../node_modules/@types/react-native/index.d.ts",
-        "../node_modules/moment/moment.d.ts",
         "../src/components/core/index.tsx",
         "../src/components/account/index.tsx",
         "../src/utils/index.tsx",
@@ -3370,12 +3356,6 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/moment/moment.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "../node_modules/@types/anymatch/index.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -4377,7 +4357,6 @@
       "../src/components/account/user.tsx",
       "../src/components/account/talent.tsx",
       "../src/components/account/index.tsx",
-      "../node_modules/moment/moment.d.ts",
       "../src/components/common/request.tsx",
       "../src/components/common/requestvideo.tsx",
       "../src/components/common/cardvideo.tsx",
