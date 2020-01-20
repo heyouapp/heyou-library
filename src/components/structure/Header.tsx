@@ -11,7 +11,7 @@ import { Text, Icon } from 'components';
 import { Colors } from 'utils';
 
 export interface HeaderProps {
-    title: string;
+    title: React.ReactNode | string;
     theme?: 'white' | 'primary';
     onPressBack?: () => void;
     onPressClose?: () => void;
