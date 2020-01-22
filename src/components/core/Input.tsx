@@ -30,20 +30,18 @@ export const InputInnerStyle = {
 const Input: React.FC<InputProps> = props => (
     <View style={props.style}>
         {props.label && <Text style={styles.label}>{props.label}</Text>}
-        <View
-            style={[
-                InputStyle,
-                props.error ? styles.input_error : null,
-                props.multiline ? styles.input_multiline : styles.input
-            ]}
-        >
+        <View style={[InputStyle, props.error ? styles.input_error : null]}>
             <TextInput
                 {...props}
-                placeholder={props.placeholder}
+                children={undefined}
                 underlineColorAndroid="rgba(0, 0, 0, 0)"
                 placeholderTextColor={Colors.neutralLight}
-                style={InputInnerStyle}
+                style={[
+                    InputInnerStyle,
+                    props.multiline ? styles.input_multiline : styles.input
+                ]}
             />
+            {props.children}
         </View>
         {props.maxLength !== undefined && (
             <Text style={styles.counter} small>
@@ -74,7 +72,8 @@ const styles = StyleSheet.create({
         height: 45
     },
     input_multiline: {
-        height: 90
+        height: 90,
+        paddingVertical: 15
     },
     input_error: {
         borderColor: Colors.error

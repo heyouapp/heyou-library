@@ -8,4 +8,4 @@ export default {
     title: 'Core|Icon'
 };
 
-export const normal = () => <Icon name="profile" color={Colors.neutral}></Icon>;
+export const normal = () => <Icon name="profile" color={Colors.neutral} />;
