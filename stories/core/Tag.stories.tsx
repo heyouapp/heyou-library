@@ -14,6 +14,12 @@ export default {
 
 export const normal = () => <Tag>Test</Tag>;
 
+export const withPress = () => (
+    <Tag onPress={action('clicked')}>Test Press</Tag>
+);
+
 export const withDelete = () => (
-    <Tag onDelete={action('clicked')}>Test Delete</Tag>
+    <Tag onPress={action('clicked')} delete>
+        Test Delete
+    </Tag>
 );

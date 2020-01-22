@@ -3,7 +3,8 @@ import {
     StyleSheet,
     StyleProp,
     ViewStyle,
-    TouchableOpacity
+    View,
+    TouchableHighlight
 } from 'react-native';
 
 // Library
@@ -13,36 +14,53 @@ import { Text, Icon } from 'components/core';
 export interface TagProps {
     children: string;
     active?: boolean;
-    onDelete?: () => void;
+    delete?: boolean;
+    onPress?: () => void;
     style?: StyleProp<ViewStyle>;
 }
 
-const Tag: React.FC<TagProps> = props => (
-    <TouchableOpacity
-        style={[
-            styles.tag,
-            props.active ? styles.tag_active : null,
-            props.style
-        ]}
-        onPress={props.onDelete}
-        disabled={!props.onDelete}
-        activeOpacity={0.7}
-    >
-        <Text
-            style={[styles.text, props.active ? styles.text_active : null]}
-            small
+const Tag: React.FC<TagProps> = props => {
+    const [pressed, setPressed] = React.useState(false);
+
+    return (
+        <TouchableHighlight
+            activeOpacity={1}
+            onPress={props.onPress}
+            disabled={!props.onPress}
+            onHideUnderlay={() => setPressed(false)}
+            onShowUnderlay={() => setPressed(true)}
+            underlayColor={Colors.primary}
+            style={[
+                styles.tag,
+                props.active ? styles.tag_active : null,
+                props.style
+            ]}
         >
-            {props.children}
-        </Text>
-        {props.onDelete && (
-            <Icon
-                name="close"
-                color={Colors[props.active ? 'white' : 'primary']}
-                style={styles.icon}
-            />
-        )}
-    </TouchableOpacity>
-);
+            <View style={styles.content}>
+                <Text
+                    style={[
+                        styles.text,
+                        props.active || pressed ? styles.text_active : null
+                    ]}
+                    small
+                >
+                    {props.children}
+                </Text>
+                {props.delete && (
+                    <Icon
+                        name="close"
+                        color={
+                            Colors[
+                                props.active || pressed ? 'white' : 'primary'
+                            ]
+                        }
+                        style={styles.icon}
+                    />
+                )}
+            </View>
+        </TouchableHighlight>
+    );
+};
 
 const styles = StyleSheet.create({
     tag: {
@@ -52,9 +70,12 @@ const styles = StyleSheet.create({
         backgroundColor: Colors.white,
         height: 30,
         margin: 3.75,
+        alignSelf: 'flex-start'
+    },
+    content: {
         alignItems: 'center',
         flexDirection: 'row',
-        alignSelf: 'flex-start'
+        flex: 1
     },
     tag_active: {
         backgroundColor: Colors.primary

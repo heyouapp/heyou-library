@@ -4,6 +4,7 @@ const Icons: { [key: string]: ImageURISource } = {
     arrowBack: require('assets/icons/arrow_back.png'),
     arrowDown: require('assets/icons/arrow_down.png'),
     arrowRight: require('assets/icons/arrow_right.png'),
+    arrowRightBold: require('assets/icons/arrow_rightBold.png'),
     arrowUp: require('assets/icons/arrow_up.png'),
     camera: require('assets/icons/camera.png'),
     close: require('assets/icons/close.png'),

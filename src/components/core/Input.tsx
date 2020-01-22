@@ -32,9 +32,9 @@ const Input: React.FC<InputProps> = props => (
         {props.label && <Text style={styles.label}>{props.label}</Text>}
         <View
             style={[
-                styles.input,
+                InputStyle,
                 props.error ? styles.input_error : null,
-                props.multiline ? styles.input_multiline : null
+                props.multiline ? styles.input_multiline : styles.input
             ]}
         >
             <TextInput
@@ -71,7 +71,6 @@ const styles = StyleSheet.create({
         textTransform: 'uppercase'
     },
     input: {
-        ...InputStyle,
         height: 45
     },
     input_multiline: {

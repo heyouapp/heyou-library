@@ -4,3 +4,4 @@ export * from './CardVideo';
 export * from './Notification';
 export * from './Share';
 export * from './Review';
+export * from './Autocomplete';
