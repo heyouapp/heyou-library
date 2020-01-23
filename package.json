@@ -2,7 +2,7 @@
     "name": "heyou-library",
     "version": "1.0.11",
     "main": "lib/index.js",
-    "license": "MIT",
+    "private": true,
     "repository": {
         "type": "git",
         "url": "https://github.com/heyouapp/heyou-library.git"
