@@ -4,7 +4,7 @@ import {
     StyleProp,
     ViewStyle,
     View,
-    TouchableWithoutFeedback
+    TouchableWithoutFeedback,
 } from 'react-native';
 
 // Library
@@ -27,8 +27,8 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         backgroundColor: Colors.white,
         paddingVertical: 15,
-        ...Shadows.primary
-    }
+        ...Shadows.primary,
+    },
 });
 
 export { Card };

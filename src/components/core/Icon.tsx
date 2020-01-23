@@ -23,7 +23,7 @@ const Icon: React.FC<IconProps> = props => {
             style={[
                 styles.icon,
                 { tintColor: props.color || Colors.neutralLight },
-                props.style
+                props.style,
             ]}
         />
     );
@@ -33,8 +33,8 @@ const styles = StyleSheet.create({
     icon: {
         height: 20,
         width: 20,
-        resizeMode: 'contain'
-    }
+        resizeMode: 'contain',
+    },
 });
 
 export { Icon };

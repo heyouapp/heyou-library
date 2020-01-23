@@ -9,7 +9,7 @@ export const Colors = {
     black: '#000000',
     grey: '#989BA5',
     greyLight: '#F0F0F0',
-    greyDark: '#636363'
+    greyDark: '#636363',
 };
 
 // Tools

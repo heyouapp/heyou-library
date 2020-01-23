@@ -5,7 +5,7 @@ import { StyleSheet, View } from 'react-native';
 import { SnapError } from 'components/structure';
 
 export default {
-    title: 'Structure|SnapError'
+    title: 'Structure|SnapError',
 };
 
 export const normal = () => (
@@ -20,6 +20,6 @@ export const normal = () => (
 const styles = StyleSheet.create({
     container: {
         position: 'relative',
-        height: 60
-    }
+        height: 60,
+    },
 });

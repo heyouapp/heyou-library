@@ -22,8 +22,7 @@
                 "transform": "typescript-transform-paths",
                 "afterDeclarations": true
             }
-        ],
-        "rootDirs": ["src", "test", "stories"]
+        ]
     },
     "include": ["src/**/*"]
 }

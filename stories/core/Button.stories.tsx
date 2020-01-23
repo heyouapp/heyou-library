@@ -9,7 +9,7 @@ import { Container } from '../decorators';
 
 export default {
     title: 'Core|Button',
-    decorators: [Container]
+    decorators: [Container],
 };
 
 export const primary = () => (

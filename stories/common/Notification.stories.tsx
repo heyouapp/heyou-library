@@ -5,7 +5,7 @@ import { action } from '@storybook/addon-actions';
 import { Notification } from 'components/common';
 
 export default {
-    title: 'Common|Notification'
+    title: 'Common|Notification',
 };
 
 export const normal = () => (

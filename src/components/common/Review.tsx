@@ -35,14 +35,14 @@ const styles = StyleSheet.create({
         marginTop: 10,
         marginBottom: 15,
         marginHorizontal: -5,
-        flexDirection: 'row'
+        flexDirection: 'row',
     },
     star: {
-        marginHorizontal: 5
+        marginHorizontal: 5,
     },
     text: {
-        fontStyle: 'italic'
-    }
+        fontStyle: 'italic',
+    },
 });
 
 export { Review };

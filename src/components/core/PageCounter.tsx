@@ -16,7 +16,7 @@ const PageCounter: React.FC<PageCounterProps> = props => (
             <View
                 style={[
                     styles.dot,
-                    props.active === index ? styles.dot_active : null
+                    props.active === index ? styles.dot_active : null,
                 ]}
                 key={index.toString()}
             />
@@ -27,18 +27,18 @@ const PageCounter: React.FC<PageCounterProps> = props => (
 const styles = StyleSheet.create({
     container: {
         marginHorizontal: -3,
-        flexDirection: 'row'
+        flexDirection: 'row',
     },
     dot: {
         borderRadius: 3,
         backgroundColor: Colors.primaryLight,
         height: 6,
         width: 14,
-        marginHorizontal: 3
+        marginHorizontal: 3,
     },
     dot_active: {
-        backgroundColor: Colors.primary
-    }
+        backgroundColor: Colors.primary,
+    },
 });
 
 export { PageCounter };

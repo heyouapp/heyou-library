@@ -7,7 +7,7 @@ import { CardVideo } from 'components/common';
 import { Controlled } from '../decorators';
 
 export default {
-    title: 'Common|CardVideo'
+    title: 'Common|CardVideo',
 };
 
 export const normal = () => (

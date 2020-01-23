@@ -4,7 +4,7 @@ import * as React from 'react';
 import { PageCounter } from 'components/core';
 
 export default {
-    title: 'Core|PageCounter'
+    title: 'Core|PageCounter',
 };
 
 export const normal = () => <PageCounter amount={5} active={2} />;

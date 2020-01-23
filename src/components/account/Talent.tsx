@@ -4,7 +4,7 @@ import {
     StyleProp,
     View,
     ViewStyle,
-    TouchableOpacity
+    TouchableOpacity,
 } from 'react-native';
 
 // Library
@@ -49,15 +49,15 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         backgroundColor: ColorOpacity(Colors.black, 0.4),
         paddingVertical: 2,
-        paddingHorizontal: 5
+        paddingHorizontal: 5,
     },
     price_inner: {
-        color: Colors.white
+        color: Colors.white,
     },
     type: {
         marginVertical: 2,
-        color: Colors.neutralLight
-    }
+        color: Colors.neutralLight,
+    },
 });
 
 export { Talent };

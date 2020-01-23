@@ -4,7 +4,7 @@ import * as React from 'react';
 import { ProfilePicture } from 'components/account';
 
 export default {
-    title: 'Account|ProfilePicture'
+    title: 'Account|ProfilePicture',
 };
 
 export const small = () => <ProfilePicture />;

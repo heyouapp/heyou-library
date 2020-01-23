@@ -4,7 +4,7 @@ import * as React from 'react';
 import { Review } from 'components/common';
 
 export default {
-    title: 'Common|Review'
+    title: 'Common|Review',
 };
 
 export const normal = () => (

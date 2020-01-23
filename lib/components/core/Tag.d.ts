@@ -3,7 +3,8 @@ import { StyleProp, ViewStyle } from 'react-native';
 export interface TagProps {
     children: string;
     active?: boolean;
-    onDelete?: () => void;
+    delete?: boolean;
+    onPress?: () => void;
     style?: StyleProp<ViewStyle>;
 }
 declare const Tag: React.FC<TagProps>;

@@ -5,7 +5,7 @@ import { action } from '@storybook/addon-actions';
 import { Request } from 'components/common';
 
 export default {
-    title: 'Common|Request'
+    title: 'Common|Request',
 };
 
 export const normal = () => (

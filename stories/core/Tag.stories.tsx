@@ -9,7 +9,7 @@ import { Container } from '../decorators';
 
 export default {
     title: 'Core|Tag',
-    decorators: [Container]
+    decorators: [Container],
 };
 
 export const normal = () => <Tag>Test</Tag>;

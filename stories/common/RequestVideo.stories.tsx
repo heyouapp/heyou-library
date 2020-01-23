@@ -7,7 +7,7 @@ import { RequestVideo } from 'components/common';
 import { Controlled } from '../decorators';
 
 export default {
-    title: 'Common|RequestVideo'
+    title: 'Common|RequestVideo',
 };
 
 export const normal = () => (
@@ -36,7 +36,7 @@ export const withReview = () => (
                 userName: 'mariorossi',
                 rating: 3,
                 description:
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             }}
         >
             <View />

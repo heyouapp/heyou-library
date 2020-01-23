@@ -30,19 +30,19 @@ const RequestVideo: React.FC<RequestVideoProps> = props => (
 
 const styles = StyleSheet.create({
     container: {
-        paddingTop: 0
+        paddingTop: 0,
     },
     header: {
         paddingHorizontal: 10,
         paddingVertical: 7.5,
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
     },
     review: {
         paddingTop: 15,
-        paddingHorizontal: 15
-    }
+        paddingHorizontal: 15,
+    },
 });
 
 export { RequestVideo };

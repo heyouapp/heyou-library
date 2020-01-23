@@ -38,19 +38,19 @@ const Request: React.FC<RequestProps> = props => (
 const styles = StyleSheet.create({
     container: {
         paddingHorizontal: 15,
-        flexDirection: 'row'
+        flexDirection: 'row',
     },
     content: {
         marginLeft: 15,
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
     },
     fullName: {
-        lineHeight: 18
+        lineHeight: 18,
     },
     time: {
         marginTop: 5,
-        color: Colors.neutralLight
-    }
+        color: Colors.neutralLight,
+    },
 });
 
 export { Request };

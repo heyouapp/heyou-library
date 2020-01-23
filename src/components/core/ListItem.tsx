@@ -4,7 +4,7 @@ import {
     StyleProp,
     View,
     ViewStyle,
-    TouchableWithoutFeedback
+    TouchableWithoutFeedback,
 } from 'react-native';
 
 // Library
@@ -44,17 +44,17 @@ const styles = StyleSheet.create({
         paddingVertical: 16,
         alignItems: 'center',
         justifyContent: 'space-between',
-        flexDirection: 'row'
+        flexDirection: 'row',
     },
     label: {
-        color: Colors.neutralLight
+        color: Colors.neutralLight,
     },
     value: {
-        color: Colors.neutralLight
+        color: Colors.neutralLight,
     },
     icon: {
-        height: 10
-    }
+        height: 10,
+    },
 });
 
 export { ListItem };

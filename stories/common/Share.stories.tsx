@@ -4,7 +4,7 @@ import * as React from 'react';
 import { Share } from 'components/common';
 
 export default {
-    title: 'Common|Share'
+    title: 'Common|Share',
 };
 
 export const normal = () => <Share />;

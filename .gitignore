@@ -36,9 +36,9 @@ local.properties
 
 # node.js
 #
-node_modules/
-npm-debug.log
-yarn-error.log
+node_modules/**/*
+npm-debug.*
+yarn-error.*
 
 # BUCK
 buck-out/
@@ -63,8 +63,18 @@ buck-out/
 # CocoaPods
 /ios/Pods/
 
-#expo
-/.expo
 
 #storybook
-/.storybook
+.storybook/*
+
+#expo
+.expo/*
+
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+web-report/

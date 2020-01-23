@@ -40,22 +40,22 @@ const styles = StyleSheet.create({
         paddingBottom: 15,
         flexDirection: 'row',
         alignItems: 'center',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
     },
     content: {
         flexDirection: 'row',
-        alignItems: 'center'
+        alignItems: 'center',
     },
     label: {
-        marginLeft: 10
+        marginLeft: 10,
     },
     time: {
-        color: Colors.neutralLight
+        color: Colors.neutralLight,
     },
     review: {
         paddingTop: 15,
-        paddingHorizontal: 15
-    }
+        paddingHorizontal: 15,
+    },
 });
 
 export { CardVideo };

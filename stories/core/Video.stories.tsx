@@ -5,7 +5,7 @@ import { View } from 'react-native';
 import { Video } from 'components/core';
 
 export default {
-    title: 'Core|Video'
+    title: 'Core|Video',
 };
 
 export const normal = () => (

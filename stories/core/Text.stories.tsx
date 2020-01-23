@@ -4,7 +4,7 @@ import * as React from 'react';
 import { Text } from 'components/core';
 
 export default {
-    title: 'Core|Text'
+    title: 'Core|Text',
 };
 
 export const normal = () => <Text>Test text</Text>;

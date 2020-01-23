@@ -5,7 +5,7 @@ import { Selector } from 'components/core';
 import { Controlled } from '../decorators';
 
 export default {
-    title: 'Core|Selector'
+    title: 'Core|Selector',
 };
 
 export const normal = () => (

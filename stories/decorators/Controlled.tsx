@@ -15,7 +15,7 @@ const Controlled = (props: Props) => {
 
     return React.cloneElement(props.children, {
         [props.keyValue]: state,
-        [props.keyOnChange]: (state: any) => setState(state)
+        [props.keyOnChange]: (state: any) => setState(state),
     });
 };
 

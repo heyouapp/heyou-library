@@ -4,7 +4,7 @@ import * as React from 'react';
 import { ListItem } from 'components/core';
 
 export default {
-    title: 'Core|ListItem'
+    title: 'Core|ListItem',
 };
 
 export const normal = () => <ListItem label="Test label" onPress={() => {}} />;

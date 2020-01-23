@@ -3,7 +3,7 @@ import {
     StyleSheet,
     View,
     ViewProps,
-    TouchableWithoutFeedback
+    TouchableWithoutFeedback,
 } from 'react-native';
 
 // Library
@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor: Colors.placeholder,
         height: 200,
-        overflow: 'hidden'
+        overflow: 'hidden',
     },
     volume: {
         position: 'absolute',
@@ -51,12 +51,12 @@ const styles = StyleSheet.create({
         width: 30,
         alignItems: 'center',
         justifyContent: 'center',
-        zIndex: 1
+        zIndex: 1,
     },
     icon: {
         height: 18,
-        width: 18
-    }
+        width: 18,
+    },
 });
 
 export { Video };

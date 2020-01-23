@@ -27,14 +27,14 @@ const User: React.FC<UserProps> = props => (
 const styles = StyleSheet.create({
     container: {
         flexDirection: 'row',
-        alignItems: 'center'
+        alignItems: 'center',
     },
     content: {
-        marginLeft: 10
+        marginLeft: 10,
     },
     userName: {
-        color: Colors.neutralLight
-    }
+        color: Colors.neutralLight,
+    },
 });
 
 export { User };

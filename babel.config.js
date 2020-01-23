@@ -1,5 +1,5 @@
 module.exports = {
-    presets: ['babel-preset-expo'],
+    presets: ['module:metro-react-native-babel-preset'],
     plugins: [
         [
             'module-resolver',
@@ -11,9 +11,9 @@ module.exports = {
                     '.js',
                     '.ts',
                     '.tsx',
-                    '.json'
-                ]
-            }
-        ]
-    ]
+                    '.json',
+                ],
+            },
+        ],
+    ],
 };

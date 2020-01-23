@@ -2,7 +2,7 @@ import * as React from 'react';
 import {
     StyleSheet,
     Text as RNText,
-    TextProps as RNTextProps
+    TextProps as RNTextProps,
 } from 'react-native';
 
 // Library
@@ -17,7 +17,7 @@ export interface TextProps extends RNTextProps {
 export const TextStyle = {
     fontSize: 14,
     color: Colors.neutral,
-    letterSpacing: 1
+    letterSpacing: 1,
 };
 
 const Text: React.FC<TextProps> = props => (
@@ -30,31 +30,31 @@ const Text: React.FC<TextProps> = props => (
             styles[props.type || 'regular'],
             props.small ? styles.small : null,
             props.uppercase ? styles.uppercase : null,
-            props.style
+            props.style,
         ]}
     />
 );
 
 const styles = StyleSheet.create({
     text: {
-        lineHeight: 22
+        lineHeight: 22,
     },
     small: {
         fontSize: 12,
-        lineHeight: 18
+        lineHeight: 18,
     },
     uppercase: {
-        textTransform: 'uppercase'
+        textTransform: 'uppercase',
     },
     regular: {
-        fontWeight: '300'
+        fontWeight: '300',
     },
     semibold: {
-        fontWeight: '600'
+        fontWeight: '600',
     },
     bold: {
-        fontWeight: '700'
-    }
+        fontWeight: '700',
+    },
 });
 
 export { Text };

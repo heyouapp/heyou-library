@@ -5,7 +5,7 @@ import { action } from '@storybook/addon-actions';
 import { Card, Text } from 'components/core';
 
 export default {
-    title: 'Core|Card'
+    title: 'Core|Card',
 };
 
 export const normal = () => (

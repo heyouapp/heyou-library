@@ -7,8 +7,8 @@ const Container = (storyFn: () => React.ReactNode) => (
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
-    }
+        flex: 1,
+    },
 });
 
 export { Container };

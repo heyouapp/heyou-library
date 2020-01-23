@@ -4,7 +4,7 @@ import * as React from 'react';
 import { Header } from 'components/structure';
 
 export default {
-    title: 'Structure|Header'
+    title: 'Structure|Header',
 };
 
 export const primary = () => <Header title="Test" />;

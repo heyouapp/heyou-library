@@ -31,13 +31,13 @@ const App = () => {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1
+        flex: 1,
     },
     content: {
         paddingHorizontal: 15,
         justifyContent: 'space-between',
-        flex: 1
-    }
+        flex: 1,
+    },
 });
 
 export default App;

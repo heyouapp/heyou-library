@@ -4,7 +4,7 @@ import * as React from 'react';
 import { User } from 'components/account';
 
 export default {
-    title: 'Account|User'
+    title: 'Account|User',
 };
 
 export const normal = () => (

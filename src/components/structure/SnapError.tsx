@@ -37,18 +37,18 @@ const styles = StyleSheet.create({
         left: 0,
         right: 0,
         backgroundColor: Colors.error,
-        zIndex: 10
+        zIndex: 10,
     },
     content: {
-        padding: 15
+        padding: 15,
     },
     text: {
         marginBottom: 10,
-        color: Colors.white
+        color: Colors.white,
     },
     button: {
-        borderColor: 'transparent'
-    }
+        borderColor: 'transparent',
+    },
 });
 
 export { SnapError };

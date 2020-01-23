@@ -4,7 +4,7 @@ import {
     StyleProp,
     View,
     ViewStyle,
-    TouchableOpacity
+    TouchableOpacity,
 } from 'react-native';
 
 // Library
@@ -33,7 +33,7 @@ const Selector: React.FC<SelectorProps> = props => {
                         styles.tab,
                         props.value === index ? styles.tab_active : null,
                         index === 0 ? styles.tab_start : null,
-                        index === props.data.length - 1 ? styles.tab_end : null
+                        index === props.data.length - 1 ? styles.tab_end : null,
                     ]}
                     key={index.toString()}
                     activeOpacity={0.7}
@@ -41,7 +41,7 @@ const Selector: React.FC<SelectorProps> = props => {
                     <Text
                         style={[
                             styles.text,
-                            props.value === index ? styles.text_active : null
+                            props.value === index ? styles.text_active : null,
                         ]}
                         type="bold"
                         small
@@ -58,7 +58,7 @@ const styles = StyleSheet.create({
     container: {
         height: 30,
         marginLeft: 1,
-        flexDirection: 'row'
+        flexDirection: 'row',
     },
     tab: {
         borderWidth: 1,
@@ -66,25 +66,25 @@ const styles = StyleSheet.create({
         marginLeft: -1,
         alignItems: 'center',
         justifyContent: 'center',
-        flex: 1
+        flex: 1,
     },
     tab_start: {
         borderTopLeftRadius: 15,
-        borderBottomLeftRadius: 15
+        borderBottomLeftRadius: 15,
     },
     tab_end: {
         borderTopRightRadius: 15,
-        borderBottomRightRadius: 15
+        borderBottomRightRadius: 15,
     },
     tab_active: {
-        backgroundColor: Colors.primary
+        backgroundColor: Colors.primary,
     },
     text: {
-        color: Colors.primary
+        color: Colors.primary,
     },
     text_active: {
-        color: Colors.white
-    }
+        color: Colors.white,
+    },
 });
 
 export { Selector };

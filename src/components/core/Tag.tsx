@@ -4,7 +4,7 @@ import {
     StyleProp,
     ViewStyle,
     View,
-    TouchableHighlight
+    TouchableHighlight,
 } from 'react-native';
 
 // Library
@@ -33,14 +33,14 @@ const Tag: React.FC<TagProps> = props => {
             style={[
                 styles.tag,
                 props.active ? styles.tag_active : null,
-                props.style
+                props.style,
             ]}
         >
             <View style={styles.content}>
                 <Text
                     style={[
                         styles.text,
-                        props.active || pressed ? styles.text_active : null
+                        props.active || pressed ? styles.text_active : null,
                     ]}
                     small
                 >
@@ -70,28 +70,28 @@ const styles = StyleSheet.create({
         backgroundColor: Colors.white,
         height: 30,
         margin: 3.75,
-        alignSelf: 'flex-start'
+        alignSelf: 'flex-start',
     },
     content: {
         alignItems: 'center',
         flexDirection: 'row',
-        flex: 1
+        flex: 1,
     },
     tag_active: {
-        backgroundColor: Colors.primary
+        backgroundColor: Colors.primary,
     },
     text: {
         paddingHorizontal: 15,
-        color: Colors.primary
+        color: Colors.primary,
     },
     text_active: {
-        color: Colors.white
+        color: Colors.white,
     },
     icon: {
         height: 10,
         width: 10,
-        marginRight: 10
-    }
+        marginRight: 10,
+    },
 });
 
 export { Tag };

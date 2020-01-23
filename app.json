@@ -1,8 +1,4 @@
 {
     "name": "Heyou",
-    "displayName": "Heyou",
-    "expo": {
-        "platforms": ["ios", "android", "web"],
-        "orientation": "portrait"
-    }
+    "displayName": "Heyou"
 }

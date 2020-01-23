@@ -7,7 +7,7 @@ import { Colors } from 'utils';
 import { Controlled } from '../decorators';
 
 export default {
-    title: 'Core|Input'
+    title: 'Core|Input',
 };
 
 export const normal = () => (
@@ -59,7 +59,7 @@ export const autocomplete = () => (
 const styles = StyleSheet.create({
     contentEmpty: {
         backgroundColor: Colors.grey,
-        height: 200
+        height: 200,
     },
     content: {
         borderTopWidth: 1,
@@ -68,6 +68,6 @@ const styles = StyleSheet.create({
         marginBottom: -3.75,
         padding: 10,
         flexDirection: 'row',
-        flexWrap: 'wrap'
-    }
+        flexWrap: 'wrap',
+    },
 });

@@ -4,7 +4,7 @@ import * as React from 'react';
 import { Talent } from 'components/account';
 
 export default {
-    title: 'Account|Talent'
+    title: 'Account|Talent',
 };
 
 export const normal = () => (

@@ -2,7 +2,7 @@ import * as React from 'react';
 import {
     StyleSheet,
     TouchableOpacity,
-    TouchableOpacityProps
+    TouchableOpacityProps,
 } from 'react-native';
 
 // Library
@@ -24,7 +24,7 @@ export const Button: React.FC<ButtonProps> = props => (
             styles[props.type || 'primary'],
             props.position ? styles[props.position] : null,
             props.small ? styles.small : null,
-            props.style
+            props.style,
         ]}
     >
         <Text
@@ -45,29 +45,29 @@ const styles: any = StyleSheet.create({
         height: 45,
         paddingHorizontal: 30,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
     primary: {
-        backgroundColor: Colors.primary
+        backgroundColor: Colors.primary,
     },
     primary_text: {
-        color: Colors.white
+        color: Colors.white,
     },
     secondary: {
         borderColor: Colors.primary,
-        backgroundColor: Colors.white
+        backgroundColor: Colors.white,
     },
     secondary_text: {
-        color: Colors.primary
+        color: Colors.primary,
     },
     small: {
         borderRadius: 15,
-        height: 30
+        height: 30,
     },
     start: {
-        alignSelf: 'flex-start'
+        alignSelf: 'flex-start',
     },
     end: {
-        alignSelf: 'flex-end'
-    }
+        alignSelf: 'flex-end',
+    },
 });

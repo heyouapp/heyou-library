@@ -3,7 +3,7 @@ import {
     StyleSheet,
     SafeAreaView,
     View,
-    TouchableWithoutFeedback
+    TouchableWithoutFeedback,
 } from 'react-native';
 
 // Library
@@ -20,7 +20,7 @@ export interface HeaderProps {
 const Header = (props: HeaderProps) => {
     const styles = generateTheme(
         Colors[props.theme === 'white' ? 'white' : 'primary'],
-        Colors[props.theme === 'white' ? 'neutral' : 'white']
+        Colors[props.theme === 'white' ? 'neutral' : 'white'],
     );
 
     return (
@@ -59,11 +59,11 @@ const generateTheme = (principalColor: string, contentColor: string) =>
             borderBottomRightRadius: 16,
             backgroundColor: principalColor,
             marginBottom: 25,
-            overflow: 'hidden'
+            overflow: 'hidden',
         },
         container: {
             height: 50,
-            paddingTop: 15
+            paddingTop: 15,
         },
         content: {
             position: 'relative',
@@ -71,7 +71,7 @@ const generateTheme = (principalColor: string, contentColor: string) =>
             paddingHorizontal: 15,
             justifyContent: 'space-between',
             alignItems: 'center',
-            flexDirection: 'row'
+            flexDirection: 'row',
         },
         title: {
             position: 'absolute',
@@ -79,12 +79,12 @@ const generateTheme = (principalColor: string, contentColor: string) =>
             right: 45,
             fontSize: 16,
             color: contentColor,
-            textAlign: 'center'
+            textAlign: 'center',
         },
         icon: {
             height: 16,
-            tintColor: contentColor
-        }
+            tintColor: contentColor,
+        },
     });
 
 export { Header };

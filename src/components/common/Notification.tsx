@@ -34,24 +34,24 @@ const Notification: React.FC<NotificationProps> = props => (
 const styles = StyleSheet.create({
     container: {
         backgroundColor: Colors.greyLight,
-        paddingHorizontal: 15
+        paddingHorizontal: 15,
     },
     header: {
         marginBottom: 7.5,
         alignItems: 'center',
         justifyContent: 'space-between',
-        flexDirection: 'row'
+        flexDirection: 'row',
     },
     content: {
         alignItems: 'center',
-        flexDirection: 'row'
+        flexDirection: 'row',
     },
     label: {
-        marginLeft: 10
+        marginLeft: 10,
     },
     time: {
-        color: Colors.neutralLight
-    }
+        color: Colors.neutralLight,
+    },
 });
 
 export { Notification };

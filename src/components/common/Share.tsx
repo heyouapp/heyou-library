@@ -3,7 +3,7 @@ import {
     StyleSheet,
     StyleProp,
     ViewStyle,
-    TouchableOpacity
+    TouchableOpacity,
 } from 'react-native';
 
 // Library
@@ -32,12 +32,12 @@ const styles = StyleSheet.create({
         height: 30,
         width: 30,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
     icon: {
         height: 15,
-        width: 15
-    }
+        width: 15,
+    },
 });
 
 export { Share };
