@@ -2,14 +2,14 @@ import * as React from 'react';
 import { action } from '@storybook/addon-actions';
 
 // Library
-import { TabsBar } from 'components/structure';
+import { BottomNav } from 'components/structure';
 
 export default {
-    title: 'Structure|TabsBar',
+    title: 'Structure|BottomNav',
 };
 
 export const normal = () => (
-    <TabsBar
+    <BottomNav
         data={[
             { iconName: 'home', onPress: action('clicked home') },
             { iconName: 'stream', onPress: action('clicked stream') },

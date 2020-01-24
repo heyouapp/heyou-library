@@ -5,12 +5,12 @@ import { StyleSheet, TouchableOpacity, View } from 'react-native';
 import { Icon, IconProps } from 'components/core';
 import { Colors } from 'utils';
 
-export interface TabsBarIconProps extends IconProps {
+export interface BottomNavIconProps extends IconProps {
     active?: boolean;
     onPress: () => void;
 }
 
-const TabsBarIcon = (props: TabsBarIconProps) => (
+const BottomNavIcon = (props: BottomNavIconProps) => (
     <TouchableOpacity
         onPress={props.onPress}
         activeOpacity={0.7}
@@ -41,4 +41,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default TabsBarIcon;
+export default BottomNavIcon;

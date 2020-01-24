@@ -1,4 +1,5 @@
 const path = require('path');
+const { withUnimodules } = require('@expo/webpack-config/addons');
 
 module.exports = {
     stories: ['../stories/**/*.stories.tsx'],
@@ -25,17 +26,13 @@ module.exports = {
             },
         },
     ],
-    webpackFinal: async config => {
-        config.module.rules.push({
-            test: /\.(js|jsx|ts|tsx|mjs|web.js|android.js|ios.js)$/,
-            exclude: [/node_modules/],
-            loader: require.resolve('babel-loader'),
-            options: {
-                cacheDirectory: true,
-                babelrc: false,
-                plugins: [['react-native-web', { commonjs: true }]],
-            },
+    webpackFinal: async main => {
+        const config = withUnimodules(main, {
+            projectRoot: path.resolve(__dirname, '../'),
         });
+
+        config.resolve.alias['react-native-web/dist/exports/ViewPropTypes'] =
+            'react-native/Libraries/Components/View/ViewPropTypes';
 
         return config;
     },

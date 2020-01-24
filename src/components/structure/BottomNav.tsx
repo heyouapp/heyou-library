@@ -4,19 +4,19 @@ import { BlurView } from 'expo-blur';
 
 // Library
 import { Shadows } from 'utils';
-import TabsBarIcon from './TabsBarIcon';
+import BottomNavIcon from './BottomNavIcon';
 
-export type TabsBarOption = {
+export type BottomNavOption = {
     iconName: string;
     onPress: () => void;
 };
 
-export interface TabsBarProps {
-    data: TabsBarOption[];
+export interface BottomNavProps {
+    data: BottomNavOption[];
     style?: StyleProp<ViewStyle>;
 }
 
-const TabsBar = (props: TabsBarProps) => {
+const BottomNav = (props: BottomNavProps) => {
     const [active, setActive] = React.useState(0);
     React.useEffect(() => {
         props.data[active].onPress();
@@ -28,8 +28,8 @@ const TabsBar = (props: TabsBarProps) => {
             intensity={10}
             style={[styles.container, props.style]}
         >
-            {props.data.map((item: TabsBarOption, index: number) => (
-                <TabsBarIcon
+            {props.data.map((item: BottomNavOption, index: number) => (
+                <BottomNavIcon
                     name={item.iconName}
                     active={active === index}
                     onPress={() => setActive(index)}
@@ -51,4 +51,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export { TabsBar };
+export { BottomNav };
