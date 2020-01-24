@@ -58,6 +58,7 @@ const styles = StyleSheet.create({
         right: 15,
     },
     container: {
+        borderRadius: 20,
         ...Shadows.primary,
     },
     bar: {

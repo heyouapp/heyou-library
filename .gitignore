@@ -66,6 +66,9 @@ buck-out/
 #expo
 .expo/*
 
+#storybook
+storybook-static/
+
 *.jks
 *.p8
 *.p12

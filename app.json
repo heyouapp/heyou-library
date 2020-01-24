@@ -2,6 +2,6 @@
     "name": "Heyou",
     "displayName": "Heyou",
     "expo": {
-        "platforms": ["ios", "android", "web"]
+        "platforms": ["web"]
     }
 }
