@@ -6,10 +6,10 @@ export const Colors = {
     placeholder: '#C0D1E1',
     error: '#E53D53',
     white: '#FFFFFF',
-    black: '#000000',
-    grey: '#989BA5',
     greyLight: '#F0F0F0',
+    grey: '#989BA5',
     greyDark: '#636363',
+    black: '#000000',
 };
 
 // Tools
