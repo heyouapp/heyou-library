@@ -1,0 +1,33 @@
+@at-root {
+    @-ms-viewport {
+        width: device-width;
+    }
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    -ms-overflow-style: scrollbar;
+    scroll-behavior: smooth;
+}
+
+body {
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+input,
+textarea {
+    outline: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
