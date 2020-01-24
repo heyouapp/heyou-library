@@ -6,9 +6,9 @@ export declare const Colors: {
     placeholder: string;
     error: string;
     white: string;
-    black: string;
-    grey: string;
     greyLight: string;
+    grey: string;
     greyDark: string;
+    black: string;
 };
 export declare const ColorOpacity: (hex: string, percentage: number) => string;

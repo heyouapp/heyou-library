@@ -1,6 +1,6 @@
 {
     "name": "heyou-library",
-    "version": "1.0.13",
+    "version": "1.0.14",
     "main": "lib/index.js",
     "private": true,
     "repository": {
@@ -21,10 +21,10 @@
         "sb:deploy": "storybook-to-ghpages"
     },
     "dependencies": {
-        "expo": "^36.0.2",
         "expo-blur": "~8.0.0",
         "react": "16.9.0",
-        "react-native": "0.61.5"
+        "react-native": "0.61.5",
+        "react-native-unimodules": "^0.7.0"
     },
     "devDependencies": {
         "@babel/cli": "^7.7.7",

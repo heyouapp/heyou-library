@@ -1,5 +1,11 @@
 import * as React from 'react';
-import { StyleSheet, StyleProp, ViewStyle } from 'react-native';
+import {
+    StyleSheet,
+    StyleProp,
+    ViewStyle,
+    SafeAreaView,
+    View,
+} from 'react-native';
 import { BlurView } from 'expo-blur';
 
 // Library
@@ -23,31 +29,43 @@ const BottomNav = (props: BottomNavProps) => {
     }, [active]);
 
     return (
-        <BlurView
-            tint="light"
-            intensity={10}
-            style={[styles.container, props.style]}
-        >
-            {props.data.map((item: BottomNavOption, index: number) => (
-                <BottomNavIcon
-                    name={item.iconName}
-                    active={active === index}
-                    onPress={() => setActive(index)}
-                    key={index.toString()}
-                />
-            ))}
-        </BlurView>
+        <SafeAreaView style={styles.wrapper}>
+            <View style={styles.container}>
+                <BlurView
+                    tint="light"
+                    intensity={80}
+                    style={[styles.bar, props.style]}
+                >
+                    {props.data.map((item: BottomNavOption, index: number) => (
+                        <BottomNavIcon
+                            name={item.iconName}
+                            active={active === index}
+                            onPress={() => setActive(index)}
+                            key={index.toString()}
+                        />
+                    ))}
+                </BlurView>
+            </View>
+        </SafeAreaView>
     );
 };
 
 const styles = StyleSheet.create({
+    wrapper: {
+        position: 'absolute',
+        bottom: 0,
+        left: 15,
+        right: 15,
+    },
     container: {
+        ...Shadows.primary,
+    },
+    bar: {
         borderRadius: 20,
         height: 60,
         alignItems: 'center',
         justifyContent: 'space-around',
         flexDirection: 'row',
-        ...Shadows.primary,
     },
 });
 
