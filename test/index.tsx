@@ -1,6 +1,13 @@
 import * as React from 'react';
 import { StyleSheet, SafeAreaView, View } from 'react-native';
-import { Text, Button, Header, SnapError, BottomNav } from 'heyou-library';
+import {
+    Text,
+    Button,
+    Header,
+    SnapError,
+    BottomNav,
+    ListItem,
+} from 'heyou-library';
 
 const App = () => {
     const [snap, setSnap] = React.useState(false);
@@ -22,6 +29,8 @@ const App = () => {
             <View style={styles.content}>
                 <Text>Text test</Text>
                 <Button onPress={() => setSnap(!snap)}>Toggle Snap</Button>
+                <ListItem label="Test label" value="" onPress={() => {}} />
+                <ListItem label="Test label" onPress={() => {}} />
             </View>
             <BottomNav
                 data={[

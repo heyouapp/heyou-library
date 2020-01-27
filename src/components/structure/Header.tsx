@@ -32,7 +32,9 @@ const Header = (props: HeaderProps) => {
                             onPress={props.onPressBack}
                             disabled={!props.onPressBack}
                         >
-                            <Icon name="arrowBack" style={styles.icon} />
+                            <View>
+                                <Icon name="arrowBack" style={styles.icon} />
+                            </View>
                         </TouchableWithoutFeedback>
                     )}
                     <Text style={styles.title} type="bold" numberOfLines={1}>
@@ -43,7 +45,9 @@ const Header = (props: HeaderProps) => {
                             onPress={props.onPressClose}
                             disabled={!props.onPressClose}
                         >
-                            <Icon name="close" style={styles.icon} />
+                            <View>
+                                <Icon name="close" style={styles.icon} />
+                            </View>
                         </TouchableWithoutFeedback>
                     )}
                 </View>

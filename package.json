@@ -1,6 +1,6 @@
 {
     "name": "heyou-library",
-    "version": "1.0.14",
+    "version": "1.0.15",
     "main": "lib/index.js",
     "private": true,
     "repository": {
