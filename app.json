@@ -1,7 +1,0 @@
-{
-    "name": "Heyou",
-    "displayName": "Heyou",
-    "expo": {
-        "platforms": ["web"]
-    }
-}
