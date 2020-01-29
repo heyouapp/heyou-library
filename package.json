@@ -1,7 +1,9 @@
 {
     "name": "heyou-library",
-    "version": "1.0.15",
+    "version": "1.0.21",
     "main": "lib/index.js",
+    "module": "lib/index.js",
+    "types": "lib/index.d.ts",
     "private": true,
     "repository": {
         "type": "git",
@@ -12,19 +14,17 @@
         "build": "yarn build:types && yarn build:js",
         "build:types": "ttsc --emitDeclarationOnly",
         "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" -D --source-maps inline",
-        "android": "react-native run-android",
-        "ios": "react-native run-ios",
-        "start": "react-native start",
         "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
         "sb": "start-storybook -p 9009 -s public",
         "sb:build": "build-storybook -s public",
         "sb:deploy": "storybook-to-ghpages -e storybook-static -o storybook-static"
     },
+    "peerDependencies": {
+        "react": "*",
+        "react-native": "*"
+    },
     "dependencies": {
-        "expo-blur": "~8.0.0",
-        "react": "16.9.0",
-        "react-native": "0.61.5",
-        "react-native-unimodules": "^0.7.0"
+        "expo-blur": "~8.0.0"
     },
     "devDependencies": {
         "@babel/cli": "^7.7.7",
@@ -55,5 +55,8 @@
         "ttypescript": "^1.5.10",
         "typescript": "^3.7.3",
         "typescript-transform-paths": "^1.1.14"
-    }
+    },
+    "files": [
+        "lib"
+    ]
 }
