@@ -34,6 +34,10 @@ module.exports = {
         config.resolve.alias['react-native-web/dist/exports/ViewPropTypes'] =
             'react-native/Libraries/Components/View/ViewPropTypes';
 
+        if (config.mode === 'production') {
+            config.output.publicPath = '';
+        }
+
         return config;
     },
 };
