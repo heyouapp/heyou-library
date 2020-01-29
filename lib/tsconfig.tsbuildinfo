@@ -434,8 +434,8 @@
         "signature": "66ce86394b4ced375bd59338265a190a5cbe0b78a15bdf64e34b46d3a5ffaa5d"
       },
       "../node_modules/@types/node/readline.d.ts": {
-        "version": "c66694170e325840524c1512b07bd9c2492611f361d635546eb673c2526a5c68",
-        "signature": "c66694170e325840524c1512b07bd9c2492611f361d635546eb673c2526a5c68"
+        "version": "7531eebda3832481211ea0cd891f622a3d9692195761f72baafc2798c5dc06a6",
+        "signature": "7531eebda3832481211ea0cd891f622a3d9692195761f72baafc2798c5dc06a6"
       },
       "../node_modules/@types/node/repl.d.ts": {
         "version": "9a09086b0c33e65f14a17eb0e9d415cab597e0b687a1a45d4b59663706451dbe",
@@ -642,8 +642,8 @@
         "signature": "fdfbe321c556c39a2ecf791d537b999591d0849e971dd938d88f460fea0186f6"
       },
       "../node_modules/@types/yargs/index.d.ts": {
-        "version": "ed02fff55817b6bfa0744b66fa612d46c89b242333839e1c6d5f11955086b035",
-        "signature": "ed02fff55817b6bfa0744b66fa612d46c89b242333839e1c6d5f11955086b035"
+        "version": "978d2eedfae36ea891b159fd0cecfa8381b5beaab0e86c5b3789c1441a164974",
+        "signature": "978d2eedfae36ea891b159fd0cecfa8381b5beaab0e86c5b3789c1441a164974"
       }
     },
     "options": {
