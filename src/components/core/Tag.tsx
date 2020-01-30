@@ -31,17 +31,13 @@ const Tag: React.FC<TagProps> = props => {
             onHideUnderlay={() => setPressed(false)}
             onShowUnderlay={() => setPressed(true)}
             underlayColor={Colors.primary}
-            style={[
-                styles.tag,
-                props.active ? styles.tag_active : null,
-                props.style,
-            ]}
+            style={[styles.tag, props.active && styles.tag_active, props.style]}
         >
             <View style={styles.content}>
                 <Text
                     style={[
                         styles.text,
-                        props.active || pressed ? styles.text_active : null,
+                        (props.active || pressed) && styles.text_active,
                     ]}
                     small
                 >

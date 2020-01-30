@@ -6,7 +6,7 @@ import {
 } from 'react-native';
 
 // Library
-import { Colors } from 'utils';
+import { Colors, Fonts } from 'utils';
 
 export interface TextProps extends RNTextProps {
     uppercase?: boolean;
@@ -15,7 +15,7 @@ export interface TextProps extends RNTextProps {
 }
 
 export const TextStyle = {
-    fontSize: 14,
+    fontSize: Fonts.SIZE.REGULAR,
     color: Colors.neutral,
     letterSpacing: 1,
 };
@@ -28,8 +28,8 @@ const Text: React.FC<TextProps> = props => (
             TextStyle,
             styles.text,
             styles[props.type || 'regular'],
-            props.small ? styles.small : null,
-            props.uppercase ? styles.uppercase : null,
+            props.small && styles.small,
+            props.uppercase && styles.uppercase,
             props.style,
         ]}
     />
@@ -40,20 +40,20 @@ const styles = StyleSheet.create({
         lineHeight: 22,
     },
     small: {
-        fontSize: 12,
-        lineHeight: 18,
+        fontSize: Fonts.LINE_HEIGHT.SMALL,
+        lineHeight: Fonts.LINE_HEIGHT.SMALL,
     },
     uppercase: {
         textTransform: 'uppercase',
     },
     regular: {
-        fontWeight: '300',
+        fontWeight: Fonts.WEIGHT.REGULAR,
     },
     semibold: {
-        fontWeight: '600',
+        fontWeight: Fonts.WEIGHT.SEMIBOLD,
     },
     bold: {
-        fontWeight: '700',
+        fontWeight: Fonts.WEIGHT.BOLD,
     },
 });
 

@@ -11,34 +11,22 @@ export interface InputProps extends TextInputProps {
     error?: string;
 }
 
-export const InputStyle = {
-    borderWidth: 2,
-    borderColor: 'transparent',
-    borderRadius: 12,
-    backgroundColor: Colors.white,
-    ...Shadows.secondary,
-};
-
-export const InputInnerStyle = {
-    height: '100%',
-    width: '100%',
-    paddingHorizontal: 15,
-    color: Colors.greyDark,
-    ...TextStyle,
-};
-
 const Input: React.FC<InputProps> = props => (
     <View style={props.style}>
         {props.label && <Text style={styles.label}>{props.label}</Text>}
-        <View style={[InputStyle, props.error ? styles.input_error : null]}>
+        <View
+            style={[styles.wrapper, props.error ? styles.wrapper_error : null]}
+        >
             <TextInput
                 {...props}
                 children={undefined}
                 underlineColorAndroid="rgba(0, 0, 0, 0)"
                 placeholderTextColor={Colors.neutralLight}
                 style={[
-                    InputInnerStyle,
-                    props.multiline ? styles.input_multiline : styles.input,
+                    styles.input,
+                    props.multiline
+                        ? styles.input_multiline
+                        : styles.input_normal,
                 ]}
             />
             {props.children}
@@ -58,6 +46,30 @@ const styles = StyleSheet.create({
     label: {
         marginBottom: 7.5,
     },
+    wrapper: {
+        borderWidth: 2,
+        borderColor: 'transparent',
+        borderRadius: 12,
+        backgroundColor: Colors.white,
+        ...Shadows.secondary,
+    },
+    wrapper_error: {
+        borderColor: Colors.error,
+    },
+    input: {
+        height: '100%',
+        width: '100%',
+        paddingHorizontal: 15,
+        color: Colors.greyDark,
+        ...TextStyle,
+    },
+    input_normal: {
+        height: 45,
+    },
+    input_multiline: {
+        height: 90,
+        paddingVertical: 15,
+    },
     counter: {
         marginTop: 5,
         color: Colors.neutralLight,
@@ -67,16 +79,6 @@ const styles = StyleSheet.create({
         marginTop: 7.5,
         color: Colors.error,
         textTransform: 'uppercase',
-    },
-    input: {
-        height: 45,
-    },
-    input_multiline: {
-        height: 90,
-        paddingVertical: 15,
-    },
-    input_error: {
-        borderColor: Colors.error,
     },
 });
 

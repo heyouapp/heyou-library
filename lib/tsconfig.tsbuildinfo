@@ -118,7 +118,7 @@
         "signature": "634bcd8a7f397b5177135a98d9e6d363a8808c1448433f93803dfec4693f8d3d"
       },
       "../src/utils/shadows.tsx": {
-        "version": "fc4e06124f66f9c91347b9b59082f531df24a18cbc2dbd81d9c81a7bbd44dbcd",
+        "version": "428b6f96debd9fb12170f414721b6942c79ed8dc99879103213ef9fb23bcbb74",
         "signature": "4d640c97c176cbdad97d6cca1fae6770c87d92c327df6a3916f61a57221a55d9"
       },
       "../node_modules/@types/react-native/globals.d.ts": {
@@ -165,32 +165,36 @@
         "version": "5dff2cdd6663dee1450983160b1f335cb86aef11abf48c66fddc3ce37cb6907e",
         "signature": "648a9575b65c865bd0882fdf722fa16a1cd8ea8c8322b4ecc993e3f12f325ae6"
       },
+      "../src/utils/fonts.tsx": {
+        "version": "12c66e7bf82f76b0df44c01c4571d102c9acfc3619ff751d0e978bc45b7471fe",
+        "signature": "85293dcb173200595de07ef22455f91d966f1b17f8a15859e9842d25cf455fd6"
+      },
       "../src/utils/index.tsx": {
-        "version": "efdbc251980803743e8a155beb31b4da4c4823349e6a81a81137eeb6a48d6b51",
-        "signature": "782bc47c8bc5d62a22e940db28201664d72e7be55a8457cf24b51ada94a127b1"
+        "version": "7860e3e13264f725f8402116e355c8ab0cbed2897868510109bfb2834667da4e",
+        "signature": "9ab390c4f209826eb816c9bf88f6d4f683d6778c547d15b8a8f12460c48a84c9"
       },
       "../src/components/account/profilepicture.tsx": {
         "version": "b28df62dc49712ffaf3e62051bd405aa9d25273a6a2797098e2ed9d8f725ec21",
         "signature": "f16a64bb63b229d87c961494411d5baa730dfd25c3fa47ffd86f0d020fbcd379"
       },
       "../src/components/core/text.tsx": {
-        "version": "c30eda0cfe6d9614e1df4b8c716de7bfb1a130c6e3cb4d99025008961a23ffff",
+        "version": "821e63c6a4248749754bf2d1ec2d9ebe595af86722f82763f619e2edff3cd7bc",
         "signature": "0fab291dbafb864eadc4128f00dff8a6b694bde4a932492c426d96f98f996751"
       },
       "../src/components/core/button.tsx": {
-        "version": "917117241de3bd5eebbc346a906ef8cee33bffe2ae5cbbbeb9e1d696729e56ed",
+        "version": "f85a4d1947235692c215d421b4aa5413b3d65d36a53fbef5159cdc3f8bad2c6e",
         "signature": "b1fc44aa95d4322f16ac8b24e7635f0cd6d4d44cc3392473e46102595ebe546e"
       },
       "../src/components/core/input.tsx": {
-        "version": "675d136fe53631f3055822f0d92b797bb4fc8a999f94969713a794f38ff362d5",
-        "signature": "94576b2708471887fa4244e97a728fcb979c5b806a6c9bf270446e49c187e46b"
+        "version": "9cc5d6531a9fa702cf6c224a44abd02b3fd6b61ef684a209b72eb40ca2212f99",
+        "signature": "c37a5137c28e6b2cc0ed4bdb8c7725b3217a83d2d1702af36f0e026fe537268a"
       },
       "../src/components/core/icon.tsx": {
         "version": "3f53cc16cedf4fab0a593417f188fc8d6e3aa0bcebed747f085ab9678bcaae29",
         "signature": "16d2e5349182b66b670fc484c71a9782e960ad24065df57ed78a3f4be1e148fa"
       },
       "../src/components/core/selector.tsx": {
-        "version": "a8233241bac70ceba82b24986a6cb73a26835eefbdc680adf6029e5a65704dbc",
+        "version": "6bd42cad57f777c5fd1203aa5ce45b15731609d1eab524c9f51fb0dc47c39ef9",
         "signature": "ed39cdd3978c0762fd3af241a52caa2aa68f80e6fbcbdf71ebaf1013abd4c39d"
       },
       "../src/components/core/card.tsx": {
@@ -198,11 +202,11 @@
         "signature": "d678ab21955541295a4cceee7ec82988c264905421f3cd54b59f0cf809956ddf"
       },
       "../src/components/core/pagecounter.tsx": {
-        "version": "0fb610fa8e2091d5ecb8c239164b92d4c54c988ca51ec8968167931c6e754d1e",
+        "version": "2d048f9c0b621894b901b3a2941744f9f25418273167e9f6fc0b10fef43605a7",
         "signature": "25f1b5a09fc1514e23c4913c438a7cceffa003ad5a8cea43bca009ddff48c801"
       },
       "../src/components/core/tag.tsx": {
-        "version": "ad5de87b40ee2fe814daf30fa4a5c214ebe97cfe61a97472583cf2c838152df0",
+        "version": "6cc609258f4c0314e2effccb5052fa5c98e616039a284622f557106be963aa2d",
         "signature": "baaeb55fc482ac56c12c06d4998da636f7c49745560e86f0baf65cf1741f0d40"
       },
       "../src/components/core/video.tsx": {
@@ -262,7 +266,7 @@
         "signature": "f67296141ef065033cac6adb29534357781b1872f3494a3ef44ab9d6c758ba5c"
       },
       "../src/components/structure/snaperror.tsx": {
-        "version": "b758a011b64ca295c9463984faef059310f3b30bfa21d9b5b6ef8d50fd5a7f1e",
+        "version": "48ba789a93cbef6f5347c93adf2bf59b613a33a7d59feb704b4f88f99508c0f0",
         "signature": "2f367241f3173baa45c5954fb372541d2ef2805fa35be9cb4775ebcc98eae62a"
       },
       "../node_modules/expo-blur/build/index.d.ts": {
@@ -727,6 +731,8 @@
           "*",
           "*",
           "*",
+          "*",
+          "*",
           "*"
         ]
       },
@@ -1007,10 +1013,18 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.5/util.d.ts"
       ],
+      "../src/utils/fonts.tsx": [
+        "../node_modules/@types/react-native/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.5/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.5/util.d.ts"
+      ],
       "../src/utils/index.tsx": [
         "../src/utils/colors.tsx",
         "../src/utils/shadows.tsx",
         "../src/utils/icons.tsx",
+        "../src/utils/fonts.tsx",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.5/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -2931,6 +2945,7 @@
       "../node_modules/@types/react/index.d.ts",
       "../node_modules/@types/react-native/index.d.ts",
       "../src/utils/icons.tsx",
+      "../src/utils/fonts.tsx",
       "../src/utils/index.tsx",
       "../src/components/account/profilepicture.tsx",
       "../src/components/core/text.tsx",

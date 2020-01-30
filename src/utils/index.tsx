@@ -1,3 +1,4 @@
-export * from './Colors';
-export * from './Shadows';
-export * from './Icons';
+export * from './colors';
+export * from './shadows';
+export * from './icons';
+export * from './fonts';

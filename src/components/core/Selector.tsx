@@ -31,9 +31,9 @@ const Selector: React.FC<SelectorProps> = props => {
                     disabled={!props.onChange}
                     style={[
                         styles.tab,
-                        props.value === index ? styles.tab_active : null,
-                        index === 0 ? styles.tab_start : null,
-                        index === props.data.length - 1 ? styles.tab_end : null,
+                        props.value === index && styles.tab_active,
+                        index === 0 && styles.tab_start,
+                        index === props.data.length - 1 && styles.tab_end,
                     ]}
                     key={index.toString()}
                     activeOpacity={0.7}
@@ -41,7 +41,7 @@ const Selector: React.FC<SelectorProps> = props => {
                     <Text
                         style={[
                             styles.text,
-                            props.value === index ? styles.text_active : null,
+                            props.value === index && styles.text_active,
                         ]}
                         type="bold"
                         small

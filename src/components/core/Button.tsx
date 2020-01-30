@@ -22,8 +22,8 @@ export const Button: React.FC<ButtonProps> = props => (
         style={[
             styles.container,
             styles[props.type || 'primary'],
-            props.position ? styles[props.position] : null,
-            props.small ? styles.small : null,
+            props.position && styles[props.position],
+            props.small && styles.small,
             props.style,
         ]}
     >

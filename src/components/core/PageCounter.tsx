@@ -16,7 +16,7 @@ const PageCounter: React.FC<PageCounterProps> = props => (
             <View
                 style={[
                     styles.dot,
-                    props.active === index ? styles.dot_active : null,
+                    props.active === index && styles.dot_active,
                 ]}
                 key={index.toString()}
             />
