@@ -166,7 +166,7 @@
         "signature": "648a9575b65c865bd0882fdf722fa16a1cd8ea8c8322b4ecc993e3f12f325ae6"
       },
       "../src/utils/fonts.tsx": {
-        "version": "503eee787f9de573e16fdfa08434bba0ab8c8477d914c93d33a2efd0218fa6e6",
+        "version": "3759cfe76693d567238948414740b894fc2716b50edc0c533acec66f20f66a8b",
         "signature": "eb6b77eb9f5790ca3629842cbe71cf6986c6f6f57c248ad5ec718d9420da29ba"
       },
       "../src/utils/index.tsx": {
@@ -292,10 +292,6 @@
       "../src/index.tsx": {
         "version": "ef789741a50bd68f6efb3ee0b32f12b2ecfc16aa415b5c41a65cc8c8c6ee9e1f",
         "signature": "870caf46802fa23ccfcc590fbab47109afd147c05ddb5d40a0fdc45953670f84"
-      },
-      "../src/utils/fonts.web.tsx": {
-        "version": "0a07a9b0b13842a2d25b8e28c8e8517f256fc72f0d4a4b43d72b382367f76134",
-        "signature": "eb6b77eb9f5790ca3629842cbe71cf6986c6f6f57c248ad5ec718d9420da29ba"
       },
       "../node_modules/@types/anymatch/index.d.ts": {
         "version": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
@@ -670,8 +666,6 @@
       "paths": {
         "*": [
           "./src/*",
-          "*",
-          "*",
           "*",
           "*",
           "*",
@@ -1337,13 +1331,6 @@
       "../src/index.tsx": [
         "../src/utils/index.tsx",
         "../src/components/index.tsx",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.5/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.5/util.d.ts"
-      ],
-      "../src/utils/fonts.web.tsx": [
-        "../node_modules/@types/react-native/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.5/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -2990,7 +2977,6 @@
       "../src/components/structure/index.tsx",
       "../src/components/index.tsx",
       "../src/index.tsx",
-      "../src/utils/fonts.web.tsx",
       "../node_modules/@types/anymatch/index.d.ts",
       "../node_modules/@babel/types/lib/index.d.ts",
       "../node_modules/@types/babel__generator/index.d.ts",
