@@ -36,7 +36,7 @@ const ProfilePicture: React.FC<ProfilePictureProps> = props => (
             props.style,
         ]}
     >
-        {props.source && <Image source={props.source} />}
+        {props.source && <Image source={props.source} style={styles.image} />}
         {props.children}
     </View>
 );
@@ -46,6 +46,9 @@ const styles: { [key: string]: Object } = StyleSheet.create({
         borderRadius: 15,
         backgroundColor: Colors.placeholder,
         overflow: 'hidden',
+    },
+    image: {
+        flex: 1,
     },
     small: {
         borderRadius: 22.5,

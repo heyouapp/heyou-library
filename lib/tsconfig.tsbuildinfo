@@ -174,7 +174,7 @@
         "signature": "9ab390c4f209826eb816c9bf88f6d4f683d6778c547d15b8a8f12460c48a84c9"
       },
       "../src/components/account/profilepicture.tsx": {
-        "version": "3e0aefd711e39dcae05d7694a40c49f2f44dd930a333455441962cd86f16444b",
+        "version": "a4c9e44521d9ebc2c838b2a607f1595f9adddc342828773eebfd451bb144cf1d",
         "signature": "3c6c80a9131eb6cdd86bfccee1c827db0b3d8f987a88c60c9ab424edeb34e920"
       },
       "../src/components/core/text.tsx": {
