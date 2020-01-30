@@ -262,7 +262,7 @@
         "signature": "f67296141ef065033cac6adb29534357781b1872f3494a3ef44ab9d6c758ba5c"
       },
       "../src/components/structure/snaperror.tsx": {
-        "version": "8fdc84396987b2773c8cfbf42cf864721fb1d7b546514e86378fc90de27cce3b",
+        "version": "b758a011b64ca295c9463984faef059310f3b30bfa21d9b5b6ef8d50fd5a7f1e",
         "signature": "2f367241f3173baa45c5954fb372541d2ef2805fa35be9cb4775ebcc98eae62a"
       },
       "../node_modules/expo-blur/build/index.d.ts": {

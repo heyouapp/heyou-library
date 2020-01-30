@@ -5,13 +5,13 @@ import { StyleSheet, SafeAreaView, View, Platform } from 'react-native';
 import { Text, Button } from 'components/core';
 import { Colors } from 'utils';
 
-export interface SnapErrorProps {
+export interface ComponentProps {
     message: string;
     closeText?: string;
     onClose: () => void;
 }
 
-const SnapError = (props: SnapErrorProps) => (
+const Component = (props: ComponentProps) => (
     <SafeAreaView
         style={[
             styles.container,
@@ -46,10 +46,6 @@ const styles = StyleSheet.create({
         right: 0,
         zIndex: 10,
     },
-    container_web: {
-        borderRadius: 15,
-        maxWidth: 375,
-    },
     content: {
         padding: 15,
     },
@@ -62,4 +58,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export { SnapError };
+export { Component };
