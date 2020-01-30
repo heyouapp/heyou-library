@@ -278,7 +278,7 @@
         "signature": "a390f3954069a4adbedb10873dedeb64842b0985c310371b04ff70b7c7ba10d6"
       },
       "../src/components/structure/bottomnav.tsx": {
-        "version": "08121733798e00283c19baaa1a7cd694a75275bfcb31e2283deb972999c43830",
+        "version": "536351d9cf909b26411535ea3037704ea78440af7c4d78d7966f51ee93b1e05b",
         "signature": "5d09cd75bfef0199f05d016a7e9183e5ba14e8cc92d3b6bfbb1f12a021490407"
       },
       "../src/components/structure/index.tsx": {

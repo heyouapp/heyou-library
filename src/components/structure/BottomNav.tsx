@@ -31,7 +31,7 @@ const BottomNav = (props: BottomNavProps) => {
     return (
         <SafeAreaView style={styles.wrapper}>
             <View style={styles.container}>
-                <BlurView tint="light" intensity={80} style={styles.content}>
+                <BlurView intensity={80} style={styles.content}>
                     {props.data.map((item: BottomNavOption, index: number) => (
                         <BottomNavIcon
                             name={item.iconName}
