@@ -23,7 +23,7 @@ export interface ProfilePictureProps {
     children?: React.ReactNode;
     size?: ProfilePictureSize;
     squared?: boolean;
-    src?: ImageSourcePropType;
+    source?: ImageSourcePropType;
 }
 
 const ProfilePicture: React.FC<ProfilePictureProps> = props => (
@@ -36,7 +36,7 @@ const ProfilePicture: React.FC<ProfilePictureProps> = props => (
             props.style,
         ]}
     >
-        {props.src && <Image source={props.src} />}
+        {props.source && <Image source={props.source} />}
         {props.children}
     </View>
 );

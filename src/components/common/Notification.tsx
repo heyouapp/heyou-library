@@ -1,5 +1,11 @@
 import * as React from 'react';
-import { StyleSheet, StyleProp, View, ViewStyle } from 'react-native';
+import {
+    StyleSheet,
+    StyleProp,
+    View,
+    ViewStyle,
+    ImageSourcePropType,
+} from 'react-native';
 
 // Library
 import { Text, Card } from 'components/core';
@@ -11,6 +17,7 @@ export interface NotificationProps {
     description: string;
     createdLabel: string;
     onPress?: () => void;
+    source?: ImageSourcePropType;
     style?: StyleProp<ViewStyle>;
 }
 
@@ -18,7 +25,7 @@ const Notification: React.FC<NotificationProps> = props => (
     <Card style={[styles.container, props.style]} onPress={props.onPress}>
         <View style={styles.header}>
             <View style={styles.content}>
-                <ProfilePicture />
+                <ProfilePicture source={props.source} />
                 <Text style={styles.label} type="semibold">
                     {props.label}
                 </Text>

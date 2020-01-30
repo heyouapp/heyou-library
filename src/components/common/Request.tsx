@@ -1,5 +1,11 @@
 import * as React from 'react';
-import { StyleSheet, StyleProp, View, ViewStyle } from 'react-native';
+import {
+    StyleSheet,
+    StyleProp,
+    View,
+    ViewStyle,
+    ImageSourcePropType,
+} from 'react-native';
 
 // Library
 import { Text, Button, Card } from 'components/core';
@@ -12,12 +18,13 @@ export interface RequestProps {
     status: string;
     buttonText: string;
     onPress: () => void;
+    source?: ImageSourcePropType;
     style?: StyleProp<ViewStyle>;
 }
 
 const Request: React.FC<RequestProps> = props => (
     <Card style={[styles.container, props.style]} onPress={props.onPress}>
-        <ProfilePicture size="medium" squared />
+        <ProfilePicture source={props.source} size="medium" squared />
         <View style={styles.content}>
             <View>
                 <Text type="semibold" style={styles.fullName}>

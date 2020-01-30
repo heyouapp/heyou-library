@@ -5,6 +5,7 @@ import {
     View,
     ViewStyle,
     TouchableOpacity,
+    ImageSourcePropType,
 } from 'react-native';
 
 // Library
@@ -19,6 +20,7 @@ export interface TalentProps {
     mainTopic: string;
     talentFeeAmount: number;
     size?: ProfilePictureSize;
+    source?: ImageSourcePropType;
 }
 
 const Talent: React.FC<TalentProps> = props => (
@@ -27,7 +29,11 @@ const Talent: React.FC<TalentProps> = props => (
         style={props.style}
         activeOpacity={0.7}
     >
-        <ProfilePicture size={props.size || 'large'} squared>
+        <ProfilePicture
+            size={props.size || 'large'}
+            source={props.source}
+            squared
+        >
             <View style={styles.price}>
                 <Text type="semibold" style={styles.price_inner} small>
                     {props.talentFeeAmount}€

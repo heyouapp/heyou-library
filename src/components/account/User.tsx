@@ -1,5 +1,11 @@
 import * as React from 'react';
-import { StyleSheet, StyleProp, View, ViewStyle } from 'react-native';
+import {
+    StyleSheet,
+    StyleProp,
+    View,
+    ViewStyle,
+    ImageSourcePropType,
+} from 'react-native';
 
 // Library
 import { Text } from 'components/core';
@@ -10,11 +16,12 @@ export interface UserProps {
     style?: StyleProp<ViewStyle>;
     fullName: string;
     userName: string;
+    source?: ImageSourcePropType;
 }
 
 const User: React.FC<UserProps> = props => (
     <View style={[styles.container, props.style]}>
-        <ProfilePicture size="small" />
+        <ProfilePicture source={props.source} size="small" />
         <View style={styles.content}>
             <Text type="semibold">{props.fullName}</Text>
             <Text small style={styles.userName}>

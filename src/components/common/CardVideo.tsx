@@ -1,5 +1,11 @@
 import * as React from 'react';
-import { StyleSheet, StyleProp, View, ViewStyle } from 'react-native';
+import {
+    StyleSheet,
+    StyleProp,
+    View,
+    ViewStyle,
+    ImageSourcePropType,
+} from 'react-native';
 
 // Library
 import { Text, Card, Video, VideoProps } from 'components/core';
@@ -11,6 +17,7 @@ export interface CardVideoProps extends VideoProps {
     createdLabel: string;
     recipientLabel: string;
     onShare: () => void;
+    source?: ImageSourcePropType;
     style?: StyleProp<ViewStyle>;
 }
 
@@ -18,7 +25,7 @@ const CardVideo: React.FC<CardVideoProps> = props => (
     <Card style={props.style}>
         <View style={styles.header}>
             <View style={styles.content}>
-                <ProfilePicture />
+                <ProfilePicture source={props.source} />
                 <View style={styles.label}>
                     <Text type="semibold">{props.recipientLabel}</Text>
                     <Text style={styles.time} small>

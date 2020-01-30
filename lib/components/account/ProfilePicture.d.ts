@@ -6,7 +6,7 @@ export interface ProfilePictureProps {
     children?: React.ReactNode;
     size?: ProfilePictureSize;
     squared?: boolean;
-    src?: ImageSourcePropType;
+    source?: ImageSourcePropType;
 }
 declare const ProfilePicture: React.FC<ProfilePictureProps>;
 export { ProfilePicture };
