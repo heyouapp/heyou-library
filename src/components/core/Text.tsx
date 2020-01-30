@@ -40,7 +40,7 @@ const styles = StyleSheet.create({
         lineHeight: Fonts.LINE_HEIGHT.REGULAR,
     },
     small: {
-        fontSize: Fonts.LINE_HEIGHT.SMALL,
+        fontSize: Fonts.SIZE.SMALL,
         lineHeight: Fonts.LINE_HEIGHT.SMALL,
     },
     uppercase: {

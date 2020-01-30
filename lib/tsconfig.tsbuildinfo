@@ -178,7 +178,7 @@
         "signature": "f16a64bb63b229d87c961494411d5baa730dfd25c3fa47ffd86f0d020fbcd379"
       },
       "../src/components/core/text.tsx": {
-        "version": "ccf237bc3a5303cb6ccda69d5a86e37c8177183b557b1be2dca050d7e31cee5a",
+        "version": "9eeb69270fd91d3ccf39d82fb80c7c2802b5c55e09723d16170fe37a5e698e17",
         "signature": "0fab291dbafb864eadc4128f00dff8a6b694bde4a932492c426d96f98f996751"
       },
       "../src/components/core/button.tsx": {
