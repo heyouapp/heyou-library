@@ -9,12 +9,12 @@ const WEIGHT: { [key: string]: TextStyle['fontWeight'] } = {
 const Fonts = {
     WEIGHT,
     SIZE: {
-        SMALL: 12,
-        REGULAR: 14,
+        SMALL: 14,
+        REGULAR: 16,
     },
     LINE_HEIGHT: {
-        SMALL: 18,
-        REGULAR: 22,
+        SMALL: 22,
+        REGULAR: 26,
     },
 };
 

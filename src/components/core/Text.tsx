@@ -37,7 +37,7 @@ const Text: React.FC<TextProps> = props => (
 
 const styles = StyleSheet.create({
     text: {
-        lineHeight: 22,
+        lineHeight: Fonts.LINE_HEIGHT.REGULAR,
     },
     small: {
         fontSize: Fonts.LINE_HEIGHT.SMALL,

@@ -166,8 +166,8 @@
         "signature": "648a9575b65c865bd0882fdf722fa16a1cd8ea8c8322b4ecc993e3f12f325ae6"
       },
       "../src/utils/fonts.tsx": {
-        "version": "12c66e7bf82f76b0df44c01c4571d102c9acfc3619ff751d0e978bc45b7471fe",
-        "signature": "85293dcb173200595de07ef22455f91d966f1b17f8a15859e9842d25cf455fd6"
+        "version": "503eee787f9de573e16fdfa08434bba0ab8c8477d914c93d33a2efd0218fa6e6",
+        "signature": "eb6b77eb9f5790ca3629842cbe71cf6986c6f6f57c248ad5ec718d9420da29ba"
       },
       "../src/utils/index.tsx": {
         "version": "7860e3e13264f725f8402116e355c8ab0cbed2897868510109bfb2834667da4e",
@@ -178,7 +178,7 @@
         "signature": "f16a64bb63b229d87c961494411d5baa730dfd25c3fa47ffd86f0d020fbcd379"
       },
       "../src/components/core/text.tsx": {
-        "version": "821e63c6a4248749754bf2d1ec2d9ebe595af86722f82763f619e2edff3cd7bc",
+        "version": "ccf237bc3a5303cb6ccda69d5a86e37c8177183b557b1be2dca050d7e31cee5a",
         "signature": "0fab291dbafb864eadc4128f00dff8a6b694bde4a932492c426d96f98f996751"
       },
       "../src/components/core/button.tsx": {
@@ -292,6 +292,10 @@
       "../src/index.tsx": {
         "version": "ef789741a50bd68f6efb3ee0b32f12b2ecfc16aa415b5c41a65cc8c8c6ee9e1f",
         "signature": "870caf46802fa23ccfcc590fbab47109afd147c05ddb5d40a0fdc45953670f84"
+      },
+      "../src/utils/fonts.web.tsx": {
+        "version": "0a07a9b0b13842a2d25b8e28c8e8517f256fc72f0d4a4b43d72b382367f76134",
+        "signature": "eb6b77eb9f5790ca3629842cbe71cf6986c6f6f57c248ad5ec718d9420da29ba"
       },
       "../node_modules/@types/anymatch/index.d.ts": {
         "version": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
@@ -666,6 +670,8 @@
       "paths": {
         "*": [
           "./src/*",
+          "*",
+          "*",
           "*",
           "*",
           "*",
@@ -1331,6 +1337,13 @@
       "../src/index.tsx": [
         "../src/utils/index.tsx",
         "../src/components/index.tsx",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.5/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.5/util.d.ts"
+      ],
+      "../src/utils/fonts.web.tsx": [
+        "../node_modules/@types/react-native/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.5/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -2977,6 +2990,7 @@
       "../src/components/structure/index.tsx",
       "../src/components/index.tsx",
       "../src/index.tsx",
+      "../src/utils/fonts.web.tsx",
       "../node_modules/@types/anymatch/index.d.ts",
       "../node_modules/@babel/types/lib/index.d.ts",
       "../node_modules/@types/babel__generator/index.d.ts",
