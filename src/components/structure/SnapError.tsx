@@ -15,9 +15,7 @@ const SnapError = (props: SnapErrorProps) => (
     <SafeAreaView
         style={[
             styles.container,
-            Platform.OS === 'web'
-                ? styles.container_web
-                : styles.container_mobile,
+            Platform.OS !== 'web' && styles.container_mobile,
         ]}
     >
         <View style={styles.content}>
@@ -39,19 +37,17 @@ const SnapError = (props: SnapErrorProps) => (
 
 const styles = StyleSheet.create({
     container: {
-        position: 'absolute',
         backgroundColor: Colors.error,
-        zIndex: 10,
     },
     container_mobile: {
+        position: 'absolute',
         top: 0,
         left: 0,
         right: 0,
+        zIndex: 10,
     },
     container_web: {
         borderRadius: 15,
-        bottom: 15,
-        right: 15,
         maxWidth: 375,
     },
     content: {
