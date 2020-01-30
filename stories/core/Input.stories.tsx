@@ -1,59 +1,55 @@
 import * as React from 'react';
 import { StyleSheet, View } from 'react-native';
+import { Store, withState } from '@sambego/storybook-state';
 
 // Library
 import { Input, Tag } from 'components/core';
 import { Colors } from 'utils';
-import { Controlled } from '../decorators';
+import { Container } from '../decorators';
+
+const store = new Store({
+    value: '',
+    onChangeText: (value: string) => store.set({ value }),
+});
 
 export default {
-    title: 'Core|Input',
+    title: 'Core/Input',
+    decorators: [withState(), Container],
+    parameters: {
+        state: {
+            store,
+        },
+    },
 };
 
-export const normal = () => (
-    <Controlled initialState="" keyValue="value" keyOnChange="onChangeText">
-        <Input />
-    </Controlled>
-);
+export const normal = () => <Input />;
 
-export const withLabel = () => (
-    <Controlled initialState="" keyValue="value" keyOnChange="onChangeText">
-        <Input label="Label test" />
-    </Controlled>
-);
+export const withLabel = () => <Input label="Label test" />;
 
 export const withLabelAndError = () => (
-    <Controlled initialState="" keyValue="value" keyOnChange="onChangeText">
-        <Input label="Label test" error="Error label" />
-    </Controlled>
+    <Input label="Label test" error="Error label" />
 );
 
 export const multiline = () => (
-    <Controlled initialState="" keyValue="value" keyOnChange="onChangeText">
-        <Input placeholder="Start typing here..." multiline />
-    </Controlled>
+    <Input placeholder="Start typing here..." multiline />
 );
 
 export const withContent = () => (
-    <Controlled initialState="" keyValue="value" keyOnChange="onChangeText">
-        <Input placeholder="Start typing here...">
-            <View style={styles.contentEmpty} />
-        </Input>
-    </Controlled>
+    <Input placeholder="Start typing here...">
+        <View style={styles.contentEmpty} />
+    </Input>
 );
 
 export const autocomplete = () => (
-    <Controlled initialState="" keyValue="value" keyOnChange="onChangeText">
-        <Input placeholder="Start typing here...">
-            <View style={styles.content}>
-                <Tag onPress={() => {}}>Broadway</Tag>
-                <Tag onPress={() => {}}>Comic Con</Tag>
-                <Tag onPress={() => {}}>DC</Tag>
-                <Tag onPress={() => {}}>Disney</Tag>
-                <Tag onPress={() => {}}>HBO</Tag>
-            </View>
-        </Input>
-    </Controlled>
+    <Input placeholder="Start typing here...">
+        <View style={styles.content}>
+            <Tag onPress={() => {}}>Broadway</Tag>
+            <Tag onPress={() => {}}>Comic Con</Tag>
+            <Tag onPress={() => {}}>DC</Tag>
+            <Tag onPress={() => {}}>Disney</Tag>
+            <Tag onPress={() => {}}>HBO</Tag>
+        </View>
+    </Input>
 );
 
 const styles = StyleSheet.create({

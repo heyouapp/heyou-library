@@ -4,37 +4,30 @@ import { StyleSheet, View } from 'react-native';
 // Library
 import { Text } from 'components/core';
 import { Colors } from 'utils';
+import { Container } from '../decorators';
 
 export default {
-    title: 'Utils|Colors',
+    title: 'Utils/Colors',
     parameters: {
         info: { inline: false },
     },
+    decorators: [Container],
 };
 
 export const list = () => (
-    <View style={styles.container}>
-        <View>
-            {Object.keys(Colors).map((color: string, index: number) => (
-                <View style={styles.item} key={index.toString()}>
-                    <View
-                        style={[
-                            styles.color,
-                            { backgroundColor: Colors[color] },
-                        ]}
-                    />
-                    <Text type="semibold">{color}</Text>
-                </View>
-            ))}
-        </View>
+    <View>
+        {Object.keys(Colors).map((color: string, index: number) => (
+            <View style={styles.item} key={index.toString()}>
+                <View
+                    style={[styles.color, { backgroundColor: Colors[color] }]}
+                />
+                <Text type="semibold">{color}</Text>
+            </View>
+        ))}
     </View>
 );
 
 const styles = StyleSheet.create({
-    container: {
-        alignItems: 'center',
-        flex: 1,
-    },
     item: {
         paddingVertical: 5,
         flexDirection: 'row',

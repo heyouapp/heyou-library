@@ -23,6 +23,7 @@ const Review: React.FC<ReviewProps> = props => (
                     name={index < props.rating ? 'starFull' : 'starEmpty'}
                     color={Colors.primary}
                     style={styles.star}
+                    key={index.toString()}
                 />
             ))}
         </View>

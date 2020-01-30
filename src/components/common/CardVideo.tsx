@@ -3,8 +3,8 @@ import { StyleSheet, StyleProp, View, ViewStyle } from 'react-native';
 
 // Library
 import { Text, Card, Video, VideoProps } from 'components/core';
-import { Share } from 'components/common';
 import { ProfilePicture } from 'components/account';
+import { Share } from './Share';
 import { Colors } from 'utils';
 
 export interface CardVideoProps extends VideoProps {

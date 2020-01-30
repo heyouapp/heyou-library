@@ -3,9 +3,11 @@ import { StyleSheet, View } from 'react-native';
 
 // Library
 import { SnapError } from 'components/structure';
+import { Container } from '../decorators';
 
 export default {
-    title: 'Structure|SnapError',
+    title: 'Structure/SnapError',
+    decorators: [Container],
 };
 
 export const normal = () => (
@@ -20,6 +22,6 @@ export const normal = () => (
 const styles = StyleSheet.create({
     container: {
         position: 'relative',
-        height: 60,
+        height: 100,
     },
 });

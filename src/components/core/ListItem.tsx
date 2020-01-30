@@ -8,7 +8,8 @@ import {
 } from 'react-native';
 
 // Library
-import { Text, Icon } from 'components/core';
+import { Text } from './Text';
+import { Icon } from './Icon';
 import { Colors } from 'utils';
 
 export interface ListItemProps {

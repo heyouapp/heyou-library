@@ -3,7 +3,8 @@ import { StyleSheet, StyleProp, View, ViewStyle } from 'react-native';
 
 // Library
 import { Text, Card, Video, VideoProps } from 'components/core';
-import { Share, Review, ReviewProps } from 'components/common';
+import { Share } from './Share';
+import { Review, ReviewProps } from './Review';
 
 export interface RequestVideoProps extends VideoProps {
     review?: ReviewProps;

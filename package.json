@@ -1,6 +1,6 @@
 {
     "name": "heyou-library",
-    "version": "1.0.21",
+    "version": "1.0.22",
     "main": "lib/index.js",
     "module": "lib/index.js",
     "types": "lib/index.d.ts",
@@ -17,7 +17,7 @@
         "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
         "sb": "start-storybook -p 9009 -s public",
         "sb:build": "build-storybook -s public",
-        "sb:deploy": "storybook-to-ghpages -e storybook-static -o storybook-static"
+        "sb:deploy": "storybook-to-ghpages"
     },
     "peerDependencies": {
         "react": "*",
@@ -32,9 +32,11 @@
         "@babel/runtime": "^7.8.3",
         "@expo/webpack-config": "^0.10.11",
         "@react-native-community/eslint-config": "^0.0.5",
+        "@sambego/storybook-state": "^2.0.1",
         "@storybook/addon-actions": "^5.3.8",
         "@storybook/addon-info": "^5.3.8",
         "@storybook/addon-links": "^5.3.8",
+        "@storybook/addon-storysource": "^5.3.9",
         "@storybook/addons": "^5.3.8",
         "@storybook/preset-typescript": "^1.2.0",
         "@storybook/react": "^5.3.8",

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { StyleSheet, SafeAreaView, View } from 'react-native';
+import { StyleSheet, SafeAreaView, View, Platform } from 'react-native';
 
 // Library
 import { Text, Button } from 'components/core';
@@ -12,7 +12,14 @@ export interface SnapErrorProps {
 }
 
 const SnapError = (props: SnapErrorProps) => (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView
+        style={[
+            styles.container,
+            Platform.OS === 'web'
+                ? styles.container_web
+                : styles.container_mobile,
+        ]}
+    >
         <View style={styles.content}>
             <Text type="semibold" style={styles.text}>
                 {props.message}
@@ -33,11 +40,19 @@ const SnapError = (props: SnapErrorProps) => (
 const styles = StyleSheet.create({
     container: {
         position: 'absolute',
+        backgroundColor: Colors.error,
+        zIndex: 10,
+    },
+    container_mobile: {
         top: 0,
         left: 0,
         right: 0,
-        backgroundColor: Colors.error,
-        zIndex: 10,
+    },
+    container_web: {
+        borderRadius: 15,
+        bottom: 15,
+        right: 15,
+        maxWidth: 375,
     },
     content: {
         padding: 15,

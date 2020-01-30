@@ -3,9 +3,11 @@ import { action } from '@storybook/addon-actions';
 
 // Library
 import { Notification } from 'components/common';
+import { Container } from '../decorators';
 
 export default {
-    title: 'Common|Notification',
+    title: 'Common/Notification',
+    decorators: [Container],
 };
 
 export const normal = () => (

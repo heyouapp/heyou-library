@@ -1,2 +1,1 @@
-export * from './Container';
-export * from './Controlled';
+export { default as Container } from './Container';

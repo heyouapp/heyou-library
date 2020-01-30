@@ -2,9 +2,11 @@ import * as React from 'react';
 
 // Library
 import { Review } from 'components/common';
+import { Container } from '../decorators';
 
 export default {
-    title: 'Common|Review',
+    title: 'Common/Review',
+    decorators: [Container],
 };
 
 export const normal = () => (

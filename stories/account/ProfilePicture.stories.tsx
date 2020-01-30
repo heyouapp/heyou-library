@@ -2,9 +2,11 @@ import * as React from 'react';
 
 // Library
 import { ProfilePicture } from 'components/account';
+import { Container } from '../decorators';
 
 export default {
-    title: 'Account|ProfilePicture',
+    title: 'Account/ProfilePicture',
+    decorators: [Container],
 };
 
 export const small = () => <ProfilePicture />;

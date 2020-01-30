@@ -2,9 +2,11 @@ import * as React from 'react';
 
 // Library
 import { Talent } from 'components/account';
+import { Container } from '../decorators';
 
 export default {
-    title: 'Account|Talent',
+    title: 'Account/Talent',
+    decorators: [Container],
 };
 
 export const normal = () => (

@@ -1,45 +1,45 @@
 import * as React from 'react';
 import { View } from 'react-native';
 import { action } from '@storybook/addon-actions';
+import { Store, withState } from '@sambego/storybook-state';
 
 // Library
 import { RequestVideo } from 'components/common';
-import { Controlled } from '../decorators';
+import { Container } from '../decorators';
+
+const store = new Store({
+    volume: false,
+    onVolumeChange: () => store.set({ volume: !store.get('volume') }),
+});
 
 export default {
-    title: 'Common|RequestVideo',
+    title: 'Common/RequestVideo',
+    decorators: [withState(), Container],
+    parameters: {
+        state: {
+            store,
+        },
+    },
 };
 
 export const normal = () => (
-    <Controlled
-        initialState={false}
-        keyValue="volume"
-        keyOnChange="onVolumeChange"
-    >
-        <RequestVideo completedLabel="20/01/2020" onShare={action('shared')}>
-            <View />
-        </RequestVideo>
-    </Controlled>
+    <RequestVideo completedLabel="20/01/2020" onShare={action('shared')}>
+        <View />
+    </RequestVideo>
 );
 
 export const withReview = () => (
-    <Controlled
-        initialState={false}
-        keyValue="volume"
-        keyOnChange="onVolumeChange"
+    <RequestVideo
+        completedLabel="20/01/2020"
+        onShare={action('shared')}
+        review={{
+            fullName: 'Mario Rossi',
+            userName: 'mariorossi',
+            rating: 3,
+            description:
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+        }}
     >
-        <RequestVideo
-            completedLabel="20/01/2020"
-            onShare={action('shared')}
-            review={{
-                fullName: 'Mario Rossi',
-                userName: 'mariorossi',
-                rating: 3,
-                description:
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            }}
-        >
-            <View />
-        </RequestVideo>
-    </Controlled>
+        <View />
+    </RequestVideo>
 );

@@ -3,12 +3,10 @@ import { action } from '@storybook/addon-actions';
 
 // Library
 import { Tag } from 'components/core';
-
-// Decorators
 import { Container } from '../decorators';
 
 export default {
-    title: 'Core|Tag',
+    title: 'Core/Tag',
     decorators: [Container],
 };
 

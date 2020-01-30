@@ -3,12 +3,10 @@ import { action } from '@storybook/addon-actions';
 
 // Library
 import { Button } from 'components/core';
-
-// Decorators
 import { Container } from '../decorators';
 
 export default {
-    title: 'Core|Button',
+    title: 'Core/Button',
     decorators: [Container],
 };
 

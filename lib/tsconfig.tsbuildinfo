@@ -178,7 +178,7 @@
         "signature": "0fab291dbafb864eadc4128f00dff8a6b694bde4a932492c426d96f98f996751"
       },
       "../src/components/core/button.tsx": {
-        "version": "15f1814c8e959175342b7ac262bcb5d04805e0f6357b333c26e5895a75ff33e1",
+        "version": "917117241de3bd5eebbc346a906ef8cee33bffe2ae5cbbbeb9e1d696729e56ed",
         "signature": "b1fc44aa95d4322f16ac8b24e7635f0cd6d4d44cc3392473e46102595ebe546e"
       },
       "../src/components/core/input.tsx": {
@@ -202,15 +202,15 @@
         "signature": "25f1b5a09fc1514e23c4913c438a7cceffa003ad5a8cea43bca009ddff48c801"
       },
       "../src/components/core/tag.tsx": {
-        "version": "5ce62ec6d0ab92ee7919986de53c01e5e87b02b38d5181e74512965f94e653a5",
+        "version": "ad5de87b40ee2fe814daf30fa4a5c214ebe97cfe61a97472583cf2c838152df0",
         "signature": "baaeb55fc482ac56c12c06d4998da636f7c49745560e86f0baf65cf1741f0d40"
       },
       "../src/components/core/video.tsx": {
-        "version": "904097a91b793f13cc7fb8bf314b2c6a2cb557bb057883eeb663038e636121ca",
+        "version": "e84180c6e7dcdf83630a69b7cf51d5bb604cbf49feebae2d475e9d673c44a218",
         "signature": "180fcc1930d27fc374231c9c30da1a59c4388d091add0fd108968eea1dad01e2"
       },
       "../src/components/core/listitem.tsx": {
-        "version": "e35b6d1c3459181495f9abe519fdcfb62eeb1a33c229e0c5aedafb5f454d87e1",
+        "version": "002938d65bb16c29743deda5e4c9ebc26ccd2ba25ff22fac5b98c65339eb958f",
         "signature": "6d10a27ab7b49625234502249ce8e8313fbf0a7a2c968615eb13a17b82da4cd7"
       },
       "../src/components/core/index.tsx": {
@@ -233,25 +233,25 @@
         "version": "91fd881bad16aab0896a02d6fa0ccb5dba9e9c693eeda744c09d6d7a26d500aa",
         "signature": "1f7aa6ed01a55a377fdf403574d50b102d7439d84944552e65544d1d45a64750"
       },
-      "../src/components/common/requestvideo.tsx": {
-        "version": "9283abaa956da6ee815404bc1da6b39f7efafb47fff696ca7119e09776db92de",
-        "signature": "001f8799c88702f6edd3abbc7bccd353fc1f802d7622badc9fd62489fdb1806a"
-      },
-      "../src/components/common/cardvideo.tsx": {
-        "version": "d9df6451318698aee863bc886e2f51924fd47bab8ea0bd755d7764268f4b6101",
-        "signature": "b5d04f5404fdf6bedd22fa5d3d20c987c04dc6c60db0594f43031f9546fa3f5a"
-      },
-      "../src/components/common/notification.tsx": {
-        "version": "b7cf4c76fc2142062c18f26a7129fcdbfe05ad201234cb9491ac4772ae18530e",
-        "signature": "b0a0d86e7b451eba25cb03e7f39a9fd2f8f0fffdf3cfa00441440a5618c22200"
-      },
       "../src/components/common/share.tsx": {
         "version": "63fd3073cc16f7840c60bfcec6aa793f4eddfc2b03209e7df4448cd099c5f5b0",
         "signature": "34f1b8fab267ea54e2e51a9408e8dc2bed9d5b587de3a279dbc9fadba97b1e09"
       },
       "../src/components/common/review.tsx": {
-        "version": "5ce4dd0abd92906ec2fe51ac0aadf237a62959ecfb20ee86d37e193054feafdd",
+        "version": "1f8455002148f57a2ccaf3d76b1a7b88475e27b550719cfbf0d73a5849eabd55",
         "signature": "9eee1bf2bd0c65b83da75a7d92055e91d247131ead984626160b5d84087bb5f0"
+      },
+      "../src/components/common/requestvideo.tsx": {
+        "version": "d10c05a9febbafc8f743bdc208500be097617c1b904c0c7824ffb912ee5c2af5",
+        "signature": "dcbca85374dd749376ccf36c03d95e12d7069f5e83f916f58efd015caa713731"
+      },
+      "../src/components/common/cardvideo.tsx": {
+        "version": "02a9de653402034ad06372ae1799c22533c763113e101f31dc86eb45e8f23e99",
+        "signature": "b5d04f5404fdf6bedd22fa5d3d20c987c04dc6c60db0594f43031f9546fa3f5a"
+      },
+      "../src/components/common/notification.tsx": {
+        "version": "b7cf4c76fc2142062c18f26a7129fcdbfe05ad201234cb9491ac4772ae18530e",
+        "signature": "b0a0d86e7b451eba25cb03e7f39a9fd2f8f0fffdf3cfa00441440a5618c22200"
       },
       "../src/components/common/index.tsx": {
         "version": "ff3444963cb7d1d45868cfb0f57dbb903a9abeb00531b292ef51bdf448dc8cdd",
@@ -262,7 +262,7 @@
         "signature": "f67296141ef065033cac6adb29534357781b1872f3494a3ef44ab9d6c758ba5c"
       },
       "../src/components/structure/snaperror.tsx": {
-        "version": "21cec868611fe1860d595208b91d88084ec8ab5695b9e5939e66e2e3c5b8d295",
+        "version": "82c634e613fb80745fbcbceb1fd61c2202fc7de6c3a5c7ec52569598d33571ca",
         "signature": "2f367241f3173baa45c5954fb372541d2ef2805fa35be9cb4775ebcc98eae62a"
       },
       "../node_modules/expo-blur/build/index.d.ts": {
@@ -1095,7 +1095,8 @@
         "../node_modules/@types/react/index.d.ts",
         "../node_modules/@types/react-native/index.d.ts",
         "../src/utils/index.tsx",
-        "../src/components/core/index.tsx",
+        "../src/components/core/text.tsx",
+        "../src/components/core/icon.tsx",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.5/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -1104,7 +1105,7 @@
       "../src/components/core/video.tsx": [
         "../node_modules/@types/react/index.d.ts",
         "../node_modules/@types/react-native/index.d.ts",
-        "../src/components/core/index.tsx",
+        "../src/components/core/icon.tsx",
         "../src/utils/index.tsx",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.5/fs.d.ts",
@@ -1114,7 +1115,8 @@
       "../src/components/core/listitem.tsx": [
         "../node_modules/@types/react/index.d.ts",
         "../node_modules/@types/react-native/index.d.ts",
-        "../src/components/core/index.tsx",
+        "../src/components/core/text.tsx",
+        "../src/components/core/icon.tsx",
         "../src/utils/index.tsx",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.5/fs.d.ts",
@@ -1179,39 +1181,6 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.5/util.d.ts"
       ],
-      "../src/components/common/requestvideo.tsx": [
-        "../node_modules/@types/react/index.d.ts",
-        "../node_modules/@types/react-native/index.d.ts",
-        "../src/components/core/index.tsx",
-        "../src/components/common/index.tsx",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.5/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.5/util.d.ts"
-      ],
-      "../src/components/common/cardvideo.tsx": [
-        "../node_modules/@types/react/index.d.ts",
-        "../node_modules/@types/react-native/index.d.ts",
-        "../src/components/core/index.tsx",
-        "../src/components/common/index.tsx",
-        "../src/components/account/index.tsx",
-        "../src/utils/index.tsx",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.5/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.5/util.d.ts"
-      ],
-      "../src/components/common/notification.tsx": [
-        "../node_modules/@types/react/index.d.ts",
-        "../node_modules/@types/react-native/index.d.ts",
-        "../src/components/core/index.tsx",
-        "../src/components/account/index.tsx",
-        "../src/utils/index.tsx",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.5/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.5/util.d.ts"
-      ],
       "../src/components/common/share.tsx": [
         "../node_modules/@types/react/index.d.ts",
         "../node_modules/@types/react-native/index.d.ts",
@@ -1223,6 +1192,40 @@
         "../node_modules/@types/node/ts3.5/util.d.ts"
       ],
       "../src/components/common/review.tsx": [
+        "../node_modules/@types/react/index.d.ts",
+        "../node_modules/@types/react-native/index.d.ts",
+        "../src/components/core/index.tsx",
+        "../src/components/account/index.tsx",
+        "../src/utils/index.tsx",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.5/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.5/util.d.ts"
+      ],
+      "../src/components/common/requestvideo.tsx": [
+        "../node_modules/@types/react/index.d.ts",
+        "../node_modules/@types/react-native/index.d.ts",
+        "../src/components/core/index.tsx",
+        "../src/components/common/share.tsx",
+        "../src/components/common/review.tsx",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.5/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.5/util.d.ts"
+      ],
+      "../src/components/common/cardvideo.tsx": [
+        "../node_modules/@types/react/index.d.ts",
+        "../node_modules/@types/react-native/index.d.ts",
+        "../src/components/core/index.tsx",
+        "../src/components/account/index.tsx",
+        "../src/components/common/share.tsx",
+        "../src/utils/index.tsx",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.5/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.5/util.d.ts"
+      ],
+      "../src/components/common/notification.tsx": [
         "../node_modules/@types/react/index.d.ts",
         "../node_modules/@types/react-native/index.d.ts",
         "../src/components/core/index.tsx",
@@ -2945,11 +2948,11 @@
       "../src/components/account/talent.tsx",
       "../src/components/account/index.tsx",
       "../src/components/common/request.tsx",
+      "../src/components/common/share.tsx",
+      "../src/components/common/review.tsx",
       "../src/components/common/requestvideo.tsx",
       "../src/components/common/cardvideo.tsx",
       "../src/components/common/notification.tsx",
-      "../src/components/common/share.tsx",
-      "../src/components/common/review.tsx",
       "../src/components/common/index.tsx",
       "../src/components/structure/header.tsx",
       "../src/components/structure/snaperror.tsx",

@@ -5,6 +5,7 @@ import './index.css';
 
 addDecorator(
     withInfo({
+        source: false,
         inline: true,
         propTablesExclude: [View],
     }),

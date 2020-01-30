@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { StyleProp, ViewStyle } from 'react-native';
 import { VideoProps } from "../core";
-import { ReviewProps } from "./";
+import { ReviewProps } from "./Review";
 export interface RequestVideoProps extends VideoProps {
     review?: ReviewProps;
     completedLabel: string;

@@ -1,15 +1,23 @@
 import * as React from 'react';
+import { Store, withState } from '@sambego/storybook-state';
 
 // Library
 import { Selector } from 'components/core';
-import { Controlled } from '../decorators';
+import { Container } from '../decorators';
+
+const store = new Store({
+    value: 0,
+    onChange: (value: number) => store.set({ value }),
+});
 
 export default {
-    title: 'Core|Selector',
+    title: 'Core/Selector',
+    decorators: [withState(), Container],
+    parameters: {
+        state: {
+            store,
+        },
+    },
 };
 
-export const normal = () => (
-    <Controlled keyValue="value" keyOnChange="onChange" initialState={0}>
-        <Selector data={['Label 1', 'Label 2']} />
-    </Controlled>
-);
+export const normal = () => <Selector data={['Label 1', 'Label 2']} />;

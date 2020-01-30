@@ -2,9 +2,11 @@ import * as React from 'react';
 
 // Library
 import { Header } from 'components/structure';
+import { Container } from '../decorators';
 
 export default {
-    title: 'Structure|Header',
+    title: 'Structure/Header',
+    decorators: [Container],
 };
 
 export const primary = () => <Header title="Test" />;

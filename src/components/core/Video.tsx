@@ -7,7 +7,7 @@ import {
 } from 'react-native';
 
 // Library
-import { Icon } from 'components/core';
+import { Icon } from './Icon';
 import { Colors, ColorOpacity } from 'utils';
 
 export interface VideoProps extends ViewProps {

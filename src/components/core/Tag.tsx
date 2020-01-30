@@ -9,7 +9,8 @@ import {
 
 // Library
 import { Colors } from 'utils';
-import { Text, Icon } from 'components/core';
+import { Text } from './Text';
+import { Icon } from './Icon';
 
 export interface TagProps {
     children: string;

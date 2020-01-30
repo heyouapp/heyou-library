@@ -2,9 +2,11 @@ import * as React from 'react';
 
 // Library
 import { User } from 'components/account';
+import { Container } from '../decorators';
 
 export default {
-    title: 'Account|User',
+    title: 'Account/User',
+    decorators: [Container],
 };
 
 export const normal = () => (

@@ -1,27 +1,33 @@
 import * as React from 'react';
 import { View } from 'react-native';
 import { action } from '@storybook/addon-actions';
+import { Store, withState } from '@sambego/storybook-state';
 
 // Library
 import { CardVideo } from 'components/common';
-import { Controlled } from '../decorators';
+import { Container } from '../decorators';
+
+const store = new Store({
+    volume: false,
+    onVolumeChange: () => store.set({ volume: !store.get('volume') }),
+});
 
 export default {
-    title: 'Common|CardVideo',
+    title: 'Common/CardVideo',
+    decorators: [withState(), Container],
+    parameters: {
+        state: {
+            store,
+        },
+    },
 };
 
 export const normal = () => (
-    <Controlled
-        initialState={false}
-        keyValue="volume"
-        keyOnChange="onVolumeChange"
+    <CardVideo
+        createdLabel="10/01/2020"
+        recipientLabel="For Mario Rossi"
+        onShare={action('shared')}
     >
-        <CardVideo
-            createdLabel="10/01/2020"
-            recipientLabel="For Mario Rossi"
-            onShare={action('shared')}
-        >
-            <View />
-        </CardVideo>
-    </Controlled>
+        <View />
+    </CardVideo>
 );

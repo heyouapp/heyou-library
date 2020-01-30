@@ -4,9 +4,11 @@ import { StyleSheet, View } from 'react-native';
 
 // Library
 import { BottomNav } from 'components/structure';
+import { Container } from '../decorators';
 
 export default {
-    title: 'Structure|BottomNav',
+    title: 'Structure/BottomNav',
+    decorators: [Container],
 };
 
 export const normal = () => (
@@ -28,6 +30,6 @@ export const normal = () => (
 const styles = StyleSheet.create({
     container: {
         position: 'relative',
-        height: 200,
+        height: 100,
     },
 });

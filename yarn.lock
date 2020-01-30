@@ -1747,6 +1747,17 @@
     eslint-plugin-react-native "3.6.0"
     prettier "1.16.4"
 
+"@sambego/storybook-state@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@sambego/storybook-state/-/storybook-state-2.0.1.tgz#862096913e708cbdeae32b0d2256fc59c254699b"
+  integrity sha512-pkD6IAMb+aB5Ow9toQDHOWZVnd0RAgsJekPfUL92UxCcx8EYM3J9xu6aPvmJbJJXc2bYcwv/z6l36Ej9cV7UJw==
+  dependencies:
+    "@storybook/addons" "^5.3.3"
+    "@storybook/api" "^5.3.3"
+    "@storybook/components" "^5.3.3"
+    "@storybook/react" "^5.3.3"
+    uuid "^3.1.0"
+
 "@sindresorhus/is@^0.7.0":
   version "0.7.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.7.0.tgz#9a06f4f137ee84d7df0460c1fdb1135ffa6c50fd"
@@ -1809,7 +1820,26 @@
     qs "^6.6.0"
     ts-dedent "^1.1.0"
 
-"@storybook/addons@5.3.9", "@storybook/addons@^5.3.8":
+"@storybook/addon-storysource@^5.3.9":
+  version "5.3.9"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-storysource/-/addon-storysource-5.3.9.tgz#cc564a5377870fbf6f52a064266d425c65bbb375"
+  integrity sha512-ilipax+C0OTkeE2sYxEA1ZSSl89s12wAP6zq66RQmpD95DvvJswetpU+40dWukw0+9WQ5prW0wR25AlbIVIxLQ==
+  dependencies:
+    "@storybook/addons" "5.3.9"
+    "@storybook/components" "5.3.9"
+    "@storybook/router" "5.3.9"
+    "@storybook/source-loader" "5.3.9"
+    "@storybook/theming" "5.3.9"
+    core-js "^3.0.1"
+    estraverse "^4.2.0"
+    loader-utils "^1.2.3"
+    prettier "^1.16.4"
+    prop-types "^15.7.2"
+    react-syntax-highlighter "^11.0.2"
+    regenerator-runtime "^0.13.3"
+    util-deprecate "^1.0.2"
+
+"@storybook/addons@5.3.9", "@storybook/addons@^5.3.3", "@storybook/addons@^5.3.8":
   version "5.3.9"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-5.3.9.tgz#f2492de356e0cd38e3da357f4dafa058a4756e36"
   integrity sha512-LrlO6nQ4S6yroFuG9Pn1rXhg0AjT/jx7UKZjZTJNqo4ZdPy88QhQO0ClbOVL+KhUiY773zEBYIk0BvwA3WYtSQ==
@@ -1822,7 +1852,7 @@
     global "^4.3.2"
     util-deprecate "^1.0.2"
 
-"@storybook/api@5.3.9":
+"@storybook/api@5.3.9", "@storybook/api@^5.3.3":
   version "5.3.9"
   resolved "https://registry.yarnpkg.com/@storybook/api/-/api-5.3.9.tgz#090119c6fd4082442e926a434d3d171535ec6784"
   integrity sha512-ix6WS880K5C3H4wjEN0IKqIlVNV0f7zHgvyRf8maL1UFEya5wkBkZg9REDOiCH0tSByzRN73NmPdII3Q1FoAvA==
@@ -1896,7 +1926,7 @@
   dependencies:
     core-js "^3.0.1"
 
-"@storybook/components@5.3.9":
+"@storybook/components@5.3.9", "@storybook/components@^5.3.3":
   version "5.3.9"
   resolved "https://registry.yarnpkg.com/@storybook/components/-/components-5.3.9.tgz#1fbc688770889ddadb8c603f5a4dbcf987f3eb0f"
   integrity sha512-R4xDR3pIYu7yPHex6DG3PPC3ekLgQuG03ZMQEgCfmWdl2wKXcLtEfQPYLRpC59xnQobfR3wqWgqrGchW54HPow==
@@ -2033,7 +2063,7 @@
   resolved "https://registry.yarnpkg.com/@storybook/preset-typescript/-/preset-typescript-1.2.0.tgz#f4b32f7d8ded507cea662372a6730902d02b504c"
   integrity sha512-GQKTgMkhOyi+UC6kHTnVKCDwIO5qO0WsT1VzCOnbmShSKez/e6/GXs+/zyw3C56KU6gQHQpV10CJizFJozJWDw==
 
-"@storybook/react@^5.3.8":
+"@storybook/react@^5.3.3", "@storybook/react@^5.3.8":
   version "5.3.9"
   resolved "https://registry.yarnpkg.com/@storybook/react/-/react-5.3.9.tgz#cf3a954b5d0430c5a3558ea5df305bb70e2af3cd"
   integrity sha512-pOc6xw1c83fUnTRcCpIrtLLDKkZUhW3EkNvwYyMHrGXMRcgDETAlpoxBMHXpnbfV7qaAsE/UAVQQ1rRq5pgPBA==
@@ -2074,6 +2104,22 @@
     memoizerific "^1.11.3"
     qs "^6.6.0"
     util-deprecate "^1.0.2"
+
+"@storybook/source-loader@5.3.9":
+  version "5.3.9"
+  resolved "https://registry.yarnpkg.com/@storybook/source-loader/-/source-loader-5.3.9.tgz#6820476c5fb08c0950dcde033f88b9496df38f67"
+  integrity sha512-ol3SxzpLYb4x3RJS9J/xzCOzK/ZnUs9LIMmpYl4sWsZQECCTTbN96P36BBH0Z6CrB38IJsDHAarseBAMqVov7A==
+  dependencies:
+    "@storybook/addons" "5.3.9"
+    "@storybook/client-logger" "5.3.9"
+    "@storybook/csf" "0.0.1"
+    core-js "^3.0.1"
+    estraverse "^4.2.0"
+    global "^4.3.2"
+    loader-utils "^1.2.3"
+    prettier "^1.16.4"
+    prop-types "^15.7.2"
+    regenerator-runtime "^0.13.3"
 
 "@storybook/storybook-deployer@^2.8.1":
   version "2.8.1"
@@ -11212,6 +11258,11 @@ prettier@1.16.4:
   version "1.16.4"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.16.4.tgz#73e37e73e018ad2db9c76742e2647e21790c9717"
   integrity sha512-ZzWuos7TI5CKUeQAtFd6Zhm2s6EpAD/ZLApIhsF9pRvRtM1RFo61dM/4MSRUA0SuLugA/zgrZD8m0BaY46Og7g==
+
+prettier@^1.16.4:
+  version "1.19.1"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.19.1.tgz#f7d7f5ff8a9cd872a7be4ca142095956a60797cb"
+  integrity sha512-s7PoyDv/II1ObgQunCbB9PdLmUcBZcnWOcxDh7O0N/UwDEsHyqkW+Qh28jW+mVuCdx7gLB0BotYI1Y6uI9iyew==
 
 pretty-bytes@^4.0.2:
   version "4.0.2"

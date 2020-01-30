@@ -3,9 +3,11 @@ import { action } from '@storybook/addon-actions';
 
 // Library
 import { Card, Text } from 'components/core';
+import { Container } from '../decorators';
 
 export default {
-    title: 'Core|Card',
+    title: 'Core/Card',
+    decorators: [Container],
 };
 
 export const normal = () => (

@@ -3,9 +3,11 @@ import { action } from '@storybook/addon-actions';
 
 // Library
 import { Request } from 'components/common';
+import { Container } from '../decorators';
 
 export default {
-    title: 'Common|Request',
+    title: 'Common/Request',
+    decorators: [Container],
 };
 
 export const normal = () => (

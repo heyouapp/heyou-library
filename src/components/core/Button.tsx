@@ -7,7 +7,7 @@ import {
 
 // Library
 import { Text } from './Text';
-import { Colors } from '../../utils';
+import { Colors } from 'utils';
 
 export interface ButtonProps extends TouchableOpacityProps {
     type?: 'primary' | 'secondary';
