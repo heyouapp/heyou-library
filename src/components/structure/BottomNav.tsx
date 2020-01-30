@@ -26,16 +26,12 @@ const BottomNav = (props: BottomNavProps) => {
     const [active, setActive] = React.useState(0);
     React.useEffect(() => {
         props.data[active].onPress();
-    }, [active]);
+    }, [active, props.data]);
 
     return (
         <SafeAreaView style={styles.wrapper}>
             <View style={styles.container}>
-                <BlurView
-                    tint="light"
-                    intensity={80}
-                    style={[styles.bar, props.style]}
-                >
+                <BlurView tint="light" intensity={80} style={styles.content}>
                     {props.data.map((item: BottomNavOption, index: number) => (
                         <BottomNavIcon
                             name={item.iconName}
@@ -61,7 +57,7 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         ...Shadows.primary,
     },
-    bar: {
+    content: {
         borderRadius: 20,
         height: 60,
         alignItems: 'center',
