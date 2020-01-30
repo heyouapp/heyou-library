@@ -5,17 +5,19 @@ import { StyleSheet, SafeAreaView, View, Platform } from 'react-native';
 import { Text, Button } from 'components/core';
 import { Colors } from 'utils';
 
-export interface ComponentProps {
+export interface SnapErrorProps {
     message: string;
     closeText?: string;
     onClose: () => void;
 }
 
-const Component = (props: ComponentProps) => (
+const SnapError = (props: SnapErrorProps) => (
     <SafeAreaView
         style={[
             styles.container,
-            Platform.OS !== 'web' && styles.container_mobile,
+            Platform.OS === 'web'
+                ? styles.container_web
+                : styles.container_mobile,
         ]}
     >
         <View style={styles.content}>
@@ -46,6 +48,9 @@ const styles = StyleSheet.create({
         right: 0,
         zIndex: 10,
     },
+    container_web: {
+        borderRadius: 15,
+    },
     content: {
         padding: 15,
     },
@@ -58,4 +63,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export { Component };
+export { SnapError };
