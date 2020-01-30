@@ -40,10 +40,12 @@ const Talent: React.FC<TalentProps> = props => (
                 </Text>
             </View>
         </ProfilePicture>
-        <Text style={styles.type} uppercase small>
-            {props.mainTopic}
-        </Text>
-        <Text>{props.fullName}</Text>
+        <View style={styles.info}>
+            <Text style={styles.type} uppercase small numberOfLines={1}>
+                {props.mainTopic}
+            </Text>
+            <Text numberOfLines={1}>{props.fullName}</Text>
+        </View>
     </TouchableOpacity>
 );
 
@@ -63,6 +65,9 @@ const styles = StyleSheet.create({
     type: {
         marginVertical: 2,
         color: Colors.neutralLight,
+    },
+    info: {
+        maxWidth: 120,
     },
 });
 

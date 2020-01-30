@@ -10,5 +10,13 @@ export default {
 };
 
 export const normal = () => (
-    <Talent fullName="Mario Rossi" mainTopic="Comedian" talentFeeAmount={50} />
+    <Talent
+        fullName="Andrea Riseborough"
+        mainTopic="Call Center Representative"
+        talentFeeAmount={50}
+        source={{
+            uri:
+                'http://pbs.twimg.com/profile_images/604741535775662080/8CEV1nXA.jpg',
+        }}
+    />
 );

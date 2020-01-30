@@ -226,7 +226,7 @@
         "signature": "e2350e167cbadf55c175d563521ba080fd9bfbad0b867b6e7d4a617a8d034de0"
       },
       "../src/components/account/talent.tsx": {
-        "version": "2aaf8f6cce4fc4240da0f737809a70490048e9b308d446b851c041ed9a778f46",
+        "version": "621fbd162d22386c908f58d8b10a549591cfa5b72b99049266d77764b07d129f",
         "signature": "1919f32adb13d0668700a4bf2d016c049dd9111da9ca609b581df25f541cab08"
       },
       "../src/components/account/index.tsx": {
