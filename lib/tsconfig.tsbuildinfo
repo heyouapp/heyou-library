@@ -114,7 +114,7 @@
         "signature": "0c9ea8c2028047f39a3f66752682604f543c08be8806258c3d95c93e75a43255"
       },
       "../src/utils/colors.tsx": {
-        "version": "105179bd7c3c04db16088a5621d1bd0344cfec7820eabb3157484f41eeff77d6",
+        "version": "9a46a1640cc5baa49d50382de7e0b004324c82ba076f75708bace5e7cb9ec677",
         "signature": "634bcd8a7f397b5177135a98d9e6d363a8808c1448433f93803dfec4693f8d3d"
       },
       "../src/utils/shadows.tsx": {
