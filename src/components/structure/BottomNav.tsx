@@ -23,7 +23,7 @@ export interface BottomNavProps {
     style?: StyleProp<ViewStyle>;
 }
 
-const BottomNav = (props: BottomNavProps) => (
+const BottomNav: React.FC<BottomNavProps> = props => (
     <SafeAreaView style={styles.wrapper}>
         <View style={styles.container}>
             <BlurView intensity={80} style={styles.content}>

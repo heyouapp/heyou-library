@@ -10,7 +10,7 @@ export interface BottomNavIconProps extends IconProps {
     onPress: () => void;
 }
 
-const BottomNavIcon = (props: BottomNavIconProps) => (
+const BottomNavIcon: React.FC<BottomNavIconProps> = props => (
     <TouchableOpacity
         onPress={props.onPress}
         activeOpacity={0.7}

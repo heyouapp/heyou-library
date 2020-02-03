@@ -5,5 +5,5 @@ export interface HeaderProps {
     onPressBack?: () => void;
     onPressClose?: () => void;
 }
-declare const Header: (props: HeaderProps) => JSX.Element;
+declare const Header: React.FC<HeaderProps>;
 export { Header };

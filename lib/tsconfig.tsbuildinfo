@@ -214,8 +214,8 @@
         "signature": "180fcc1930d27fc374231c9c30da1a59c4388d091add0fd108968eea1dad01e2"
       },
       "../src/components/core/listitem.tsx": {
-        "version": "002938d65bb16c29743deda5e4c9ebc26ccd2ba25ff22fac5b98c65339eb958f",
-        "signature": "6d10a27ab7b49625234502249ce8e8313fbf0a7a2c968615eb13a17b82da4cd7"
+        "version": "d75db7e472e5c7dd80be585770604acec956dbb22cf46154a74b5e84530ee511",
+        "signature": "e2003a934c77eda5437d717519dacb2a58268308ba9ceab45ee716ebeedca9d9"
       },
       "../src/components/core/index.tsx": {
         "version": "702bcf8d190f9261448c22d2bc336e79173f918b96a96b78e61914ca409f386f",
@@ -262,24 +262,24 @@
         "signature": "4ce06b9eaff89b5faf5df0c48ab7505956f6d54516436dd29f41e5c33cc52705"
       },
       "../src/components/structure/header.tsx": {
-        "version": "ad4201d293bf829b1d048ff5adfa115882f7a09eddb0879cb1fad7f966dc123a",
-        "signature": "f67296141ef065033cac6adb29534357781b1872f3494a3ef44ab9d6c758ba5c"
+        "version": "62f5fa8daf051971e172e4747e3cb354bfb11e3b083624c973ea28464fa12bfb",
+        "signature": "01069183bf17d19792affb690760838677246828ea3d5d178d0e823302d6be58"
       },
       "../src/components/structure/snaperror.tsx": {
-        "version": "48ba789a93cbef6f5347c93adf2bf59b613a33a7d59feb704b4f88f99508c0f0",
-        "signature": "2f367241f3173baa45c5954fb372541d2ef2805fa35be9cb4775ebcc98eae62a"
+        "version": "0efb14b6f3d06be0e69adbf9586c9784f70a08c86a7371e3d5e476fa2b79ab61",
+        "signature": "b988e5212af229b6c70bd28080b6932b86dd7c9a1e3fd5049650a36f386b0265"
       },
       "../node_modules/expo-blur/build/index.d.ts": {
         "version": "6d6fe912dc110cc42c2861e3f51e33e7c29e297376dd20ce0be81c266d18e7ec",
         "signature": "6d6fe912dc110cc42c2861e3f51e33e7c29e297376dd20ce0be81c266d18e7ec"
       },
       "../src/components/structure/bottomnavicon.tsx": {
-        "version": "ee9f8b9a79f77e09f4f4696a2cf2cbbf0ecca89a61a1b0b52fa72caaac38fae0",
-        "signature": "a390f3954069a4adbedb10873dedeb64842b0985c310371b04ff70b7c7ba10d6"
+        "version": "7182aa845567f1e8f31fcd4b7b1a36e3ac737d4093cd1cfd83192ab2369c38d4",
+        "signature": "6784f44a2bc06c114ea37ef9c5fc82c2ae820952bd81dcc2eb98e9dc947b1ec1"
       },
       "../src/components/structure/bottomnav.tsx": {
-        "version": "27ccd522c6bdc75ead0ff1145464b85580538ee05b28bcd09709c549562a5201",
-        "signature": "d2744d2cd8c7e52151d1b2892e67deaabfdc3bd3eb03d14651ec468721a153f9"
+        "version": "a2da83a61bfd15ef4261b769b13e70a6eb35a4c8c51d6b08cb2c16b1dc7eacb1",
+        "signature": "38b8b903cfb939fce67b3901031e59516398e4e8baf5d0a87a0a47ef7c37efcf"
       },
       "../src/components/structure/index.tsx": {
         "version": "1f7ddb3a22a77fc034dd3ec2b8c49d2c43be4bb2a0b3e06ad9d9f18341e1a7a5",
@@ -292,6 +292,10 @@
       "../src/index.tsx": {
         "version": "ef789741a50bd68f6efb3ee0b32f12b2ecfc16aa415b5c41a65cc8c8c6ee9e1f",
         "signature": "870caf46802fa23ccfcc590fbab47109afd147c05ddb5d40a0fdc45953670f84"
+      },
+      "../src/components/core/group.tsx": {
+        "version": "4461122aef1e5503759e6bd99284aab4bbde4261826a100718f16c035655763a",
+        "signature": "1f99998aba12a44b9a7b6f43ff88dba24a94f736510242555a9bc9993f9fae35"
       },
       "../node_modules/@types/anymatch/index.d.ts": {
         "version": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
@@ -666,6 +670,8 @@
       "paths": {
         "*": [
           "./src/*",
+          "*",
+          "*",
           "*",
           "*",
           "*",
@@ -1331,6 +1337,14 @@
       "../src/index.tsx": [
         "../src/utils/index.tsx",
         "../src/components/index.tsx",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.5/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.5/util.d.ts"
+      ],
+      "../src/components/core/group.tsx": [
+        "../node_modules/@types/react/index.d.ts",
+        "../node_modules/@types/react-native/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.5/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -2977,6 +2991,7 @@
       "../src/components/structure/index.tsx",
       "../src/components/index.tsx",
       "../src/index.tsx",
+      "../src/components/core/group.tsx",
       "../node_modules/@types/anymatch/index.d.ts",
       "../node_modules/@babel/types/lib/index.d.ts",
       "../node_modules/@types/babel__generator/index.d.ts",

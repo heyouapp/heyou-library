@@ -1,4 +1,4 @@
-/// <reference types="react" />
+import * as React from 'react';
 import { StyleProp, ViewStyle } from 'react-native';
 export interface ListItemProps {
     label: string;
@@ -6,5 +6,5 @@ export interface ListItemProps {
     onPress: () => void;
     style?: StyleProp<ViewStyle>;
 }
-declare const ListItem: (props: ListItemProps) => JSX.Element;
+declare const ListItem: React.FC<ListItemProps>;
 export { ListItem };

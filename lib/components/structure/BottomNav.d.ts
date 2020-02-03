@@ -1,4 +1,4 @@
-/// <reference types="react" />
+import * as React from 'react';
 import { StyleProp, ViewStyle } from 'react-native';
 export declare type BottomNavOption = {
     iconName: string;
@@ -9,5 +9,5 @@ export interface BottomNavProps {
     data: BottomNavOption[];
     style?: StyleProp<ViewStyle>;
 }
-declare const BottomNav: (props: BottomNavProps) => JSX.Element;
+declare const BottomNav: React.FC<BottomNavProps>;
 export { BottomNav };

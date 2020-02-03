@@ -19,7 +19,7 @@ export interface ListItemProps {
     style?: StyleProp<ViewStyle>;
 }
 
-const ListItem = (props: ListItemProps) => (
+const ListItem: React.FC<ListItemProps> = props => (
     <TouchableOpacity
         activeOpacity={0.7}
         onPress={props.onPress}

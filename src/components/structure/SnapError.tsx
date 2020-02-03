@@ -11,7 +11,7 @@ export interface SnapErrorProps {
     onClose: () => void;
 }
 
-const SnapError = (props: SnapErrorProps) => (
+const SnapError: React.FC<SnapErrorProps> = props => (
     <SafeAreaView
         style={[
             styles.container,

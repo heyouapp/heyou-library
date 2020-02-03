@@ -1,8 +1,8 @@
-/// <reference types="react" />
+import * as React from 'react';
 export interface SnapErrorProps {
     message: string;
     closeText?: string;
     onClose: () => void;
 }
-declare const SnapError: (props: SnapErrorProps) => JSX.Element;
+declare const SnapError: React.FC<SnapErrorProps>;
 export { SnapError };

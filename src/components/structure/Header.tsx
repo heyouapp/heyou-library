@@ -17,7 +17,7 @@ export interface HeaderProps {
     onPressClose?: () => void;
 }
 
-const Header = (props: HeaderProps) => {
+const Header: React.FC<HeaderProps> = props => {
     const styles = generateTheme(
         Colors[props.theme === 'white' ? 'white' : 'primary'],
         Colors[props.theme === 'white' ? 'neutral' : 'white'],
