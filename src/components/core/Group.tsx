@@ -4,7 +4,7 @@ import { StyleSheet, StyleProp, View, ViewStyle } from 'react-native';
 export interface GroupProps {
     children: React.ReactNode;
     horizontal?: boolean;
-    unit?: boolean;
+    unit?: number;
     style?: StyleProp<ViewStyle>;
 }
 
@@ -25,7 +25,7 @@ const Group: React.FC<GroupProps> = ({ unit = 7, ...props }) => (
     >
         {React.Children.map(props.children, (child: any) =>
             React.cloneElement(child, {
-                style: [child.props.style, getMargin(unit as number)],
+                style: [child.props.style, getMargin(unit)],
             }),
         )}
     </View>
