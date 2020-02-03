@@ -217,9 +217,13 @@
         "version": "d75db7e472e5c7dd80be585770604acec956dbb22cf46154a74b5e84530ee511",
         "signature": "e2003a934c77eda5437d717519dacb2a58268308ba9ceab45ee716ebeedca9d9"
       },
+      "../src/components/core/group.tsx": {
+        "version": "4461122aef1e5503759e6bd99284aab4bbde4261826a100718f16c035655763a",
+        "signature": "1f99998aba12a44b9a7b6f43ff88dba24a94f736510242555a9bc9993f9fae35"
+      },
       "../src/components/core/index.tsx": {
-        "version": "702bcf8d190f9261448c22d2bc336e79173f918b96a96b78e61914ca409f386f",
-        "signature": "0d671b720adb9e5aa692774649b0136d496ddc9818e71fd78d7dce49e563aa92"
+        "version": "5c43fea372e955c43c10ac68214591f67f298e576e1fc56d45aab139269ec233",
+        "signature": "603d2ed520218ce40b492c990f6eb40cf9da3ea7698fd7da9aee8e15ce6d71db"
       },
       "../src/components/account/user.tsx": {
         "version": "d280524f75e04c92b8706675cfdd4b6810833217a6e4ec71052daa2b18b0cc56",
@@ -292,10 +296,6 @@
       "../src/index.tsx": {
         "version": "ef789741a50bd68f6efb3ee0b32f12b2ecfc16aa415b5c41a65cc8c8c6ee9e1f",
         "signature": "870caf46802fa23ccfcc590fbab47109afd147c05ddb5d40a0fdc45953670f84"
-      },
-      "../src/components/core/group.tsx": {
-        "version": "4461122aef1e5503759e6bd99284aab4bbde4261826a100718f16c035655763a",
-        "signature": "1f99998aba12a44b9a7b6f43ff88dba24a94f736510242555a9bc9993f9fae35"
       },
       "../node_modules/@types/anymatch/index.d.ts": {
         "version": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
@@ -1143,6 +1143,14 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.5/util.d.ts"
       ],
+      "../src/components/core/group.tsx": [
+        "../node_modules/@types/react/index.d.ts",
+        "../node_modules/@types/react-native/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.5/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.5/util.d.ts"
+      ],
       "../src/components/core/index.tsx": [
         "../src/components/core/text.tsx",
         "../src/components/core/button.tsx",
@@ -1154,6 +1162,7 @@
         "../src/components/core/tag.tsx",
         "../src/components/core/video.tsx",
         "../src/components/core/listitem.tsx",
+        "../src/components/core/group.tsx",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.5/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -1337,14 +1346,6 @@
       "../src/index.tsx": [
         "../src/utils/index.tsx",
         "../src/components/index.tsx",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.5/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.5/util.d.ts"
-      ],
-      "../src/components/core/group.tsx": [
-        "../node_modules/@types/react/index.d.ts",
-        "../node_modules/@types/react-native/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.5/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -2972,6 +2973,7 @@
       "../src/components/core/tag.tsx",
       "../src/components/core/video.tsx",
       "../src/components/core/listitem.tsx",
+      "../src/components/core/group.tsx",
       "../src/components/core/index.tsx",
       "../src/components/account/user.tsx",
       "../src/components/account/talent.tsx",
@@ -2991,7 +2993,6 @@
       "../src/components/structure/index.tsx",
       "../src/components/index.tsx",
       "../src/index.tsx",
-      "../src/components/core/group.tsx",
       "../node_modules/@types/anymatch/index.d.ts",
       "../node_modules/@babel/types/lib/index.d.ts",
       "../node_modules/@types/babel__generator/index.d.ts",
