@@ -218,8 +218,8 @@
         "signature": "e2003a934c77eda5437d717519dacb2a58268308ba9ceab45ee716ebeedca9d9"
       },
       "../src/components/core/group.tsx": {
-        "version": "e4946143262c87f05e0b621260fc8aa30e744c2be43bc779b96693784e32240c",
-        "signature": "4d40d973b1ebb590fa46dd5d8a6664956a069c8379cbef7cf48c688e97b92912"
+        "version": "289295f743952cbfe5c60072e96ecc6cea188b1f221597b0a1c894df1d31a2de",
+        "signature": "ff0bbdbbc83a76f7583b33626cee3ae7db75b3971d3c36083c81a0e5b5f7a3ed"
       },
       "../src/components/core/index.tsx": {
         "version": "5c43fea372e955c43c10ac68214591f67f298e576e1fc56d45aab139269ec233",
