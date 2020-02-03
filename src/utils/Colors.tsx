@@ -4,6 +4,7 @@ export const Colors = {
     neutral: '#3B566E',
     neutralLight: '#6F8BA4',
     placeholder: '#C0D1E1',
+    inputSecondary: '#F2F5F8',
     error: '#E53D53',
     white: '#FFFFFF',
     greyLight: '#F0F0F0',

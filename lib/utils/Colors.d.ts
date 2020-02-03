@@ -4,6 +4,7 @@ export declare const Colors: {
     neutral: string;
     neutralLight: string;
     placeholder: string;
+    inputSecondary: string;
     error: string;
     white: string;
     greyLight: string;

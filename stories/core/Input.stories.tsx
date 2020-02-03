@@ -24,6 +24,8 @@ export default {
 
 export const normal = () => <Input />;
 
+export const secondary = () => <Input secondary />;
+
 export const withLabel = () => <Input label="Label test" />;
 
 export const withLabelAndError = () => (

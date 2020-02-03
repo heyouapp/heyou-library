@@ -114,8 +114,8 @@
         "signature": "0c9ea8c2028047f39a3f66752682604f543c08be8806258c3d95c93e75a43255"
       },
       "../src/utils/colors.tsx": {
-        "version": "9a46a1640cc5baa49d50382de7e0b004324c82ba076f75708bace5e7cb9ec677",
-        "signature": "634bcd8a7f397b5177135a98d9e6d363a8808c1448433f93803dfec4693f8d3d"
+        "version": "5e051007a03b4aeec11d2707ff7618b1ac404794d2df172615c14bf97f10a9e4",
+        "signature": "388740899e73595c28cd9d244a075f93db8e8d95b92b2fb86ec89514b4ea6774"
       },
       "../src/utils/shadows.tsx": {
         "version": "428b6f96debd9fb12170f414721b6942c79ed8dc99879103213ef9fb23bcbb74",
@@ -186,8 +186,8 @@
         "signature": "b1fc44aa95d4322f16ac8b24e7635f0cd6d4d44cc3392473e46102595ebe546e"
       },
       "../src/components/core/input.tsx": {
-        "version": "9cc5d6531a9fa702cf6c224a44abd02b3fd6b61ef684a209b72eb40ca2212f99",
-        "signature": "c37a5137c28e6b2cc0ed4bdb8c7725b3217a83d2d1702af36f0e026fe537268a"
+        "version": "33c5bd7723e029e33165df97f4e31187870f881a572a430645a34e8235cd5ab5",
+        "signature": "3ce20fdb58f9bb65c425287763040d0c02cbebb29309d1be90d033e925fc95d0"
       },
       "../src/components/core/icon.tsx": {
         "version": "3f53cc16cedf4fab0a593417f188fc8d6e3aa0bcebed747f085ab9678bcaae29",
@@ -218,8 +218,8 @@
         "signature": "e2003a934c77eda5437d717519dacb2a58268308ba9ceab45ee716ebeedca9d9"
       },
       "../src/components/core/group.tsx": {
-        "version": "4461122aef1e5503759e6bd99284aab4bbde4261826a100718f16c035655763a",
-        "signature": "1f99998aba12a44b9a7b6f43ff88dba24a94f736510242555a9bc9993f9fae35"
+        "version": "e4946143262c87f05e0b621260fc8aa30e744c2be43bc779b96693784e32240c",
+        "signature": "4d40d973b1ebb590fa46dd5d8a6664956a069c8379cbef7cf48c688e97b92912"
       },
       "../src/components/core/index.tsx": {
         "version": "5c43fea372e955c43c10ac68214591f67f298e576e1fc56d45aab139269ec233",

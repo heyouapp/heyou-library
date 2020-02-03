@@ -9,13 +9,20 @@ export interface InputProps extends TextInputProps {
     label?: string;
     uppercase?: boolean;
     error?: string;
+    secondary?: boolean;
 }
 
 const Input: React.FC<InputProps> = props => (
     <View style={props.style}>
         {props.label && <Text style={styles.label}>{props.label}</Text>}
         <View
-            style={[styles.wrapper, props.error ? styles.wrapper_error : null]}
+            style={[
+                styles.wrapper,
+                props.secondary
+                    ? styles.wrapper_secondary
+                    : styles.wrapper_primary,
+                props.error ? styles.wrapper_error : null,
+            ]}
         >
             <TextInput
                 {...props}
@@ -50,8 +57,13 @@ const styles = StyleSheet.create({
         borderWidth: 2,
         borderColor: 'transparent',
         borderRadius: 12,
+    },
+    wrapper_primary: {
         backgroundColor: Colors.white,
         ...Shadows.secondary,
+    },
+    wrapper_secondary: {
+        backgroundColor: Colors.inputSecondary,
     },
     wrapper_error: {
         borderColor: Colors.error,
@@ -76,6 +88,7 @@ const styles = StyleSheet.create({
         alignSelf: 'flex-end',
     },
     error: {
+        minHeight: 20,
         marginTop: 7.5,
         color: Colors.error,
         textTransform: 'uppercase',
