@@ -15,6 +15,7 @@ import BottomNavIcon from './BottomNavIcon';
 export type BottomNavOption = {
     iconName: string;
     onPress: () => void;
+    active: boolean;
 };
 
 export interface BottomNavProps {
@@ -22,29 +23,22 @@ export interface BottomNavProps {
     style?: StyleProp<ViewStyle>;
 }
 
-const BottomNav = (props: BottomNavProps) => {
-    const [active, setActive] = React.useState(0);
-    React.useEffect(() => {
-        props.data[active].onPress();
-    }, [active, props.data]);
-
-    return (
-        <SafeAreaView style={styles.wrapper}>
-            <View style={styles.container}>
-                <BlurView intensity={80} style={styles.content}>
-                    {props.data.map((item: BottomNavOption, index: number) => (
-                        <BottomNavIcon
-                            name={item.iconName}
-                            active={active === index}
-                            onPress={() => setActive(index)}
-                            key={index.toString()}
-                        />
-                    ))}
-                </BlurView>
-            </View>
-        </SafeAreaView>
-    );
-};
+const BottomNav = (props: BottomNavProps) => (
+    <SafeAreaView style={styles.wrapper}>
+        <View style={styles.container}>
+            <BlurView intensity={80} style={styles.content}>
+                {props.data.map((item: BottomNavOption, index: number) => (
+                    <BottomNavIcon
+                        name={item.iconName}
+                        active={item.active}
+                        onPress={item.onPress}
+                        key={index.toString()}
+                    />
+                ))}
+            </BlurView>
+        </View>
+    </SafeAreaView>
+);
 
 const styles = StyleSheet.create({
     wrapper: {
