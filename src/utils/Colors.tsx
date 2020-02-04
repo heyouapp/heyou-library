@@ -1,4 +1,4 @@
-export const Colors = {
+const Colors = {
     primary: '#361596',
     primaryLight: '#DDDCFF',
     neutral: '#3B566E',
@@ -26,3 +26,5 @@ export const ColorOpacity = (hex: string, percentage: number) => {
 
     return 'rgba(0, 0, 0, 0)';
 };
+
+export { Colors };

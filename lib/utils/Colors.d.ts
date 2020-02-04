@@ -1,4 +1,4 @@
-export declare const Colors: {
+declare const Colors: {
     primary: string;
     primaryLight: string;
     neutral: string;
@@ -13,3 +13,4 @@ export declare const Colors: {
     black: string;
 };
 export declare const ColorOpacity: (hex: string, percentage: number) => string;
+export { Colors };
