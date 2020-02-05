@@ -10,6 +10,7 @@
         "url": "https://github.com/heyouapp/heyou-library.git"
     },
     "scripts": {
+        "prepare": "yarn build",
         "prebuild": "rm -rf lib",
         "build": "yarn build:types && yarn build:js",
         "build:types": "ttsc --emitDeclarationOnly",

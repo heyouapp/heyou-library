@@ -78,3 +78,4 @@ storybook-static/
 *.orig.*
 web-build/
 web-report/
+lib/
