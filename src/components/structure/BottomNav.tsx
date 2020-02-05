@@ -10,7 +10,7 @@ import { BlurView } from 'expo-blur';
 
 // Library
 import { Shadows } from 'utils';
-import BottomNavIcon from './BottomNavIcon';
+import { BottomNavIcon } from './BottomNavIcon';
 
 export type BottomNavOption = {
     iconName: string;

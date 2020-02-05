@@ -25,7 +25,8 @@
         "react-native": "*"
     },
     "dependencies": {
-        "expo-blur": "~8.0.0"
+        "expo-blur": "~8.0.0",
+        "react-native-safe-area-context": "^0.6.4"
     },
     "devDependencies": {
         "@babel/cli": "^7.7.7",
