@@ -1,8 +1,10 @@
 import * as React from 'react';
 import {
     StyleSheet,
+    StyleProp,
     SafeAreaView,
     View,
+    ViewStyle,
     TouchableWithoutFeedback,
 } from 'react-native';
 
@@ -15,6 +17,7 @@ export interface HeaderProps {
     theme?: 'white' | 'primary';
     onPressBack?: () => void;
     onPressClose?: () => void;
+    style?: StyleProp<ViewStyle>;
 }
 
 const Header: React.FC<HeaderProps> = props => {
@@ -24,7 +27,7 @@ const Header: React.FC<HeaderProps> = props => {
     );
 
     return (
-        <SafeAreaView style={styles.wrapper}>
+        <SafeAreaView style={[styles.wrapper, props.style]}>
             <View style={styles.container}>
                 <View style={styles.content}>
                     {!!props.onPressBack && (

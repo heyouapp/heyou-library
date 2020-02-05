@@ -1,5 +1,12 @@
 import * as React from 'react';
-import { StyleSheet, SafeAreaView, View, Platform } from 'react-native';
+import {
+    StyleSheet,
+    StyleProp,
+    SafeAreaView,
+    View,
+    ViewStyle,
+    Platform,
+} from 'react-native';
 
 // Library
 import { Text, Button } from 'components/core';
@@ -9,6 +16,7 @@ export interface SnapErrorProps {
     message: string;
     closeText?: string;
     onClose: () => void;
+    style?: StyleProp<ViewStyle>;
 }
 
 const SnapError: React.FC<SnapErrorProps> = props => (
@@ -18,6 +26,7 @@ const SnapError: React.FC<SnapErrorProps> = props => (
             Platform.OS === 'web'
                 ? styles.container_web
                 : styles.container_mobile,
+            props.style,
         ]}
     >
         <View style={styles.content}>
