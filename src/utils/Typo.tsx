@@ -17,7 +17,7 @@ const SIZE =
               REGULAR: 14,
           };
 
-const Fonts = {
+const Typo = {
     WEIGHT,
     SIZE,
     LINE_HEIGHT: {
@@ -26,4 +26,4 @@ const Fonts = {
     },
 };
 
-export { Fonts };
+export { Typo };
