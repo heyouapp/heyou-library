@@ -9,3 +9,4 @@ export * from './Tag';
 export * from './Video';
 export * from './ListItem';
 export * from './Group';
+export * from './Tabs';
