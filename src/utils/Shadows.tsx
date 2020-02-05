@@ -7,14 +7,14 @@ const Shadows = {
         shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.16,
         shadowRadius: 14,
-        elevation: 1,
+        elevation: 14,
     },
     secondary: {
         shadowColor: Colors.black,
         shadowOffset: { width: 0, height: 2 },
         shadowOpacity: 0.08,
         shadowRadius: 14,
-        elevation: 1,
+        elevation: 14,
     },
 };
 
