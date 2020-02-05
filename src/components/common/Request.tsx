@@ -50,6 +50,7 @@ const styles = StyleSheet.create({
     content: {
         marginLeft: 15,
         justifyContent: 'space-between',
+        flex: 1,
     },
     fullName: {
         lineHeight: 18,
