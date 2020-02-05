@@ -5,6 +5,7 @@ import {
     SafeAreaView,
     View,
     ViewStyle,
+    Platform,
     TouchableWithoutFeedback,
 } from 'react-native';
 
@@ -27,7 +28,13 @@ const Header: React.FC<HeaderProps> = props => {
     );
 
     return (
-        <SafeAreaView style={[styles.wrapper, props.style]}>
+        <SafeAreaView
+            style={[
+                styles.wrapper,
+                Platform.OS === 'android' && styles.wrapper_android,
+                props.style,
+            ]}
+        >
             <View style={styles.container}>
                 <View style={styles.content}>
                     {!!props.onPressBack && (
@@ -67,6 +74,9 @@ const generateTheme = (principalColor: string, contentColor: string) =>
             backgroundColor: principalColor,
             marginBottom: 25,
             overflow: 'hidden',
+        },
+        wrapper_android: {
+            paddingTop: 30,
         },
         container: {
             height: 50,

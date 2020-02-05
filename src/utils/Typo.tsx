@@ -2,7 +2,7 @@ import { Platform, TextStyle } from 'react-native';
 
 const WEIGHT: { [key: string]: TextStyle['fontWeight'] } = {
     REGULAR: '300',
-    SEMIBOLD: '600',
+    SEMIBOLD: Platform.OS === 'android' ? '700' : '600',
     BOLD: '700',
 };
 

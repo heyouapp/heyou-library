@@ -26,6 +26,7 @@ const SnapError: React.FC<SnapErrorProps> = props => (
             Platform.OS === 'web'
                 ? styles.container_web
                 : styles.container_mobile,
+            Platform.OS === 'android' && styles.container_android,
             props.style,
         ]}
     >
@@ -59,6 +60,9 @@ const styles = StyleSheet.create({
     },
     container_web: {
         borderRadius: 15,
+    },
+    container_android: {
+        paddingTop: 20,
     },
     content: {
         padding: 15,
