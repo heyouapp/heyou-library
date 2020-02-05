@@ -1,5 +1,11 @@
 import * as React from 'react';
-import { StyleSheet, View, TouchableOpacity } from 'react-native';
+import {
+    StyleSheet,
+    StyleProp,
+    View,
+    ViewStyle,
+    TouchableOpacity,
+} from 'react-native';
 
 // Library
 import { Text } from './Text';
@@ -13,10 +19,11 @@ export type TabsItem = {
 
 export interface TabsProps {
     data: TabsItem[];
+    style?: StyleProp<ViewStyle>;
 }
 
 const Tabs: React.FC<TabsProps> = props => (
-    <View style={styles.container}>
+    <View style={[styles.container, props.style]}>
         {props.data.map((item: TabsItem, index: number) => (
             <TouchableOpacity
                 onPress={item.onPress}
