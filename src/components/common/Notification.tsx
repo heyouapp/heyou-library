@@ -24,17 +24,15 @@ export interface NotificationProps {
 const Notification: React.FC<NotificationProps> = props => (
     <Card style={[styles.container, props.style]} onPress={props.onPress}>
         <View style={styles.header}>
-            <View style={styles.content}>
-                <ProfilePicture source={props.source} />
-                <Text style={styles.label} type="semibold">
-                    {props.label}
-                </Text>
-            </View>
-            <Text style={styles.time} small>
-                {props.createdLabel}
-            </Text>
+            {props.source && (
+                <ProfilePicture source={props.source} style={styles.picture} />
+            )}
+            <Text type="semibold">{props.label}</Text>
         </View>
         <Text>{props.description}</Text>
+        <Text style={styles.time} small>
+            {props.createdLabel}
+        </Text>
     </Card>
 );
 
@@ -44,20 +42,17 @@ const styles = StyleSheet.create({
         paddingHorizontal: 15,
     },
     header: {
-        marginBottom: 7.5,
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        flexDirection: 'row',
-    },
-    content: {
+        marginBottom: 10,
         alignItems: 'center',
         flexDirection: 'row',
     },
-    label: {
-        marginLeft: 10,
+    picture: {
+        marginRight: 10,
     },
     time: {
+        marginTop: 10,
         color: Colors.neutralLight,
+        alignSelf: 'flex-end',
     },
 });
 

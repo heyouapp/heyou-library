@@ -19,6 +19,16 @@ imperdiet lacus ac lectus porttitor vehicula."
     />
 );
 
+export const withSource = () => (
+    <Notification
+        label="Notification label"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
+imperdiet lacus ac lectus porttitor vehicula."
+        createdLabel="15 minutes ago"
+        source={{}}
+    />
+);
+
 export const withAction = () => (
     <Notification
         label="Notification label"
