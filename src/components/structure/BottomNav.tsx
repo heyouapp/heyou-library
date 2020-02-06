@@ -25,7 +25,10 @@ export interface BottomNavProps {
 
 const BottomNav: React.FC<BottomNavProps> = props => (
     <SafeAreaView
-        style={[styles.wrapper, { bottom: Platform.OS === 'android' ? 15 : 0 }]}
+        style={[
+            styles.wrapper,
+            Platform.OS === 'android' && styles.wrapper_android,
+        ]}
     >
         <BlurView
             intensity={Platform.OS === 'android' ? 1000 : 80}
@@ -46,8 +49,12 @@ const BottomNav: React.FC<BottomNavProps> = props => (
 const styles = StyleSheet.create({
     wrapper: {
         position: 'absolute',
+        bottom: 0,
         left: 15,
         right: 15,
+    },
+    wrapper_android: {
+        bottom: 15,
     },
     container: {
         borderRadius: 20,
