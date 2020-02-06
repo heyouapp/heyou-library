@@ -21,6 +21,10 @@ export const withClose = () => (
 
 export const withInput = () => (
     <Header title="Test" onPressBack={() => {}} onPressClose={() => {}}>
-        <HeaderInput value="" onChangeText={() => {}} />
+        <HeaderInput
+            placeholder="Start typing here..."
+            value=""
+            onChangeText={() => {}}
+        />
     </Header>
 );
