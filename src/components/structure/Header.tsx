@@ -14,11 +14,12 @@ import { Text, Icon } from 'components';
 import { Colors } from 'utils';
 
 export interface HeaderProps {
-    title: React.ReactNode | string;
+    title: React.ReactNode;
     theme?: 'white' | 'primary';
     onPressBack?: () => void;
     onPressClose?: () => void;
     style?: StyleProp<ViewStyle>;
+    children?: React.ReactNode;
 }
 
 const Header: React.FC<HeaderProps> = props => {
@@ -47,9 +48,17 @@ const Header: React.FC<HeaderProps> = props => {
                             </View>
                         </TouchableWithoutFeedback>
                     )}
-                    <Text style={styles.title} type="bold" numberOfLines={1}>
-                        {props.title}
-                    </Text>
+                    {typeof props.title === 'string' ? (
+                        <Text
+                            style={styles.title}
+                            type="bold"
+                            numberOfLines={1}
+                        >
+                            {props.title}
+                        </Text>
+                    ) : (
+                        props.title
+                    )}
                     {!!props.onPressClose && (
                         <TouchableWithoutFeedback
                             onPress={props.onPressClose}
@@ -61,6 +70,7 @@ const Header: React.FC<HeaderProps> = props => {
                         </TouchableWithoutFeedback>
                     )}
                 </View>
+                {props.children}
             </View>
         </SafeAreaView>
     );
@@ -79,7 +89,7 @@ const generateTheme = (principalColor: string, contentColor: string) =>
             paddingTop: 30,
         },
         container: {
-            height: 50,
+            minHeight: 50,
             paddingTop: 15,
         },
         content: {

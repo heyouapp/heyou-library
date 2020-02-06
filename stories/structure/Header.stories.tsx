@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 // Library
-import { Header } from 'components/structure';
+import { Header, HeaderInput } from 'components/structure';
 import { Container } from '../decorators';
 
 export default {
@@ -17,4 +17,10 @@ export const withBack = () => <Header title="Test" onPressBack={() => {}} />;
 
 export const withClose = () => (
     <Header title="Test" onPressBack={() => {}} onPressClose={() => {}} />
+);
+
+export const withInput = () => (
+    <Header title="Test" onPressBack={() => {}} onPressClose={() => {}}>
+        <HeaderInput value="" onChangeText={() => {}} />
+    </Header>
 );
