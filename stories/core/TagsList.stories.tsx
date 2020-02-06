@@ -1,20 +1,25 @@
 import * as React from 'react';
 
 // Library
-import { TagList, Tag } from 'components/core';
+import { TagsList, Tag } from 'components/core';
 import { Container } from '../decorators';
 
 export default {
-    title: 'Core/TagList',
+    title: 'Core/TagsList',
     decorators: [Container],
 };
 
 export const normal = () => (
-    <TagList>
+    <TagsList moreString="+ More" lessString="- Less" amountCollapsed={5}>
         <Tag onPress={() => {}}>Broadway</Tag>
         <Tag onPress={() => {}}>Comic Con</Tag>
         <Tag onPress={() => {}}>DC</Tag>
         <Tag onPress={() => {}}>Disney</Tag>
         <Tag onPress={() => {}}>HBO</Tag>
-    </TagList>
+        <Tag onPress={() => {}}>Broadway</Tag>
+        <Tag onPress={() => {}}>Comic Con</Tag>
+        <Tag onPress={() => {}}>DC</Tag>
+        <Tag onPress={() => {}}>Disney</Tag>
+        <Tag onPress={() => {}}>HBO</Tag>
+    </TagsList>
 );

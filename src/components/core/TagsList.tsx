@@ -9,27 +9,27 @@ import { Colors } from 'utils';
 export interface TagsListProps {
     moreString: string;
     lessString: string;
+    amountCollapsed?: number;
     children: React.ReactNode;
 }
 
-const TagsList: React.FC<TagsListProps> = ({
-    moreString = '+ More',
-    lessString = '- Less',
-    ...props
-}) => {
+const TagsList: React.FC<TagsListProps> = props => {
     const [isCollapsed, setCollapse] = React.useState(true);
     const arr = React.Children.toArray(props.children);
 
     return (
         <Group unit={4} horizontal>
-            {arr.splice(0, isCollapsed ? 5 : arr.length)}
+            {arr.splice(
+                0,
+                isCollapsed ? props.amountCollapsed || 5 : arr.length,
+            )}
             <Text
                 small
                 type="semibold"
                 onPress={() => setCollapse(!isCollapsed)}
                 style={styles.more}
             >
-                {isCollapsed ? moreString : lessString}
+                {isCollapsed ? props.moreString : props.lessString}
             </Text>
         </Group>
     );
