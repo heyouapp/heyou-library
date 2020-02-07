@@ -11,3 +11,4 @@ export * from './ListItem';
 export * from './Group';
 export * from './Tabs';
 export * from './TagsList';
+export * from './WrappedList';
