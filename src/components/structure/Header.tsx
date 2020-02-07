@@ -34,15 +34,13 @@ const Header: React.FC<HeaderProps> = props => {
                 styles.wrapper,
                 Platform.OS === 'android' && styles.wrapper_android,
                 props.style,
-            ]}
-        >
+            ]}>
             <View style={styles.container}>
                 <View style={styles.content}>
                     {!!props.onPressBack && (
                         <TouchableWithoutFeedback
                             onPress={props.onPressBack}
-                            disabled={!props.onPressBack}
-                        >
+                            disabled={!props.onPressBack}>
                             <View>
                                 <Icon name="arrowBack" style={styles.icon} />
                             </View>
@@ -52,8 +50,7 @@ const Header: React.FC<HeaderProps> = props => {
                         <Text
                             style={styles.title}
                             type="bold"
-                            numberOfLines={1}
-                        >
+                            numberOfLines={1}>
                             {props.title}
                         </Text>
                     ) : (
@@ -62,8 +59,7 @@ const Header: React.FC<HeaderProps> = props => {
                     {!!props.onPressClose && (
                         <TouchableWithoutFeedback
                             onPress={props.onPressClose}
-                            disabled={!props.onPressClose}
-                        >
+                            disabled={!props.onPressClose}>
                             <View>
                                 <Icon name="close" style={styles.icon} />
                             </View>

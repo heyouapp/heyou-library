@@ -24,8 +24,7 @@ const ListItem: React.FC<ListItemProps> = props => (
         activeOpacity={0.7}
         onPress={props.onPress}
         disabled={!props.onPress}
-        style={[styles.container, props.style]}
-    >
+        style={[styles.container, props.style]}>
         {props.value === undefined && (
             <Text style={styles.label}>{props.label}</Text>
         )}

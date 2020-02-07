@@ -28,8 +28,7 @@ const SnapError: React.FC<SnapErrorProps> = props => (
                 : styles.container_mobile,
             Platform.OS === 'android' && styles.container_android,
             props.style,
-        ]}
-    >
+        ]}>
         <View style={styles.content}>
             <Text type="semibold" style={styles.text}>
                 {props.message}
@@ -39,8 +38,7 @@ const SnapError: React.FC<SnapErrorProps> = props => (
                 position="end"
                 small
                 onPress={props.onClose}
-                style={styles.button}
-            >
+                style={styles.button}>
                 {props.closeText || 'OK'}
             </Button>
         </View>

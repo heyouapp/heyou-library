@@ -19,8 +19,7 @@ const Share: React.FC<ShareProps> = props => (
     <TouchableOpacity
         onPress={props.onPress}
         style={[styles.container, props.style]}
-        activeOpacity={0.7}
-    >
+        activeOpacity={0.7}>
         <Icon name="share" color={Colors.white} style={styles.icon} />
     </TouchableOpacity>
 );

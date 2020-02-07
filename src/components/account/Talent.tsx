@@ -27,13 +27,11 @@ const Talent: React.FC<TalentProps> = props => (
     <TouchableOpacity
         onPress={props.onPress}
         style={props.style}
-        activeOpacity={0.7}
-    >
+        activeOpacity={0.7}>
         <ProfilePicture
             size={props.size || 'large'}
             source={props.source}
-            squared
-        >
+            squared>
             <View style={styles.price}>
                 <Text type="semibold" style={styles.price_inner} small>
                     {props.talentFeeAmount}€

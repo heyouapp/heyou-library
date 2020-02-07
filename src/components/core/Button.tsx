@@ -25,13 +25,11 @@ export const Button: React.FC<ButtonProps> = props => (
             props.position && styles[props.position],
             props.small && styles.small,
             props.style,
-        ]}
-    >
+        ]}>
         <Text
             style={styles[`${props.type || 'primary'}_text`]}
             type="semibold"
-            small
-        >
+            small>
             {props.children}
         </Text>
     </TouchableOpacity>

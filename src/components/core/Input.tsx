@@ -22,8 +22,7 @@ const Input: React.FC<InputProps> = props => (
                     ? styles.wrapper_secondary
                     : styles.wrapper_primary,
                 props.error ? styles.wrapper_error : null,
-            ]}
-        >
+            ]}>
             <TextInput
                 {...props}
                 children={undefined}

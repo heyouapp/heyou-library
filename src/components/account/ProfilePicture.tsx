@@ -34,8 +34,7 @@ const ProfilePicture: React.FC<ProfilePictureProps> = props => (
                 `${props.size || 'small'}${props.squared ? '_squared' : ''}`
             ] || styles.small,
             props.style,
-        ]}
-    >
+        ]}>
         {props.source && <Image source={props.source} style={styles.image} />}
         {props.children}
     </View>

@@ -36,16 +36,14 @@ const Selector: React.FC<SelectorProps> = props => {
                         index === props.data.length - 1 && styles.tab_end,
                     ]}
                     key={index.toString()}
-                    activeOpacity={0.7}
-                >
+                    activeOpacity={0.7}>
                     <Text
                         style={[
                             styles.text,
                             props.value === index && styles.text_active,
                         ]}
                         type="bold"
-                        small
-                    >
+                        small>
                         {item}
                     </Text>
                 </TouchableOpacity>

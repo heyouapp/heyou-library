@@ -18,8 +18,7 @@ export interface VideoProps extends ViewProps {
 const Video: React.FC<VideoProps> = props => (
     <TouchableWithoutFeedback
         onPress={() => props.onVolumeChange(!props.volume)}
-        disabled={!props.onVolumeChange}
-    >
+        disabled={!props.onVolumeChange}>
         <View style={[styles.container, props.style]}>
             {props.children}
             {props.volume !== undefined && (

@@ -27,8 +27,7 @@ const TagsList: React.FC<TagsListProps> = props => {
                 small
                 type="semibold"
                 onPress={() => setCollapse(!isCollapsed)}
-                style={styles.more}
-            >
+                style={styles.more}>
                 {isCollapsed ? props.moreString : props.lessString}
             </Text>
         </Group>

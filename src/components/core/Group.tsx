@@ -21,8 +21,7 @@ const Group: React.FC<GroupProps> = ({ unit = 7, ...props }) => (
             getMargin(-unit),
             props.horizontal && styles.container,
             props.style,
-        ]}
-    >
+        ]}>
         {React.Children.map(props.children, (child: any) =>
             React.cloneElement(child, {
                 style: [child.props.style, getMargin(unit)],

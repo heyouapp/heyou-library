@@ -28,12 +28,10 @@ const BottomNav: React.FC<BottomNavProps> = props => (
         style={[
             styles.wrapper,
             Platform.OS === 'android' && styles.wrapper_android,
-        ]}
-    >
+        ]}>
         <BlurView
             intensity={Platform.OS === 'android' ? 1000 : 80}
-            style={styles.container}
-        >
+            style={styles.container}>
             {props.data.map((item: BottomNavOption, index: number) => (
                 <BottomNavIcon
                     name={item.iconName}

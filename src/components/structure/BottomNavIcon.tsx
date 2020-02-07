@@ -14,8 +14,7 @@ const BottomNavIcon: React.FC<BottomNavIconProps> = props => (
     <TouchableOpacity
         onPress={props.onPress}
         activeOpacity={0.7}
-        style={styles.container}
-    >
+        style={styles.container}>
         <Icon
             {...props}
             color={Colors[props.active ? 'primary' : 'grey']}

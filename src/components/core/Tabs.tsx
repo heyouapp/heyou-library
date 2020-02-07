@@ -30,13 +30,11 @@ const Tabs: React.FC<TabsProps> = props => (
                 disabled={!item.onPress || item.active}
                 activeOpacity={0.7}
                 style={[styles.item, item.active && styles.item_active]}
-                key={index.toString()}
-            >
+                key={index.toString()}>
                 <Text
                     style={[styles.text, item.active && styles.text_active]}
                     type="semibold"
-                    small
-                >
+                    small>
                     {item.label}
                 </Text>
             </TouchableOpacity>
