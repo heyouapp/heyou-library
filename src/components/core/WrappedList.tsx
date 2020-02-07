@@ -13,8 +13,8 @@ interface WrappedListProps extends FlatListProperties<any> {
 const WrappedList: React.FC<WrappedListProps> = props => (
     <FlatList
         {...props}
-        renderItem={(_props?: ListRenderItemInfo<any>) => {
-            const element = props.renderItem(_props);
+        renderItem={(_props: ListRenderItemInfo<any>) => {
+            const element: any = props.renderItem(_props);
 
             return (
                 <View
@@ -22,7 +22,7 @@ const WrappedList: React.FC<WrappedListProps> = props => (
                         flex: 1 / (props.numColumns || 1),
                     }}>
                     {React.cloneElement(element as React.ReactElement, {
-                        style: [element.style, { margin: props.margin / 2 }],
+                        style: [element['style'], { margin: props.margin / 2 }],
                     })}
                 </View>
             );
