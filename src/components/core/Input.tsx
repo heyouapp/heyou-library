@@ -9,7 +9,7 @@ export interface InputProps extends TextInputProps {
     label?: string;
     uppercase?: boolean;
     error?: string;
-    secondary?: boolean;
+    secondary?: boolean | string;
 }
 
 const Input: React.FC<InputProps> = props => (
