@@ -12,3 +12,4 @@ export * from './Group';
 export * from './Tabs';
 export * from './TagsList';
 export * from './WrappedList';
+export * from './Badge';

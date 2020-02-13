@@ -6,7 +6,7 @@ import {
     ListRenderItemInfo,
 } from 'react-native';
 
-interface WrappedListProps extends FlatListProperties<any> {
+export interface WrappedListProps extends FlatListProperties<any> {
     margin: number;
 }
 
