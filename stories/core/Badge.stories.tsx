@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { View } from 'react-native';
 
 // Library
 import { Badge } from 'components/core';
