@@ -23,3 +23,13 @@ export const normal = () => (
         <Tag onPress={() => {}}>HBO</Tag>
     </TagsList>
 );
+
+export const normalWithout = () => (
+    <TagsList moreString="+ More" lessString="- Less" amountCollapsed={5}>
+        <Tag onPress={() => {}}>Broadway</Tag>
+        <Tag onPress={() => {}}>Comic Con</Tag>
+        <Tag onPress={() => {}}>DC</Tag>
+        <Tag onPress={() => {}}>Disney</Tag>
+        <Tag onPress={() => {}}>HBO</Tag>
+    </TagsList>
+);

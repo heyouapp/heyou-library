@@ -15,20 +15,19 @@ export interface TagsListProps {
 
 const TagsList: React.FC<TagsListProps> = props => {
     const [isCollapsed, setCollapse] = React.useState(true);
+    const amount = props.amountCollapsed || 5;
     const arr = React.Children.toArray(props.children);
 
     return (
         <Group unit={4} horizontal>
-            {arr.splice(
-                0,
-                isCollapsed ? props.amountCollapsed || 5 : arr.length,
-            )}
+            {[...arr].splice(0, isCollapsed ? amount : arr.length)}
             <Text
                 small
                 type="semibold"
                 onPress={() => setCollapse(!isCollapsed)}
                 style={styles.more}>
-                {isCollapsed ? props.moreString : props.lessString}
+                {amount < arr.length &&
+                    (isCollapsed ? props.moreString : props.lessString)}
             </Text>
         </Group>
     );
