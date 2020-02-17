@@ -21,12 +21,13 @@ export interface TalentProps {
     talentFeeAmount: number;
     size?: ProfilePictureSize;
     source?: ImageSourcePropType;
+    horizontal?: boolean;
 }
 
 const Talent: React.FC<TalentProps> = props => (
     <TouchableOpacity
         onPress={props.onPress}
-        style={props.style}
+        style={[props.horizontal && styles.horizontal, props.style]}
         activeOpacity={0.7}>
         <ProfilePicture
             size={props.size || 'large'}
@@ -38,7 +39,7 @@ const Talent: React.FC<TalentProps> = props => (
                 </Text>
             </View>
         </ProfilePicture>
-        <View style={styles.info}>
+        <View style={props.horizontal && styles.info}>
             <Text style={styles.type} uppercase small numberOfLines={1}>
                 {props.mainTopic}
             </Text>
@@ -48,6 +49,10 @@ const Talent: React.FC<TalentProps> = props => (
 );
 
 const styles = StyleSheet.create({
+    horizontal: {
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
     price: {
         position: 'absolute',
         top: 5,
@@ -65,7 +70,7 @@ const styles = StyleSheet.create({
         color: Colors.neutralLight,
     },
     info: {
-        maxWidth: 120,
+        marginLeft: 15,
     },
 });
 
