@@ -95,7 +95,6 @@ const generateTheme = (principalColor: string, contentColor: string) =>
             borderBottomLeftRadius: 16,
             borderBottomRightRadius: 16,
             backgroundColor: principalColor,
-            marginBottom: 25,
             overflow: 'hidden',
         },
         wrapper_android: {
