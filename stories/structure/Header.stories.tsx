@@ -2,6 +2,7 @@ import * as React from 'react';
 
 // Library
 import { Header, HeaderInput } from 'components/structure';
+import { Button } from 'components/core';
 import { Container } from '../decorators';
 
 export default {
@@ -15,8 +16,17 @@ export const white = () => <Header title="Test" theme="white" />;
 
 export const withBack = () => <Header title="Test" onPressBack={() => {}} />;
 
-export const withClose = () => (
-    <Header title="Test" onPressBack={() => {}} onPressClose={() => {}} />
+export const withClose = () => <Header title="Test" onPressClose={() => {}} />;
+
+export const withRightRender = () => (
+    <Header
+        title="Test"
+        renderRight={
+            <Button type="secondary" small>
+                + Follow
+            </Button>
+        }
+    />
 );
 
 export const withInput = () => (

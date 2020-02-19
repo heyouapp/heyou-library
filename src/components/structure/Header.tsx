@@ -18,6 +18,7 @@ export interface HeaderProps {
     theme?: 'white' | 'primary';
     onPressBack?: () => void;
     onPressClose?: () => void;
+    renderRight?: React.ReactNode;
     style?: StyleProp<ViewStyle>;
     children?: React.ReactNode;
 }
@@ -37,33 +38,49 @@ const Header: React.FC<HeaderProps> = props => {
             ]}>
             <View style={styles.container}>
                 <View style={styles.content}>
-                    {!!props.onPressBack && (
-                        <TouchableWithoutFeedback
-                            onPress={props.onPressBack}
-                            disabled={!props.onPressBack}>
-                            <View>
-                                <Icon name="arrowBack" style={styles.icon} />
-                            </View>
-                        </TouchableWithoutFeedback>
-                    )}
-                    {typeof props.title === 'string' ? (
-                        <Text
-                            style={styles.title}
-                            type="bold"
-                            numberOfLines={1}>
-                            {props.title}
-                        </Text>
+                    <View>
+                        {!!props.onPressBack && (
+                            <TouchableWithoutFeedback
+                                onPress={props.onPressBack}
+                                disabled={!props.onPressBack}>
+                                <View>
+                                    <Icon
+                                        name="arrowBack"
+                                        style={styles.icon}
+                                    />
+                                </View>
+                            </TouchableWithoutFeedback>
+                        )}
+                    </View>
+                    <View style={styles.middle}>
+                        {typeof props.title === 'string' ? (
+                            <Text
+                                style={styles.title}
+                                type="bold"
+                                numberOfLines={1}>
+                                {props.title}
+                            </Text>
+                        ) : (
+                            props.title
+                        )}
+                    </View>
+                    {props.renderRight ? (
+                        props.renderRight
                     ) : (
-                        props.title
-                    )}
-                    {!!props.onPressClose && (
-                        <TouchableWithoutFeedback
-                            onPress={props.onPressClose}
-                            disabled={!props.onPressClose}>
-                            <View>
-                                <Icon name="close" style={styles.icon} />
-                            </View>
-                        </TouchableWithoutFeedback>
+                        <View>
+                            {!!props.onPressClose && (
+                                <TouchableWithoutFeedback
+                                    onPress={props.onPressClose}
+                                    disabled={!props.onPressClose}>
+                                    <View>
+                                        <Icon
+                                            name="close"
+                                            style={styles.icon}
+                                        />
+                                    </View>
+                                </TouchableWithoutFeedback>
+                            )}
+                        </View>
                     )}
                 </View>
                 {props.children}
@@ -92,14 +109,16 @@ const generateTheme = (principalColor: string, contentColor: string) =>
             position: 'relative',
             height: 20,
             paddingHorizontal: 15,
-            justifyContent: 'space-between',
             alignItems: 'center',
             flexDirection: 'row',
+            justifyContent: 'space-between',
         },
-        title: {
+        middle: {
             position: 'absolute',
             left: 45,
             right: 45,
+        },
+        title: {
             fontSize: 16,
             color: contentColor,
             textAlign: 'center',
