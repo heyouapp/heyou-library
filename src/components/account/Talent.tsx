@@ -10,7 +10,11 @@ import {
 
 // Library
 import { Text } from 'components/core';
-import { ProfilePicture, ProfilePictureSizeType } from './ProfilePicture';
+import {
+    ProfilePicture,
+    ProfilePictureSizes,
+    ProfilePictureSizeType,
+} from './ProfilePicture';
 import { Colors, ColorOpacity } from 'utils';
 
 export interface TalentProps {
@@ -24,26 +28,34 @@ export interface TalentProps {
     style?: StyleProp<ViewStyle>;
 }
 
-const Talent: React.FC<TalentProps> = props => (
-    <TouchableOpacity
-        onPress={props.onPress}
-        style={[props.horizontal && styles.horizontal, props.style]}
-        activeOpacity={0.7}>
-        <ProfilePicture size={props.size || 'lg'} source={props.source}>
-            <View style={styles.price}>
-                <Text type="semibold" style={styles.price_inner} small>
-                    {props.talentFeeAmount}€
+const Talent: React.FC<TalentProps> = props => {
+    const size = props.size || 'xl';
+
+    return (
+        <TouchableOpacity
+            onPress={props.onPress}
+            style={[
+                props.horizontal && styles.horizontal,
+                { width: ProfilePictureSizes[size].width },
+                props.style,
+            ]}
+            activeOpacity={0.7}>
+            <ProfilePicture size={size} source={props.source}>
+                <View style={styles.price}>
+                    <Text type="semibold" style={styles.price_inner} small>
+                        {props.talentFeeAmount}€
+                    </Text>
+                </View>
+            </ProfilePicture>
+            <View style={props.horizontal && styles.info}>
+                <Text style={styles.type} uppercase small numberOfLines={1}>
+                    {props.mainTopic}
                 </Text>
+                <Text numberOfLines={1}>{props.fullName}</Text>
             </View>
-        </ProfilePicture>
-        <View style={props.horizontal && styles.info}>
-            <Text style={styles.type} uppercase small numberOfLines={1}>
-                {props.mainTopic}
-            </Text>
-            <Text numberOfLines={1}>{props.fullName}</Text>
-        </View>
-    </TouchableOpacity>
-);
+        </TouchableOpacity>
+    );
+};
 
 const styles = StyleSheet.create({
     horizontal: {

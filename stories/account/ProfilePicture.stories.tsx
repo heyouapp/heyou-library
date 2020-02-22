@@ -9,14 +9,14 @@ export default {
     decorators: [Container],
 };
 
-export const small = () => <ProfilePicture />;
+export const smRounded = () => <ProfilePicture size="sm" rounded />;
 
-export const medium = () => <ProfilePicture size="md" rounded />;
+export const sm = () => <ProfilePicture size="sm" />;
 
-export const smallSquared = () => <ProfilePicture />;
+export const md = () => <ProfilePicture size="md" />;
 
-export const mediumSquared = () => <ProfilePicture size="md" />;
+export const lg = () => <ProfilePicture size="lg" />;
 
-export const largeSquared = () => <ProfilePicture size="lg" />;
+export const xl = () => <ProfilePicture size="xl" />;
 
-export const xlargeSquared = () => <ProfilePicture size="xl" />;
+export const xxl = () => <ProfilePicture size="xxl" />;

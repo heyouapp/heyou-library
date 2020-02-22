@@ -24,7 +24,7 @@ export interface RequestProps {
 
 const Request: React.FC<RequestProps> = props => (
     <Card style={[styles.container, props.style]} onPress={props.onPress}>
-        <ProfilePicture source={props.source} size="md" />
+        <ProfilePicture source={props.source} size="lg" />
         <View style={styles.content}>
             <View>
                 <Text type="semibold" style={styles.fullName}>
