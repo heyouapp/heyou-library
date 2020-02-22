@@ -21,7 +21,7 @@ export interface UserProps {
 
 const User: React.FC<UserProps> = props => (
     <View style={[styles.container, props.style]}>
-        <ProfilePicture source={props.source} size="small" />
+        <ProfilePicture source={props.source} size="sm" rounded />
         <View style={styles.content}>
             <Text type="semibold">{props.fullName}</Text>
             <Text small style={styles.userName}>

@@ -25,7 +25,11 @@ const Notification: React.FC<NotificationProps> = props => (
     <Card style={[styles.container, props.style]} onPress={props.onPress}>
         <View style={styles.header}>
             {props.source && (
-                <ProfilePicture source={props.source} style={styles.picture} />
+                <ProfilePicture
+                    source={props.source}
+                    style={styles.picture}
+                    rounded
+                />
             )}
             <Text type="semibold">{props.label}</Text>
         </View>

@@ -10,18 +10,18 @@ import {
 
 // Library
 import { Text } from 'components/core';
-import { ProfilePicture, ProfilePictureSize } from './ProfilePicture';
+import { ProfilePicture, ProfilePictureSizeType } from './ProfilePicture';
 import { Colors, ColorOpacity } from 'utils';
 
 export interface TalentProps {
-    style?: StyleProp<ViewStyle>;
-    onPress?: () => void;
     fullName: string;
     mainTopic: string;
     talentFeeAmount: number;
-    size?: ProfilePictureSize;
+    onPress?: () => void;
+    size?: ProfilePictureSizeType;
     source?: ImageSourcePropType;
     horizontal?: boolean;
+    style?: StyleProp<ViewStyle>;
 }
 
 const Talent: React.FC<TalentProps> = props => (
@@ -29,10 +29,7 @@ const Talent: React.FC<TalentProps> = props => (
         onPress={props.onPress}
         style={[props.horizontal && styles.horizontal, props.style]}
         activeOpacity={0.7}>
-        <ProfilePicture
-            size={props.size || 'large'}
-            source={props.source}
-            squared>
+        <ProfilePicture size={props.size || 'lg'} source={props.source}>
             <View style={styles.price}>
                 <Text type="semibold" style={styles.price_inner} small>
                     {props.talentFeeAmount}€

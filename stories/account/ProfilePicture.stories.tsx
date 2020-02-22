@@ -11,12 +11,12 @@ export default {
 
 export const small = () => <ProfilePicture />;
 
-export const medium = () => <ProfilePicture size="medium" />;
+export const medium = () => <ProfilePicture size="md" rounded />;
 
-export const large = () => <ProfilePicture size="large" />;
+export const smallSquared = () => <ProfilePicture />;
 
-export const smallSquared = () => <ProfilePicture squared />;
+export const mediumSquared = () => <ProfilePicture size="md" />;
 
-export const mediumSquared = () => <ProfilePicture size="medium" squared />;
+export const largeSquared = () => <ProfilePicture size="lg" />;
 
-export const largeSquared = () => <ProfilePicture size="large" squared />;
+export const xlargeSquared = () => <ProfilePicture size="xl" />;

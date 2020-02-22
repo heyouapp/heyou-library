@@ -25,7 +25,7 @@ const CardVideo: React.FC<CardVideoProps> = props => (
     <Card style={props.style}>
         <View style={styles.header}>
             <View style={styles.content}>
-                <ProfilePicture source={props.source} />
+                <ProfilePicture source={props.source} rounded />
                 <View style={styles.label}>
                     <Text type="semibold">{props.recipientLabel}</Text>
                     <Text style={styles.time} small>
