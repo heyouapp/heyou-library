@@ -11,23 +11,25 @@ import { Icon } from './Icon';
 import { Colors, ColorOpacity } from 'utils';
 
 export interface VideoProps extends ViewProps {
-    volume: boolean;
-    onVolumeChange: (volume: boolean) => void;
+    playing: boolean;
+    onPlay: (state: boolean) => void;
 }
 
 const Video: React.FC<VideoProps> = props => (
     <TouchableWithoutFeedback
-        onPress={() => props.onVolumeChange(!props.volume)}
-        disabled={!props.onVolumeChange}>
+        onPress={() => props.onPlay(!props.playing)}
+        disabled={!props.onPlay}>
         <View style={[styles.container, props.style]}>
             {props.children}
-            {props.volume !== undefined && (
-                <View style={styles.volume}>
-                    <Icon
-                        name={props.volume ? 'volumeOn' : 'volumeOff'}
-                        color={Colors.white}
-                        style={styles.icon}
-                    />
+            {!props.playing && (
+                <View style={styles.icon}>
+                    <View style={styles.icon_holder}>
+                        <Icon
+                            name="play"
+                            color={Colors.white}
+                            style={styles.icon_inner}
+                        />
+                    </View>
                 </View>
             )}
         </View>
@@ -40,21 +42,28 @@ const styles = StyleSheet.create({
         height: 200,
         overflow: 'hidden',
     },
-    volume: {
+    icon: {
         position: 'absolute',
-        right: 10,
-        bottom: 10,
-        borderRadius: 15,
-        backgroundColor: ColorOpacity(Colors.black, 0.7),
-        height: 30,
-        width: 30,
+        top: 0,
+        left: 0,
+        right: 0,
+        bottom: 0,
         alignItems: 'center',
         justifyContent: 'center',
         zIndex: 1,
     },
-    icon: {
-        height: 18,
-        width: 18,
+    icon_holder: {
+        borderRadius: 25,
+        backgroundColor: ColorOpacity(Colors.white, 0.2),
+        height: 50,
+        width: 50,
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    icon_inner: {
+        height: 20,
+        width: 20,
+        marginLeft: 3,
     },
 });
 

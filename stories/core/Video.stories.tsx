@@ -7,8 +7,8 @@ import { Video } from 'components/core';
 import { Container } from '../decorators';
 
 const store = new Store({
-    volume: false,
-    onVolumeChange: () => store.set({ volume: !store.get('volume') }),
+    playing: false,
+    onPlay: () => store.set({ playing: !store.get('playing') }),
 });
 
 export default {

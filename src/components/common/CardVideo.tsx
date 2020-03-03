@@ -35,7 +35,7 @@ const CardVideo: React.FC<CardVideoProps> = props => (
             </View>
             <Share onPress={props.onShare} />
         </View>
-        <Video volume={props.volume} onVolumeChange={props.onVolumeChange}>
+        <Video playing={props.playing} onPlay={props.onPlay}>
             {props.children}
         </Video>
     </Card>

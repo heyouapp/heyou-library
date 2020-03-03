@@ -19,6 +19,8 @@ const Icons: { [key: string]: ImageURISource } = {
     stream: require('assets/icons/stream.png'),
     volumeOff: require('assets/icons/volume_off.png'),
     volumeOn: require('assets/icons/volume_on.png'),
+    play: require('assets/icons/play.png'),
+    pause: require('assets/icons/pause.png'),
 };
 
 export { Icons };

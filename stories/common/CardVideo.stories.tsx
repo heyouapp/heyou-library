@@ -8,8 +8,8 @@ import { CardVideo } from 'components/common';
 import { Container } from '../decorators';
 
 const store = new Store({
-    volume: false,
-    onVolumeChange: () => store.set({ volume: !store.get('volume') }),
+    playing: false,
+    onPlay: () => store.set({ playing: !store.get('playing') }),
 });
 
 export default {
@@ -26,8 +26,7 @@ export const normal = () => (
     <CardVideo
         createdLabel="10/01/2020"
         recipientLabel="For Mario Rossi"
-        onShare={action('shared')}
-    >
+        onShare={action('shared')}>
         <View />
     </CardVideo>
 );
