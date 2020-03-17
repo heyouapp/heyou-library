@@ -92,8 +92,6 @@ const Header: React.FC<HeaderProps> = props => {
 const generateTheme = (principalColor: string, contentColor: string) =>
     StyleSheet.create({
         wrapper: {
-            borderBottomLeftRadius: 16,
-            borderBottomRightRadius: 16,
             backgroundColor: principalColor,
             overflow: 'hidden',
         },

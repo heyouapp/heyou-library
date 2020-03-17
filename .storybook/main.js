@@ -35,6 +35,9 @@ module.exports = {
         config.resolve.alias['react-native-web/dist/exports/ViewPropTypes'] =
             'react-native/Libraries/Components/View/ViewPropTypes';
 
+        config.resolve.alias['react-native-web/dist/exports/ColorPropType'] =
+            'react-native/Libraries/DeprecatedPropTypes/DeprecatedColorPropType';
+
         if (config.mode === 'production') {
             config.output.publicPath = '';
         }
