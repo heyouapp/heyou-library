@@ -6,7 +6,7 @@ import { Colors } from 'utils';
 import { Text } from 'components';
 
 export interface BadgeProps {
-    amount: number;
+    amount: string | number;
     style?: StyleProp<ViewStyle>;
 }
 
