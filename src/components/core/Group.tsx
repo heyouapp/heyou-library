@@ -22,10 +22,13 @@ const Group: React.FC<GroupProps> = ({ unit = 7, ...props }) => (
             props.horizontal && styles.container,
             props.style,
         ]}>
-        {React.Children.map(props.children, (child: any) =>
-            React.cloneElement(child, {
-                style: [child.props.style, getMargin(unit)],
-            }),
+        {React.Children.map(
+            props.children,
+            (child: any) =>
+                child &&
+                React.cloneElement(child, {
+                    style: [child.props.style, getMargin(unit)],
+                }),
         )}
     </View>
 );
