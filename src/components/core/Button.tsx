@@ -38,19 +38,19 @@ export const Button: React.FC<ButtonProps> = props => {
                 styles.container,
                 props.position && styles[props.position],
                 props.small && styles.smallContainer,
+                props.style,
             ]}>
             {state === 2 ? (
                 <Lottie callback={() => setState(0)} />
             ) : (
                 <TouchableOpacity
-                    {...props}
+                    onPress={props.onPress}
                     activeOpacity={0.7}
-                    disabled={!!props.loading}
+                    disabled={!!props.loading || props.disabled}
                     style={[
                         styles.button,
                         styles[props.type || 'primary'],
                         props.small && styles.small,
-                        props.style,
                     ]}>
                     {state === 0 ? (
                         <Text
