@@ -14,4 +14,3 @@ export * from './TagsList';
 export * from './WrappedList';
 export * from './Badge';
 export * from './Loading';
-export * from './Lottie';
