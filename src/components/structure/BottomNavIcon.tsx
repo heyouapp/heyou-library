@@ -2,12 +2,13 @@ import * as React from 'react';
 import { StyleSheet, TouchableOpacity, View } from 'react-native';
 
 // Library
-import { Icon, IconProps } from 'components/core';
+import { Icon, IconProps, Badge } from 'components/core';
 import { Colors } from 'utils';
 
 export interface BottomNavIconProps extends IconProps {
     active?: boolean;
     onPress: () => void;
+    badgeCount: number | string;
 }
 
 const BottomNavIcon: React.FC<BottomNavIconProps> = props => (
@@ -15,6 +16,9 @@ const BottomNavIcon: React.FC<BottomNavIconProps> = props => (
         onPress={props.onPress}
         activeOpacity={0.7}
         style={styles.container}>
+        {!!props.badgeCount && (
+            <Badge amount={props.badgeCount} style={styles.badge} />
+        )}
         <Icon
             {...props}
             color={Colors[props.active ? 'primary' : 'grey']}
@@ -37,6 +41,11 @@ const styles = StyleSheet.create({
         height: 8,
         width: 8,
         marginTop: 6,
+    },
+    badge: {
+        position: 'absolute',
+        transform: [{ translateY: -9 }, { translateX: 12 }],
+        zIndex: 1,
     },
 });
 

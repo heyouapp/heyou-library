@@ -15,13 +15,14 @@ export const normal = () => (
     <View style={styles.container}>
         <BottomNav
             data={[
-                { iconName: 'home', onPress: action('clicked home') },
-                { iconName: 'stream', onPress: action('clicked stream') },
+                { name: 'home', onPress: action('clicked home') },
+                { name: 'stream', onPress: action('clicked stream') },
                 {
-                    iconName: 'notifications',
+                    name: 'notifications',
                     onPress: action('clicked notifications'),
+                    badgeCount: 20,
                 },
-                { iconName: 'profile', onPress: action('clicked profile') },
+                { name: 'profile', onPress: action('clicked profile') },
             ]}
         />
     </View>

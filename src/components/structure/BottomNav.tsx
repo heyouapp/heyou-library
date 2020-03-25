@@ -4,16 +4,10 @@ import { BlurView } from 'expo-blur';
 
 // Library
 import { Shadows } from 'utils';
-import { BottomNavIcon } from './BottomNavIcon';
-
-export type BottomNavOption = {
-    iconName: string;
-    onPress: () => void;
-    active: boolean;
-};
+import { BottomNavIcon, BottomNavIconProps } from './BottomNavIcon';
 
 export interface BottomNavProps {
-    data: BottomNavOption[];
+    data: BottomNavIconProps[];
     style?: StyleProp<ViewStyle>;
 }
 
@@ -21,13 +15,8 @@ const BottomNav: React.FC<BottomNavProps> = props => (
     <BlurView
         intensity={Platform.OS === 'android' ? 1000 : 80}
         style={styles.container}>
-        {props.data.map((item: BottomNavOption, index: number) => (
-            <BottomNavIcon
-                name={item.iconName}
-                active={item.active}
-                onPress={item.onPress}
-                key={index.toString()}
-            />
+        {props.data.map((item: BottomNavIconProps, index: number) => (
+            <BottomNavIcon {...item} key={index.toString()} />
         ))}
     </BlurView>
 );
