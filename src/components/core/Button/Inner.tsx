@@ -23,12 +23,13 @@ const Inner: React.FC<InnerProps> = props => (
         style={[
             styles.container,
             styles[props.type || 'primary'],
-            props.small && styles.small,
+            props.small && styles.containerSmall,
+            props.style,
         ]}
         activeOpacity={0.7}>
         {props.state === 0 ? (
             <Text
-                style={styles[`${props.type || 'primary'}_text`]}
+                style={styles[`${props.type || 'primary'}Text`]}
                 type="semibold"
                 small>
                 {props.children}
@@ -53,7 +54,7 @@ const styles: any = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
     },
-    small: {
+    containerSmall: {
         borderRadius: 15,
     },
     primary: {
@@ -63,10 +64,10 @@ const styles: any = StyleSheet.create({
         borderColor: Colors.primary,
         backgroundColor: Colors.white,
     },
-    primary_text: {
+    primaryText: {
         color: Colors.white,
     },
-    secondary_text: {
+    secondaryText: {
         color: Colors.primary,
     },
 });

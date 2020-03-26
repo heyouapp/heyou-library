@@ -12,6 +12,7 @@ const Lottie: React.FC<LottieProps> = props => (
     <LottieNative
         source={Assets.checkAnimation}
         onAnimationFinish={props.callback}
+        loop={false}
         autoPlay
     />
 );

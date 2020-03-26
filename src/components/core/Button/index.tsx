@@ -25,23 +25,26 @@ export const Button: React.FC<ButtonProps> = props => {
         }
     }, [props.loading]);
 
-    return (
-        <View
-            style={[
-                styles.container,
-                props.position && styles[props.position],
-                props.small && styles.small,
-                props.style,
-            ]}>
-            {state === 2 ? (
+    const style = [
+        styles.container,
+        props.position && styles[props.position],
+        props.small && styles.small,
+        props.style,
+    ];
+
+    if (state === 2) {
+        return (
+            <View style={style}>
                 <View style={styles.animation}>
-                    <Lottie callback={() => setTimeout(setState(0), 1000)} />
+                    <Lottie
+                        callback={() => setTimeout(() => setState(0), 1000)}
+                    />
                 </View>
-            ) : (
-                <Inner {...props} state={state} />
-            )}
-        </View>
-    );
+            </View>
+        );
+    }
+
+    return <Inner {...props} style={style} state={state} />;
 };
 
 const styles: any = StyleSheet.create({
