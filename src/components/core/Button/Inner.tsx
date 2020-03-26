@@ -44,7 +44,7 @@ const Inner: React.FC<InnerProps> = props => (
     </TouchableOpacity>
 );
 
-const styles: any = StyleSheet.create({
+const styles: { [key: string]: Object } = StyleSheet.create({
     container: {
         borderWidth: 1,
         borderColor: 'transparent',

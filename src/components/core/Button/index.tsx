@@ -47,7 +47,7 @@ export const Button: React.FC<ButtonProps> = props => {
                     />
                 </View>
             ) : (
-                <Inner {...props} style={styles.innerStyle} state={state} />
+                <Inner {...props} style={props.innerStyle} state={state} />
             )}
         </View>
     );
