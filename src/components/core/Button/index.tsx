@@ -1,5 +1,11 @@
 import * as React from 'react';
-import { StyleSheet, TouchableOpacityProps, View } from 'react-native';
+import {
+    StyleSheet,
+    StyleProp,
+    TouchableOpacityProps,
+    View,
+    ViewStyle,
+} from 'react-native';
 
 // Components
 import Lottie from './Lottie';
@@ -11,6 +17,7 @@ export interface ButtonProps extends TouchableOpacityProps {
     small?: boolean;
     loading?: boolean;
     withAnimation?: boolean;
+    innerStyle: StyleProp<ViewStyle>;
 }
 
 export const Button: React.FC<ButtonProps> = props => {
@@ -25,26 +32,25 @@ export const Button: React.FC<ButtonProps> = props => {
         }
     }, [props.loading]);
 
-    const style = [
-        styles.container,
-        props.position && styles[props.position],
-        props.small && styles.small,
-        props.style,
-    ];
-
-    if (state === 2) {
-        return (
-            <View style={style}>
+    return (
+        <View
+            style={[
+                styles.container,
+                props.position && styles[props.position],
+                props.small && styles.small,
+                props.style,
+            ]}>
+            {state === 2 ? (
                 <View style={styles.animation}>
                     <Lottie
                         callback={() => setTimeout(() => setState(0), 1000)}
                     />
                 </View>
-            </View>
-        );
-    }
-
-    return <Inner {...props} style={style} state={state} />;
+            ) : (
+                <Inner {...props} style={styles.innerStyle} state={state} />
+            )}
+        </View>
+    );
 };
 
 const styles: any = StyleSheet.create({
@@ -63,7 +69,7 @@ const styles: any = StyleSheet.create({
     animation: {
         height: 150,
         width: 150,
-        transform: [{ translateY: -50 }, { translateX: 50 }],
+        transform: [{ translateY: -55 }],
         alignSelf: 'center',
     },
 });
