@@ -17,7 +17,7 @@ export interface ButtonProps extends TouchableOpacityProps {
     small?: boolean;
     loading?: boolean;
     withAnimation?: boolean;
-    innerStyle: StyleProp<ViewStyle>;
+    innerStyle?: StyleProp<ViewStyle>;
 }
 
 export const Button: React.FC<ButtonProps> = props => {
