@@ -20,7 +20,7 @@ import { Colors, ColorOpacity } from 'utils';
 export interface TalentProps {
     fullName: string;
     mainTopic: string;
-    talentFeeAmount: number;
+    talentFeeAmount: number | string;
     onPress?: () => void;
     size?: ProfilePictureSizeType;
     source?: ImageSourcePropType;
@@ -43,7 +43,7 @@ const Talent: React.FC<TalentProps> = props => {
             <ProfilePicture size={size} source={props.source}>
                 <View style={styles.price}>
                     <Text type="semibold" style={styles.price_inner} small>
-                        {props.talentFeeAmount}€
+                        {props.talentFeeAmount}
                     </Text>
                 </View>
             </ProfilePicture>
