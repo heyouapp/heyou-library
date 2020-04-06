@@ -2,13 +2,14 @@ import * as React from 'react';
 import { StyleSheet, StyleProp, View, ViewStyle } from 'react-native';
 
 // Library
-import { Text, Card, Video, VideoProps } from 'components/core';
+import { Card, Video, VideoProps } from 'components/core';
 import { Share } from './Share';
 import { Review, ReviewProps } from './Review';
 
 export interface RequestVideoProps extends VideoProps {
     review?: ReviewProps;
     completedLabel: string;
+    completedValue: string;
     onShare: () => void;
     style?: StyleProp<ViewStyle>;
 }
@@ -16,13 +17,8 @@ export interface RequestVideoProps extends VideoProps {
 const RequestVideo: React.FC<RequestVideoProps> = props => (
     <Card style={[styles.container, props.style]}>
         <View style={styles.header}>
-            <Text small>
-                Video completed on{' '}
-                <Text type="semibold" small>
-                    {props.completedLabel}
-                </Text>
-            </Text>
-            <Share onPress={props.onShare} />
+            {props.completedLabel}
+            {!!props.onShare && <Share onPress={props.onShare} />}
         </View>
         <Video {...props} />
         {props.review && <Review {...props.review} style={styles.review} />}
@@ -34,8 +30,8 @@ const styles = StyleSheet.create({
         paddingTop: 0,
     },
     header: {
+        height: 45,
         paddingHorizontal: 10,
-        paddingVertical: 7.5,
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'space-between',

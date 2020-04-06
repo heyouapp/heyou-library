@@ -16,7 +16,7 @@ import { Colors } from 'utils';
 export interface CardVideoProps extends VideoProps {
     createdLabel: string;
     recipientLabel: string;
-    onShare: () => void;
+    onShare?: () => void;
     source?: ImageSourcePropType;
     style?: StyleProp<ViewStyle>;
 }
@@ -33,7 +33,7 @@ const CardVideo: React.FC<CardVideoProps> = props => (
                     </Text>
                 </View>
             </View>
-            <Share onPress={props.onShare} />
+            {!!props.onShare && <Share onPress={props.onShare} />}
         </View>
         <Video playing={props.playing} onPlay={props.onPlay}>
             {props.children}

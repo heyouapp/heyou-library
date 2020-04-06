@@ -4,6 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { Store, withState } from '@sambego/storybook-state';
 
 // Library
+import { Text } from 'components/core';
 import { RequestVideo } from 'components/common';
 import { Container } from '../decorators';
 
@@ -23,7 +24,15 @@ export default {
 };
 
 export const normal = () => (
-    <RequestVideo completedLabel="20/01/2020" onShare={action('shared')}>
+    <RequestVideo
+        completedLabel={
+            <Text small>
+                Video completed on{' '}
+                <Text type="semibold" small>
+                    20/01/2020
+                </Text>
+            </Text>
+        }>
         <View />
     </RequestVideo>
 );
