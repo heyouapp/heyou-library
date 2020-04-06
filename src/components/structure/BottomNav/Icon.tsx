@@ -16,21 +16,26 @@ const BottomNavIcon: React.FC<BottomNavIconProps> = props => (
         onPress={props.onPress}
         activeOpacity={0.7}
         style={styles.container}>
-        {!!props.badgeCount && (
-            <Badge amount={props.badgeCount} style={styles.badge} />
-        )}
-        <Icon
-            {...props}
-            color={Colors[props.active ? 'primary' : 'grey']}
-            style={styles.icon}
-        />
+        <View>
+            {!!props.badgeCount && (
+                <Badge amount={props.badgeCount} style={styles.badge} />
+            )}
+            <Icon
+                {...props}
+                color={Colors[props.active ? 'primary' : 'grey']}
+                style={styles.icon}
+            />
+        </View>
         {props.active && <View style={styles.dot} />}
     </TouchableOpacity>
 );
 
 const styles = StyleSheet.create({
     container: {
+        height: '100%',
         alignItems: 'center',
+        justifyContent: 'center',
+        flex: 1,
     },
     icon: {
         height: 20,

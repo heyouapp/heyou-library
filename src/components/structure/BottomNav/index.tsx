@@ -4,7 +4,7 @@ import { BlurView } from 'expo-blur';
 
 // Library
 import { Shadows } from 'utils';
-import { BottomNavIcon, BottomNavIconProps } from './BottomNavIcon';
+import { BottomNavIcon, BottomNavIconProps } from './Icon';
 
 export interface BottomNavProps {
     data: BottomNavIconProps[];
@@ -25,8 +25,6 @@ const styles = StyleSheet.create({
     container: {
         borderRadius: 20,
         height: 60,
-        alignItems: 'center',
-        justifyContent: 'space-around',
         flexDirection: 'row',
         ...Shadows.primary,
     },

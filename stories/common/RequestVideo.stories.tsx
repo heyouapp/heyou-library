@@ -39,7 +39,14 @@ export const normal = () => (
 
 export const withReview = () => (
     <RequestVideo
-        completedLabel="20/01/2020"
+        completedLabel={
+            <Text small>
+                Video completed on{' '}
+                <Text type="semibold" small>
+                    20/01/2020
+                </Text>
+            </Text>
+        }
         onShare={action('shared')}
         review={{
             fullName: 'Mario Rossi',

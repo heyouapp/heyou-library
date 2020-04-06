@@ -15,7 +15,7 @@ export const normal = () => (
     <View style={styles.container}>
         <BottomNav
             data={[
-                { name: 'home', onPress: action('clicked home') },
+                { name: 'home', onPress: action('clicked home'), active: true },
                 { name: 'stream', onPress: action('clicked stream') },
                 {
                     name: 'notifications',
