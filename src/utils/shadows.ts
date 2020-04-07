@@ -1,5 +1,5 @@
 // Library
-import { Colors } from './Colors';
+import { Colors } from './colors';
 
 const Shadows = {
     primary: {

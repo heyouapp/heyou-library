@@ -11,7 +11,7 @@ import { Text } from 'components/core';
 import { Colors } from 'utils';
 
 export interface InnerProps extends TouchableOpacityProps {
-    type?: 'primary' | 'secondary';
+    type?: 'primary' | 'secondary' | 'tertiary';
     small?: boolean;
     state: number;
 }
@@ -37,7 +37,11 @@ const Inner: React.FC<InnerProps> = props => (
         ) : (
             <ActivityIndicator
                 color={
-                    (props.type !== 'secondary' && Colors.white) || undefined
+                    Colors[
+                        !props.type || props.type === 'primary'
+                            ? 'white'
+                            : 'primary'
+                    ]
                 }
             />
         )}
@@ -64,10 +68,16 @@ const styles: { [key: string]: Object } = StyleSheet.create({
         borderColor: Colors.primary,
         backgroundColor: Colors.white,
     },
+    tertiary: {
+        backgroundColor: Colors.secondary,
+    },
     primaryText: {
         color: Colors.white,
     },
     secondaryText: {
+        color: Colors.primary,
+    },
+    tertiaryText: {
         color: Colors.primary,
     },
 });

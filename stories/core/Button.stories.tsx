@@ -21,6 +21,12 @@ export const secondary = () => (
     </Button>
 );
 
+export const tertiary = () => (
+    <Button onPress={action('clicked')} type="tertiary">
+        Tertiary Button
+    </Button>
+);
+
 export const loading = () => (
     <Button onPress={action('clicked')} loading={true}>
         Loading Button
