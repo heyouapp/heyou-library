@@ -1,24 +1,10 @@
 import * as React from 'react';
-import {
-    StyleSheet,
-    StyleProp,
-    TouchableOpacityProps,
-    View,
-    ViewStyle,
-} from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
-// Components
+// Common
 import Lottie from './Lottie';
 import Inner from './Inner';
-
-export interface ButtonProps extends TouchableOpacityProps {
-    type?: 'primary' | 'secondary';
-    position?: 'start' | 'end';
-    small?: boolean;
-    loading?: boolean;
-    withAnimation?: boolean;
-    innerStyle?: StyleProp<ViewStyle>;
-}
+import { ButtonProps } from './model';
 
 export const Button: React.FC<ButtonProps> = props => {
     const [state, setState] = React.useState(0);

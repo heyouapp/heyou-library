@@ -1,18 +1,14 @@
 import * as React from 'react';
-import {
-    StyleSheet,
-    TouchableOpacity,
-    TouchableOpacityProps,
-    ActivityIndicator,
-} from 'react-native';
+import { StyleSheet, TouchableOpacity, ActivityIndicator } from 'react-native';
 
 // Library
 import { Text } from 'components/core';
 import { Colors } from 'utils';
 
-export interface InnerProps extends TouchableOpacityProps {
-    type?: 'primary' | 'secondary' | 'tertiary';
-    small?: boolean;
+// Common
+import { ButtonProps } from './model';
+
+export interface InnerProps extends ButtonProps {
     state: number;
 }
 
