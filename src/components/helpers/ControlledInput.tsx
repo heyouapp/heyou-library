@@ -5,10 +5,9 @@ import { Controller, ControllerProps } from 'react-hook-form';
 import { Input } from 'components/core';
 
 type ControllerType = Partial<ControllerProps<React.ReactElement>>;
-type Rules = ControllerType['rules'][];
 
 interface Props extends Omit<ControllerType, 'rules'> {
-    rules: Rules;
+    rules?: ControllerType['rules'][];
 }
 
 const ControlledInput: React.FC<Props> = props => {
