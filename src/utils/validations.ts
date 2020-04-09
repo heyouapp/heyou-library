@@ -32,35 +32,28 @@ const Validations = {
         validate: (value: string) => value.indexOf('@') !== -1 || message,
     }),
     PASSWORD: (message: string) => ({
-        validate:
-            (async (value: string) => {
-                const {
-                    lowerCase,
-                    upperCase,
-                    numbers,
-                    specialCharacters,
-                } = charsets;
+        validate: async (value: string) => {
+            const {
+                lowerCase,
+                upperCase,
+                numbers,
+                specialCharacters,
+            } = charsets;
 
-                const policy = new PasswordPolicy({
-                    length: { minLength: 8 },
-                    contains: {
-                        expressions: [
-                            lowerCase,
-                            upperCase,
-                            numbers,
-                            specialCharacters,
-                        ],
-                    },
-                });
+            const policy = new PasswordPolicy({
+                length: { minLength: 8 },
+                contains: {
+                    expressions: [
+                        lowerCase,
+                        upperCase,
+                        numbers,
+                        specialCharacters,
+                    ],
+                },
+            });
 
-                try {
-                    await policy.assert(value);
-
-                    return true;
-                } catch (err) {
-                    return false;
-                }
-            }) || message,
+            return (await policy.assert(value)) || message;
+        },
     }),
     FOLLOWERS: (message: string) => ({
         min: {

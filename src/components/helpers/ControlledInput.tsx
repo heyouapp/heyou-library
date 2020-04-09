@@ -4,27 +4,25 @@ import { Controller, ControllerProps } from 'react-hook-form';
 // Library
 import { Input } from 'components/core';
 
-type ControllerType = ControllerProps<React.ReactElement>;
+type ControllerType = Partial<ControllerProps<React.ReactElement>>;
 type Rules = ControllerType['rules'][];
 
-interface ControlledInputProps {
-    as?: ControllerType['as'];
-    rules?: Rules;
-    control: ControllerType['control'];
-    name: ControllerType['name'];
+interface Props extends Omit<ControllerType, 'rules'> {
+    rules: Rules;
 }
 
-const ControlledInput: React.FC<ControlledInputProps> = props => {
+const ControlledInput: React.FC<Props> = props => {
     const errors = props.control && props.control.errorsRef.current;
     const error = errors && errors[props.name];
 
     return (
         <Controller
-            as={Input}
-            error={error && error.message}
+            name=""
             defaultValue=""
-            {...props}
+            as={Input}
+            error={error && error['message']}
             onChange={args => args[0].nativeEvent.text}
+            {...props}
             rules={Object.assign({}, ...(props.rules || []))}
         />
     );
