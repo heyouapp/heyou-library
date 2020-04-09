@@ -16,7 +16,7 @@ interface Props extends Omit<ControllerType, 'rules'> {
 const ControlledInput: React.FC<Props> = props => {
     const intl = useIntl();
     const errors = props.control && props.control.errorsRef.current;
-    const error = errors[name];
+    const error = errors[props.name];
     const rules = Array.isArray(props.rules)
         ? Object.assign({}, ...props.rules)
         : props.rules;
