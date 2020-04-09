@@ -4,3 +4,4 @@ export * from './icons';
 export * from './typo';
 export * from './assets';
 export * from './validations';
+export * from './formErrors';

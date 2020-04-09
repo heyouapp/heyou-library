@@ -2,36 +2,21 @@
 import { PasswordPolicy, charsets } from 'password-sheriff';
 
 const Validations = {
-    REQUIRED: (message: string) => ({
-        required: {
-            value: true,
-            message,
-        },
-    }),
-    NAME: (message: string) => ({
-        minLength: {
-            value: 3,
-            message,
-        },
-        maxLength: {
-            value: 30,
-            message,
-        },
-    }),
-    NICKNAME: (message: string) => ({
-        minLength: {
-            value: 3,
-            message,
-        },
-        maxLength: {
-            value: 30,
-            message,
-        },
-    }),
-    EMAIL: (message: string) => ({
-        validate: (value: string) => value.indexOf('@') !== -1 || message,
-    }),
-    PASSWORD: (message: string) => ({
+    REQUIRED: {
+        required: true,
+    },
+    NAME: {
+        minLength: 3,
+        maxLength: 30,
+    },
+    NICKNAME: {
+        minLength: 3,
+        maxLength: 30,
+    },
+    EMAIL: {
+        validate: (value: string) => value.indexOf('@') !== -1,
+    },
+    PASSWORD: {
         validate: async (value: string) => {
             const {
                 lowerCase,
@@ -52,15 +37,17 @@ const Validations = {
                 },
             });
 
-            return (await policy.assert(value)) || message;
+            try {
+                await policy.assert(value);
+                return true;
+            } catch (err) {
+                return false;
+            }
         },
-    }),
-    FOLLOWERS: (message: string) => ({
-        min: {
-            value: 50000,
-            message,
-        },
-    }),
+    },
+    FOLLOWERS: {
+        min: 50000,
+    },
 };
 
 export { Validations };
