@@ -25,7 +25,7 @@ const Loading = () => {
         };
 
         startAnimation();
-    }, []);
+    }, [left, right]);
 
     return (
         <View style={styles.container}>

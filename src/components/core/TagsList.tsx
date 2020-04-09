@@ -2,9 +2,9 @@ import * as React from 'react';
 import { StyleSheet } from 'react-native';
 
 // Library
-import { Group } from './Group';
-import { Text } from './Text';
+import { Group } from 'components/helpers';
 import { Colors } from 'utils';
+import { Text } from './Text';
 
 export interface TagsListProps {
     moreString: string;

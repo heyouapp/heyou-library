@@ -30,7 +30,7 @@ export const Button: React.FC<ButtonProps> = props => {
         } else if (props.loading === false && loaded) {
             setState(props.withAnimation ? 2 : 0);
         }
-    }, [props.loading]);
+    }, [loaded, props.withAnimation, props.loading]);
 
     return (
         <View
