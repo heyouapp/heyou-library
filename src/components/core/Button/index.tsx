@@ -1,8 +1,11 @@
 import * as React from 'react';
 import { StyleSheet, View } from 'react-native';
 
+// Library
+import { Lottie } from 'components/helpers';
+import { Assets } from 'utils';
+
 // Common
-import Lottie from './Lottie';
 import Inner from './Inner';
 import { ButtonProps } from './model';
 
@@ -29,6 +32,7 @@ export const Button: React.FC<ButtonProps> = props => {
             {state === 2 ? (
                 <View style={styles.animation}>
                     <Lottie
+                        source={Assets.checkAnimation}
                         callback={() => setTimeout(() => setState(0), 1000)}
                     />
                 </View>
