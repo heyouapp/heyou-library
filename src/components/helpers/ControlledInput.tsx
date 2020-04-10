@@ -13,36 +13,41 @@ interface Props extends Omit<ControllerType, 'rules'> {
     rules?: Rule[] | Rule;
 }
 
-export const getControlledError = (
+export const useControlledError = (
     name: string,
     error: FieldError,
     messages: { [key: string]: Record<string, MessageDescriptor> },
 ) => {
+    const intl = useIntl();
+
+    if (!error) {
+        return;
+    }
+
     const type = error['type'];
     const message =
         (messages[name] && messages[name][type]) || messages['common'][type];
 
-    return message;
+    return intl.formatMessage(message) || 'Unknown error';
 };
 
 const ControlledInput: React.FC<Props> = ({
     messages = FormErrors,
     ...props
 }) => {
-    const intl = useIntl();
     const { control, name, rules } = props;
     const error = control.errorsRef.current[name];
+    const message = useControlledError(name, error, messages);
     const formattedRules = Array.isArray(rules)
         ? Object.assign({}, ...rules)
         : rules;
-    const message = getControlledError(name, error, messages);
 
     return (
         <Controller
             name=""
             defaultValue=""
             as={Input}
-            error={(error && intl.formatMessage(message)) || 'Unknown error'}
+            error={message}
             onChange={args => args[0].nativeEvent.text}
             {...props}
             rules={formattedRules}
