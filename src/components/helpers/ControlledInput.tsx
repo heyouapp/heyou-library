@@ -15,8 +15,8 @@ interface Props extends Omit<ControllerType, 'rules'> {
 
 export const useControlledError = (
     name: string,
-    error: FieldError,
-    messages: { [key: string]: Record<string, MessageDescriptor> },
+    error?: FieldError,
+    messages: { [key: string]: Record<string, MessageDescriptor> } = FormErrors,
 ) => {
     const intl = useIntl();
 
@@ -24,7 +24,7 @@ export const useControlledError = (
         return;
     }
 
-    const type = error['type'];
+    const type: string = error.type;
     const message =
         (messages[name] && messages[name][type]) || messages['common'][type];
 
