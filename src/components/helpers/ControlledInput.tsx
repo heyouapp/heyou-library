@@ -1,6 +1,6 @@
 import * as React from 'react';
-import { Controller, ControllerProps } from 'react-hook-form';
-import { useIntl } from 'react-intl';
+import { Controller, ControllerProps, FieldError } from 'react-hook-form';
+import { useIntl, MessageDescriptor } from 'react-intl';
 
 // Library
 import { Input } from 'components/core';
@@ -13,34 +13,39 @@ interface Props extends Omit<ControllerType, 'rules'> {
     rules?: Rule[] | Rule;
 }
 
-const ControlledInput: React.FC<Props> = props => {
+export const getControlledError = (
+    name: string,
+    error: FieldError,
+    messages: { [key: string]: Record<string, MessageDescriptor> },
+) => {
+    const type = error['type'];
+    const message =
+        (messages[name] && messages[name][type]) || messages['common'][type];
+
+    return message;
+};
+
+const ControlledInput: React.FC<Props> = ({
+    messages = FormErrors,
+    ...props
+}) => {
     const intl = useIntl();
-    const errors = props.control && props.control.errorsRef.current;
-    const error = errors[props.name];
-    const rules = Array.isArray(props.rules)
-        ? Object.assign({}, ...props.rules)
-        : props.rules;
-
-    const getControlledError = () => {
-        const { name, messages = FormErrors } = props;
-
-        const type = error['type'];
-        const message =
-            (messages[name] && messages[name][type]) ||
-            messages['common'][type];
-
-        return intl.formatMessage(message) || 'Unknown error';
-    };
+    const { control, name, rules } = props;
+    const error = control.errorsRef.current[name];
+    const formattedRules = Array.isArray(rules)
+        ? Object.assign({}, ...rules)
+        : rules;
+    const message = getControlledError(name, error, messages);
 
     return (
         <Controller
             name=""
             defaultValue=""
             as={Input}
-            error={error && getControlledError()}
+            error={(error && intl.formatMessage(message)) || 'Unknown error'}
             onChange={args => args[0].nativeEvent.text}
             {...props}
-            rules={rules}
+            rules={formattedRules}
         />
     );
 };
