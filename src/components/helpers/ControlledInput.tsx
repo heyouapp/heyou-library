@@ -26,7 +26,7 @@ export const useControlledError = (
 
     const type: string = error.type;
     const message =
-        (messages[name] && messages[name][type]) || messages['common'][type];
+        (messages[name] && messages[name][type]) || messages.common[type];
 
     return intl.formatMessage(message) || 'Unknown error';
 };
