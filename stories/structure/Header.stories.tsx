@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { action } from '@storybook/addon-actions';
 
 // Library
 import { Header, HeaderInput } from 'components/structure';
@@ -14,9 +15,13 @@ export const primary = () => <Header title="Test" />;
 
 export const white = () => <Header title="Test" theme="white" />;
 
-export const withBack = () => <Header title="Test" onPressBack={() => {}} />;
+export const withBack = () => (
+    <Header title="Test" onPressBack={action('pressed back')} />
+);
 
-export const withClose = () => <Header title="Test" onPressClose={() => {}} />;
+export const withClose = () => (
+    <Header title="Test" onPressClose={action('pressed close')} />
+);
 
 export const withRightRender = () => (
     <Header

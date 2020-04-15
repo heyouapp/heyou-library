@@ -18,6 +18,7 @@ export interface HeaderProps {
     theme?: 'white' | 'primary';
     onPressBack?: () => void;
     onPressClose?: () => void;
+    renderLeft?: React.ReactNode;
     renderRight?: React.ReactNode;
     style?: StyleProp<ViewStyle>;
     children?: React.ReactNode;
@@ -32,82 +33,71 @@ const Header: React.FC<HeaderProps> = props => {
     return (
         <SafeAreaView
             style={[
-                styles.wrapper,
-                Platform.OS === 'android' && styles.wrapper_android,
+                styles.container,
+                Platform.OS === 'android' && styles.container_android,
                 props.style,
             ]}>
-            <View style={styles.container}>
-                <View style={styles.content}>
-                    <View>
-                        {!!props.onPressBack && (
+            <View style={styles.content}>
+                <View>
+                    {props.renderLeft ||
+                        (props.onPressBack && (
                             <TouchableWithoutFeedback
-                                onPress={props.onPressBack}
-                                disabled={!props.onPressBack}>
-                                <View>
+                                onPress={props.onPressBack}>
+                                <View style={styles.icon}>
                                     <Icon
                                         name="arrowBack"
-                                        style={styles.icon}
+                                        style={styles.icon_inner}
                                     />
                                 </View>
                             </TouchableWithoutFeedback>
-                        )}
-                    </View>
-                    <View style={styles.middle}>
-                        {typeof props.title === 'string' ? (
-                            <Text
-                                style={styles.title}
-                                type="bold"
-                                numberOfLines={1}>
-                                {props.title}
-                            </Text>
-                        ) : (
-                            props.title
-                        )}
-                    </View>
-                    {props.renderRight ? (
-                        props.renderRight
+                        ))}
+                </View>
+                <View style={styles.middle}>
+                    {typeof props.title === 'string' ? (
+                        <Text
+                            style={styles.title}
+                            type="bold"
+                            numberOfLines={1}>
+                            {props.title}
+                        </Text>
                     ) : (
-                        <View>
-                            {!!props.onPressClose && (
-                                <TouchableWithoutFeedback
-                                    onPress={props.onPressClose}
-                                    disabled={!props.onPressClose}>
-                                    <View>
-                                        <Icon
-                                            name="close"
-                                            style={styles.icon}
-                                        />
-                                    </View>
-                                </TouchableWithoutFeedback>
-                            )}
-                        </View>
+                        props.title
                     )}
                 </View>
-                {props.children}
+                <View>
+                    {props.renderRight ||
+                        (props.onPressClose && (
+                            <TouchableWithoutFeedback
+                                onPress={props.onPressClose}>
+                                <View style={styles.icon}>
+                                    <Icon
+                                        name="close"
+                                        style={styles.icon_inner}
+                                    />
+                                </View>
+                            </TouchableWithoutFeedback>
+                        ))}
+                </View>
             </View>
+            {props.children}
         </SafeAreaView>
     );
 };
 
 const generateTheme = (principalColor: string, contentColor: string) =>
     StyleSheet.create({
-        wrapper: {
-            backgroundColor: principalColor,
-            overflow: 'hidden',
-        },
-        wrapper_android: {
-            paddingTop: 30,
-        },
         container: {
-            minHeight: 50,
-            paddingTop: 15,
+            backgroundColor: principalColor,
+        },
+        container_android: {
+            paddingTop: 30,
         },
         content: {
             position: 'relative',
-            height: 20,
+            height: 50,
             paddingHorizontal: 15,
-            alignItems: 'center',
             flexDirection: 'row',
+            alignItems: 'center',
             justifyContent: 'space-between',
         },
         middle: {
@@ -115,12 +105,26 @@ const generateTheme = (principalColor: string, contentColor: string) =>
             left: 45,
             right: 45,
         },
+        side: {
+            minWidth: 45,
+            marginHorizontal: -15,
+            justifyContent: 'center',
+            alignItems: 'center',
+        },
         title: {
             fontSize: 16,
             color: contentColor,
             textAlign: 'center',
         },
         icon: {
+            height: 50,
+            width: 45,
+            marginHorizontal: -15,
+            alignSelf: 'stretch',
+            alignItems: 'center',
+            justifyContent: 'center',
+        },
+        icon_inner: {
             height: 16,
             tintColor: contentColor,
         },
