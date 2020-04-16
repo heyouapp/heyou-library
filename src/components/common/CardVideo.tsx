@@ -17,6 +17,7 @@ export interface CardVideoProps extends VideoProps {
     createdLabel: string;
     recipientLabel: string;
     onShare?: () => void;
+    onProfilePicturePress?: () => void;
     source?: ImageSourcePropType;
     style?: StyleProp<ViewStyle>;
 }
@@ -25,7 +26,11 @@ const CardVideo: React.FC<CardVideoProps> = props => (
     <Card style={props.style}>
         <View style={styles.header}>
             <View style={styles.content}>
-                <ProfilePicture source={props.source} rounded />
+                <ProfilePicture
+                    source={props.source}
+                    onPress={props.onProfilePicturePress}
+                    rounded
+                />
                 <View style={styles.label}>
                     <Text type="semibold">{props.recipientLabel}</Text>
                     <Text style={styles.time} small>

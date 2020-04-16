@@ -2,7 +2,7 @@ import * as React from 'react';
 import {
     StyleSheet,
     StyleProp,
-    View,
+    TouchableOpacity,
     ViewStyle,
     Image,
     ImageSourcePropType,
@@ -19,6 +19,7 @@ export interface ProfilePictureProps {
     size?: ProfilePictureSizeType;
     source?: ImageSourcePropType;
     rounded?: boolean;
+    onPress?: () => void;
 }
 
 export const ProfilePictureSizes = {
@@ -49,7 +50,10 @@ const ProfilePicture: React.FC<ProfilePictureProps> = props => {
         ProfilePictureSizes[props.size || 'sm'] || ProfilePictureSizes.sm;
 
     return (
-        <View
+        <TouchableOpacity
+            onPress={props.onPress}
+            disabled={!props.onPress}
+            activeOpacity={0.7}
             style={[
                 styles.container,
                 size,
@@ -60,7 +64,7 @@ const ProfilePicture: React.FC<ProfilePictureProps> = props => {
                 <Image source={props.source} style={styles.image} />
             )}
             {props.children}
-        </View>
+        </TouchableOpacity>
     );
 };
 
