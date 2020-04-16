@@ -40,7 +40,6 @@ const styles = StyleSheet.create({
     container: {
         backgroundColor: Colors.placeholder,
         height: 200,
-        aspectRatio: 9.6 / 11.54,
         overflow: 'hidden',
     },
     icon: {
