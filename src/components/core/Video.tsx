@@ -39,7 +39,8 @@ const Video: React.FC<VideoProps> = props => (
 const styles = StyleSheet.create({
     container: {
         backgroundColor: Colors.placeholder,
-        height: 200,
+        height: 400,
+        overflow: 'hidden',
     },
     icon: {
         position: 'absolute',
