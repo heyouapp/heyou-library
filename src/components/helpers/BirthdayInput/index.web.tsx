@@ -46,6 +46,10 @@ const BirthdayInput: React.FC<BirthdayInputProps> = props => {
             customInput={<CustomInput inputProps={props.inputProps} />}
             onChange={(value: Date) => setBirthday(value)}
             selected={birthday}
+            peekNextMonth
+            showMonthDropdown
+            showYearDropdown
+            dropdownMode="select"
         />
     );
 };
