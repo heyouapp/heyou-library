@@ -9,46 +9,42 @@ import { FormErrors } from 'utils';
 type ControllerType = Partial<ControllerProps<React.ReactElement>>;
 type Rule = ControllerType['rules'];
 
-interface Props extends Omit<ControllerType, 'rules'> {
+interface ControlledInputProps extends Omit<ControllerType, 'rules'> {
+    name: string;
     rules?: Rule[] | Rule;
 }
 
-export const useControlledError = (
-    name: string,
-    error?: FieldError,
-    messages: { [key: string]: Record<string, MessageDescriptor> } = FormErrors,
+export const getControlledError = (
+    field: string,
+    errors: { [key: string]: FieldError },
+    messages: { [key: string]: Record<string, MessageDescriptor> },
 ) => {
-    const intl = useIntl();
+    const type: string = errors[field] && errors[field]['type'];
 
-    if (!error) {
-        return;
-    }
-
-    const type: string = error.type;
-    const message =
-        (messages[name] && messages[name][type]) || messages.common[type];
-
-    return intl.formatMessage(message) || 'Unknown error';
+    return (
+        type &&
+        ((messages[field] && messages[field][type]) || messages.common[type])
+    );
 };
 
-const ControlledInput: React.FC<Props> = ({
+const ControlledInput: React.FC<ControlledInputProps> = ({
     messages = FormErrors,
     ...props
 }) => {
-    const { control, name, rules } = props;
-    const error = control.errorsRef.current[name];
-    const message = useControlledError(name, error, messages);
-    const formattedRules = Array.isArray(rules)
-        ? Object.assign({}, ...rules)
-        : rules;
+    const errors = props.control.errorsRef.current;
+    const intl = useIntl();
+
+    const message = getControlledError(props.name, errors, messages);
+    const formattedRules = Array.isArray(props.rules)
+        ? Object.assign({}, ...props.rules)
+        : props.rules;
 
     return (
         <Controller
-            name=""
-            defaultValue=""
             as={Input}
-            error={message}
             onChange={args => args[0].nativeEvent.text}
+            error={message && intl.formatMessage(message)}
+            defaultValue=""
             {...props}
             rules={formattedRules}
         />
