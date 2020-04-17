@@ -50,7 +50,6 @@ const BirthdayInput: React.FC<BirthdayInputProps> = props => {
             showMonthDropdown
             showYearDropdown
             dropdownMode="select"
-            withPortal
         />
     );
 };
