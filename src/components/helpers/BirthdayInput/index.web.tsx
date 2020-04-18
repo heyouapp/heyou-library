@@ -2,7 +2,6 @@ import * as React from 'react';
 import { TouchableWithoutFeedback } from 'react-native';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import { format } from 'date-fns';
 
 // Library
 import { Input, InputProps } from 'components/core';
@@ -11,7 +10,7 @@ type InputType = Partial<InputProps>;
 interface BirthdayInputProps {
     ref: void;
     inputProps: InputType;
-    onDateChange: (value: string) => void;
+    onDateChange: (value: Date) => void;
 }
 
 interface CustomInputProps {
@@ -32,12 +31,10 @@ const CustomInput = React.forwardRef(
     ),
 );
 
-const toFormat = (date: Date) => date && format(date, 'dd/MM/yyyy');
-
 const BirthdayInput: React.FC<BirthdayInputProps> = props => {
     const [birthday, setBirthday] = React.useState(new Date());
     React.useEffect(() => {
-        props.onDateChange(toFormat(birthday));
+        props.onDateChange(birthday);
     }, [props, birthday]);
 
     return (
