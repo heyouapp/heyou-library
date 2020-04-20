@@ -8,9 +8,9 @@ import { Input, InputProps } from 'components/core';
 
 type InputType = Partial<InputProps>;
 interface BirthdayInputProps {
-    ref: void;
     inputProps: InputType;
     onDateChange: (value: Date) => void;
+    value: Date;
 }
 
 interface CustomInputProps {
@@ -31,24 +31,17 @@ const CustomInput = React.forwardRef(
     ),
 );
 
-const BirthdayInput: React.FC<BirthdayInputProps> = props => {
-    const [birthday, setBirthday] = React.useState(new Date());
-    React.useEffect(() => {
-        props.onDateChange(birthday);
-    }, [props, birthday]);
-
-    return (
-        <DatePicker
-            dateFormat="dd/MM/yyyy"
-            customInput={<CustomInput inputProps={props.inputProps} />}
-            onChange={(value: Date) => setBirthday(value)}
-            selected={birthday}
-            peekNextMonth
-            showMonthDropdown
-            showYearDropdown
-            dropdownMode="select"
-        />
-    );
-};
+const BirthdayInput: React.FC<BirthdayInputProps> = props => (
+    <DatePicker
+        dateFormat="dd/MM/yyyy"
+        customInput={<CustomInput inputProps={props.inputProps} />}
+        onChange={props.onDateChange}
+        selected={props.value}
+        peekNextMonth
+        showMonthDropdown
+        showYearDropdown
+        dropdownMode="select"
+    />
+);
 
 export { BirthdayInput };
