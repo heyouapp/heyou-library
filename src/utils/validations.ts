@@ -1,5 +1,6 @@
 // @ts-ignore
 import { PasswordPolicy, charsets } from 'password-sheriff';
+import { isValid } from 'date-fns';
 
 const Validations = {
     REQUIRED: {
@@ -15,6 +16,9 @@ const Validations = {
     },
     EMAIL: {
         validate: (value: string) => value.indexOf('@') !== -1,
+    },
+    BIRTHDAY: {
+        validate: (value: string) => isValid(new Date(value)),
     },
     PASSWORD: {
         validate: async (value: string) => {

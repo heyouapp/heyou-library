@@ -1,47 +1,21 @@
 import * as React from 'react';
-import { TouchableWithoutFeedback } from 'react-native';
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
+import InputMask from 'react-input-mask';
 
 // Library
 import { Input, InputProps } from 'components/core';
 
-type InputType = Partial<InputProps>;
-interface BirthdayInputProps {
-    inputProps: InputType;
-    onDateChange: (value: Date) => void;
-    value: Date;
-}
+const BirthdayInput: React.FC<Partial<InputProps>> = props => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) =>
+        props.onChangeText(e.target.value);
 
-interface CustomInputProps {
-    inputProps: InputType;
-    onClick?: () => void;
-    value?: string;
-}
-
-const CustomInput = React.forwardRef(
-    (props: CustomInputProps, ref: React.Ref<TouchableWithoutFeedback>) => (
-        <TouchableWithoutFeedback onPress={props.onClick} ref={ref}>
-            <Input
-                {...props.inputProps}
-                value={props.value}
-                placeholder="dd/mm/yyyy"
-            />
-        </TouchableWithoutFeedback>
-    ),
-);
-
-const BirthdayInput: React.FC<BirthdayInputProps> = props => (
-    <DatePicker
-        dateFormat="dd/MM/yyyy"
-        customInput={<CustomInput inputProps={props.inputProps} />}
-        onChange={props.onDateChange}
-        selected={props.value}
-        peekNextMonth
-        showMonthDropdown
-        showYearDropdown
-        dropdownMode="select"
-    />
-);
+    return (
+        <InputMask
+            mask="99/99/9999"
+            value={props.value}
+            onChange={handleChange}>
+            <Input {...props} />
+        </InputMask>
+    );
+};
 
 export { BirthdayInput };
