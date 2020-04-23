@@ -4,6 +4,7 @@
     "ErrorFields.Common.maxLength": "Invalid length",
     "ErrorFields.Common.unknown": "Unknown error",
     "ErrorFields.Email.validate": "Wrong email format",
+    "ErrorFields.Birthday.validate": "Wrong birthday format",
     "ErrorFields.Name.minLength": "It must be between 3 and 30 characters",
     "ErrorFields.Name.maxLength": "It must be between 3 and 30 characters",
     "ErrorFields.Nickname.minLength": "It must be between 3 and 30 characters",

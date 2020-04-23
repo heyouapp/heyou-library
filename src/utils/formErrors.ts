@@ -19,6 +19,12 @@ const FormErrors = defineMessages({
             defaultMessage: 'Unknown error',
         },
     },
+    birthday: {
+        validate: {
+            id: 'ErrorFields.Birthday.validate',
+            defaultMessage: 'Wrong birthday format',
+        },
+    },
     email: {
         validate: {
             id: 'ErrorFields.Email.validate',
