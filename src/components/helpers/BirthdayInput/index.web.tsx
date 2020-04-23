@@ -4,10 +4,18 @@ import InputMask from 'react-input-mask';
 // Library
 import { Input, InputProps } from 'components/core';
 
-const BirthdayInput: React.FC<InputProps> = props => (
-    <InputMask mask="99/99/9999" value={props.value} onChange={props.onChange}>
-        <Input {...props} />
-    </InputMask>
-);
+const BirthdayInput: React.FC<InputProps> = props => {
+    const handleChange = (e: React.ChangeEvent<HTMLInputElement>) =>
+        props.onChangeText && props.onChangeText(e.target.value);
+
+    return (
+        <InputMask
+            mask="99/99/9999"
+            value={props.value}
+            onChange={handleChange}>
+            <Input {...props} />
+        </InputMask>
+    );
+};
 
 export { BirthdayInput };
