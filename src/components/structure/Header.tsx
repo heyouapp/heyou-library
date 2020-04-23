@@ -15,7 +15,7 @@ import { Colors } from 'utils';
 
 export interface HeaderProps {
     title: React.ReactNode;
-    theme?: 'white' | 'primary';
+    theme?: 'white' | 'primary' | 'charity';
     onPressBack?: () => void;
     onPressClose?: () => void;
     renderLeft?: React.ReactNode;
@@ -26,7 +26,7 @@ export interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = props => {
     const styles = generateTheme(
-        Colors[props.theme === 'white' ? 'white' : 'primary'],
+        Colors[props.theme || 'primary'],
         Colors[props.theme === 'white' ? 'neutral' : 'white'],
     );
 

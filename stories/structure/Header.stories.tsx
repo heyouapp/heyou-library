@@ -15,6 +15,8 @@ export const primary = () => <Header title="Test" />;
 
 export const white = () => <Header title="Test" theme="white" />;
 
+export const charity = () => <Header title="Test" theme="charity" />;
+
 export const withBack = () => (
     <Header title="Test" onPressBack={action('pressed back')} />
 );

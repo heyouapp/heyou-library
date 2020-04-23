@@ -12,6 +12,7 @@ const Colors = {
     grey: '#989BA5',
     greyDark: '#636363',
     black: '#000000',
+    charity: '#96151D',
 };
 
 // Tools

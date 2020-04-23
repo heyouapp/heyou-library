@@ -12,6 +12,14 @@ export default {
 
 export const normal = () => <Tag>Test</Tag>;
 
+export const active = () => <Tag active>Test</Tag>;
+
+export const charity = () => (
+    <Tag onPress={action('clicked')} charity>
+        Test Press
+    </Tag>
+);
+
 export const withPress = () => (
     <Tag onPress={action('clicked')}>Test Press</Tag>
 );
