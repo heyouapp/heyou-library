@@ -50,9 +50,6 @@ const Validations = {
             }
         },
     },
-    FOLLOWERS: {
-        min: 50000,
-    },
 };
 
 export { Validations };
