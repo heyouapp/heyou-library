@@ -35,7 +35,7 @@ const Request: React.FC<RequestProps> = props => (
                     {props.status}
                 </Text>
             </View>
-            <Button type="secondary" position="end" small>
+            <Button disabled type="secondary" position="end" small>
                 {props.buttonText}
             </Button>
         </View>
