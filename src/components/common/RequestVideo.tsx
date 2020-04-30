@@ -8,16 +8,15 @@ import { Review, ReviewProps } from './Review';
 
 export interface RequestVideoProps extends VideoProps {
     review?: ReviewProps;
-    completedLabel: string;
-    completedValue: string;
-    onShare: () => void;
+    completedLabel?: React.ReactNode;
+    onShare?: () => void;
     style?: StyleProp<ViewStyle>;
 }
 
 const RequestVideo: React.FC<RequestVideoProps> = props => (
     <Card style={[styles.container, props.style]}>
         <View style={styles.header}>
-            {props.completedLabel}
+            <View>{props.completedLabel}</View>
             {!!props.onShare && <Share onPress={props.onShare} />}
         </View>
         <Video {...props} />
