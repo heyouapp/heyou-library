@@ -12,6 +12,7 @@ import { ButtonProps } from './model';
 export const Button: React.FC<ButtonProps> = props => {
     const [state, setState] = React.useState(0);
     const [loaded, setLoad] = React.useState(false);
+    // eslint-disable-next-line
     React.useEffect(() => {
         setLoad(true);
         if (props.loading === true) {
@@ -19,7 +20,7 @@ export const Button: React.FC<ButtonProps> = props => {
         } else if (props.loading === false && loaded) {
             setState(props.withAnimation ? 2 : 0);
         }
-    }, [loaded, props.withAnimation, props.loading]);
+    }, [props.loading]);
 
     return (
         <View
