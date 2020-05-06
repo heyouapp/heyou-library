@@ -27,6 +27,12 @@ export const tertiary = () => (
     </Button>
 );
 
+export const facebook = () => (
+    <Button onPress={action('clicked')} type="facebook">
+        Continue with Facebook
+    </Button>
+);
+
 export const loading = () => (
     <Button onPress={action('clicked')} loading={true}>
         Loading Button

@@ -13,6 +13,7 @@ const Colors = {
     greyDark: '#636363',
     black: '#000000',
     charity: '#96151D',
+    facebook: '#1877f2',
 };
 
 // Tools

@@ -2,7 +2,7 @@ import * as React from 'react';
 import { StyleSheet, TouchableOpacity, ActivityIndicator } from 'react-native';
 
 // Library
-import { Text } from 'components/core';
+import { Text, Icon } from 'components/core';
 import { Colors } from 'utils';
 
 // Common
@@ -24,12 +24,24 @@ const Inner: React.FC<InnerProps> = props => (
         ]}
         activeOpacity={0.7}>
         {props.state === 0 ? (
-            <Text
-                style={styles[`${props.type || 'primary'}Text`]}
-                type="semibold"
-                small>
-                {props.children}
-            </Text>
+            <>
+                {props.type === 'facebook' && (
+                    <Icon
+                        name="facebook"
+                        style={styles.icon}
+                        color={Colors.white}
+                    />
+                )}
+                <Text
+                    style={[
+                        styles.text,
+                        styles[`${props.type || 'primary'}Text`],
+                    ]}
+                    type="semibold"
+                    small>
+                    {props.children}
+                </Text>
+            </>
         ) : (
             <ActivityIndicator
                 color={
@@ -53,9 +65,13 @@ const styles: { [key: string]: Object } = StyleSheet.create({
         paddingHorizontal: 30,
         alignItems: 'center',
         justifyContent: 'center',
+        flexDirection: 'row',
     },
     containerSmall: {
         borderRadius: 15,
+    },
+    text: {
+        textAlign: 'center',
     },
     primary: {
         backgroundColor: Colors.primary,
@@ -67,6 +83,9 @@ const styles: { [key: string]: Object } = StyleSheet.create({
     tertiary: {
         backgroundColor: Colors.secondary,
     },
+    facebook: {
+        backgroundColor: Colors.facebook,
+    },
     primaryText: {
         color: Colors.white,
     },
@@ -75,6 +94,12 @@ const styles: { [key: string]: Object } = StyleSheet.create({
     },
     tertiaryText: {
         color: Colors.primary,
+    },
+    facebookText: {
+        color: Colors.white,
+    },
+    icon: {
+        marginRight: 7,
     },
 });
 

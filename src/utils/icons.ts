@@ -21,6 +21,7 @@ const Icons: { [key: string]: ImageURISource } = {
     volumeOn: require('assets/icons/volume_on.png'),
     play: require('assets/icons/play.png'),
     pause: require('assets/icons/pause.png'),
+    facebook: require('assets/icons/facebook.png'),
 };
 
 export { Icons };
