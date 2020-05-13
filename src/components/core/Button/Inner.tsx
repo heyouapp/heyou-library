@@ -12,49 +12,47 @@ export interface InnerProps extends ButtonProps {
     state: number;
 }
 
-const Inner: React.FC<InnerProps> = props => (
-    <TouchableOpacity
-        onPress={props.onPress}
-        disabled={props.state !== 0 || props.disabled}
-        style={[
-            styles.container,
-            styles[props.type || 'primary'],
-            props.small && styles.containerSmall,
-            props.style,
-        ]}
-        activeOpacity={0.7}>
-        {props.state === 0 ? (
-            <>
-                {props.type === 'facebook' && (
-                    <Icon
-                        name="facebook"
-                        style={styles.icon}
-                        color={Colors.white}
-                    />
-                )}
-                <Text
-                    style={[
-                        styles.text,
-                        styles[`${props.type || 'primary'}Text`],
-                    ]}
-                    type="semibold"
-                    small>
-                    {props.children}
-                </Text>
-            </>
-        ) : (
-            <ActivityIndicator
-                color={
-                    Colors[
-                        !props.type || props.type === 'primary'
-                            ? 'white'
-                            : 'primary'
-                    ]
-                }
-            />
-        )}
-    </TouchableOpacity>
-);
+const Inner: React.FC<InnerProps> = props => {
+    const isPrimary = props.type === 'secondary' || props.type === 'tertiary';
+
+    return (
+        <TouchableOpacity
+            onPress={props.onPress}
+            disabled={props.state !== 0 || props.disabled}
+            style={[
+                styles.container,
+                styles[props.type || 'primary'],
+                props.small && styles.containerSmall,
+                props.style,
+            ]}
+            activeOpacity={0.7}>
+            {props.state === 0 ? (
+                <>
+                    {props.type === 'facebook' && (
+                        <Icon
+                            name="facebook"
+                            style={styles.icon}
+                            color={Colors.white}
+                        />
+                    )}
+                    <Text
+                        style={[
+                            styles.text,
+                            styles[isPrimary ? 'primaryText' : 'whiteText'],
+                        ]}
+                        type="semibold"
+                        small>
+                        {props.children}
+                    </Text>
+                </>
+            ) : (
+                <ActivityIndicator
+                    color={Colors[isPrimary ? 'primary' : 'white']}
+                />
+            )}
+        </TouchableOpacity>
+    );
+};
 
 const styles: { [key: string]: Object } = StyleSheet.create({
     container: {
@@ -86,17 +84,14 @@ const styles: { [key: string]: Object } = StyleSheet.create({
     facebook: {
         backgroundColor: Colors.facebook,
     },
+    apple: {
+        backgroundColor: Colors.black,
+    },
+    whiteText: {
+        color: Colors.white,
+    },
     primaryText: {
-        color: Colors.white,
-    },
-    secondaryText: {
         color: Colors.primary,
-    },
-    tertiaryText: {
-        color: Colors.primary,
-    },
-    facebookText: {
-        color: Colors.white,
     },
     icon: {
         marginRight: 7,

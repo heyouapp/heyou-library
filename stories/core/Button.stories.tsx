@@ -33,6 +33,12 @@ export const facebook = () => (
     </Button>
 );
 
+export const apple = () => (
+    <Button onPress={action('clicked')} type="apple">
+         Continue with Apple
+    </Button>
+);
+
 export const loading = () => (
     <Button onPress={action('clicked')} loading={true}>
         Loading Button
