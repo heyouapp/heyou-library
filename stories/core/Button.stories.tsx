@@ -35,7 +35,7 @@ export const facebook = () => (
 
 export const apple = () => (
     <Button onPress={action('clicked')} type="apple">
-         Continue with Apple
+        Continue with Apple
     </Button>
 );
 

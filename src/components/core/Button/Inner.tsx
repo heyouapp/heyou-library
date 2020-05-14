@@ -35,6 +35,16 @@ const Inner: React.FC<InnerProps> = props => {
                             color={Colors.white}
                         />
                     )}
+                    {props.type === 'apple' && (
+                        <Text
+                            style={[
+                                styles.text,
+                                styles[isPrimary ? 'primaryText' : 'whiteText'],
+                                styles.appleLogo,
+                            ]}>
+                            
+                        </Text>
+                    )}
                     <Text
                         style={[
                             styles.text,
@@ -86,6 +96,10 @@ const styles: { [key: string]: Object } = StyleSheet.create({
     },
     apple: {
         backgroundColor: Colors.black,
+    },
+    appleLogo: {
+        marginRight: 5,
+        fontSize: 20,
     },
     whiteText: {
         color: Colors.white,
