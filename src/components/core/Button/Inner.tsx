@@ -36,12 +36,7 @@ const Inner: React.FC<InnerProps> = props => {
                         />
                     )}
                     {props.type === 'apple' && (
-                        <Text
-                            style={[
-                                styles.text,
-                                styles[isPrimary ? 'primaryText' : 'whiteText'],
-                                styles.appleLogo,
-                            ]}>
+                        <Text style={[styles.whiteText, styles.appleLogo]}>
                             
                         </Text>
                     )}
