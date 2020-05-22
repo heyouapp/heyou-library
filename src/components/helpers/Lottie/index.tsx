@@ -4,16 +4,13 @@ import LottieNative from 'lottie-react-native';
 // Common
 import { LottieProps } from './model';
 
-const Lottie: React.FC<LottieProps> = ({
-    loop = false,
-    autoPlay = true,
-    ...props
-}) => (
+const Lottie: React.FC<LottieProps> = props => (
     <LottieNative
+        {...props}
         source={props.source}
         onAnimationFinish={props.callback}
-        loop={loop}
-        autoPlay={autoPlay}
+        loop={props.loop || false}
+        autoPlay={props.autoPlay || true}
     />
 );
 

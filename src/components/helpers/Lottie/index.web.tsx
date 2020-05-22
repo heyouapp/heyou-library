@@ -4,15 +4,12 @@ import LottieWeb from 'react-lottie';
 // Common
 import { LottieProps } from './model';
 
-const Lottie: React.FC<LottieProps> = ({
-    loop = false,
-    autoPlay = true,
-    ...props
-}) => (
+const Lottie: React.FC<LottieProps> = props => (
     <LottieWeb
+        {...props}
         options={{
-            loop,
-            autoplay: autoPlay,
+            loop: props.loop || false,
+            autoplay: props.autoPlay || true,
             animationData: props.source,
             rendererSettings: {
                 preserveAspectRatio: 'xMidYMid slice',
