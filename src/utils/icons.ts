@@ -22,6 +22,7 @@ const Icons: { [key: string]: ImageURISource } = {
     play: require('assets/icons/play.png'),
     pause: require('assets/icons/pause.png'),
     facebook: require('assets/icons/facebook.png'),
+    burger: require('assets/icons/burger.png'),
 };
 
 export { Icons };
