@@ -3,4 +3,6 @@ export interface LottieProps {
     callback?: () => void;
     loop?: boolean;
     autoPlay?: boolean;
+    isStopped?: boolean;
+    isPaused?: boolean;
 }
