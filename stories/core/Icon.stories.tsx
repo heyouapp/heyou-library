@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { StyleSheet } from 'react-native';
 
 // Library
 import { Icon } from 'components/core';
@@ -11,15 +10,6 @@ export default {
     decorators: [Container],
 };
 
-export const normal = () => <Icon name="profile" color={Colors.neutral} />;
-
-export const withSize = () => (
-    <Icon name="profile" color={Colors.neutral} style={styles.icon} />
+export const normal = () => (
+    <Icon name="profile" color={Colors.neutral} size={50} />
 );
-
-const styles = StyleSheet.create({
-    icon: {
-        height: 50,
-        width: 50,
-    },
-});

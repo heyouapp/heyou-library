@@ -20,7 +20,7 @@ const Share: React.FC<ShareProps> = props => (
         onPress={props.onPress}
         style={[styles.container, props.style]}
         activeOpacity={0.7}>
-        <Icon name="share" color={Colors.white} style={styles.icon} />
+        <Icon name="share" color={Colors.white} size={15} />
     </TouchableOpacity>
 );
 
@@ -32,10 +32,6 @@ const styles = StyleSheet.create({
         width: 30,
         alignItems: 'center',
         justifyContent: 'center',
-    },
-    icon: {
-        height: 15,
-        width: 15,
     },
 });
 

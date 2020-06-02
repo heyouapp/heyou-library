@@ -47,6 +47,7 @@ const Header: React.FC<HeaderProps> = props => {
                                     <Icon
                                         name="arrowBack"
                                         style={styles.icon_inner}
+                                        size={16}
                                     />
                                 </View>
                             </TouchableWithoutFeedback>
@@ -73,6 +74,7 @@ const Header: React.FC<HeaderProps> = props => {
                                     <Icon
                                         name="close"
                                         style={styles.icon_inner}
+                                        size={16}
                                     />
                                 </View>
                             </TouchableWithoutFeedback>
@@ -125,8 +127,7 @@ const generateTheme = (principalColor: string, contentColor: string) =>
             justifyContent: 'center',
         },
         icon_inner: {
-            height: 16,
-            tintColor: contentColor,
+            color: contentColor,
         },
     });
 

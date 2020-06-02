@@ -28,17 +28,13 @@ const Inner: React.FC<InnerProps> = props => {
             activeOpacity={0.7}>
             {props.state === 0 ? (
                 <>
-                    {props.type === 'facebook' && (
+                    {(props.type === 'facebook' || props.type === 'apple') && (
                         <Icon
-                            name="facebook"
+                            name={props.type}
                             style={styles.icon}
                             color={Colors.white}
+                            size={20}
                         />
-                    )}
-                    {props.type === 'apple' && (
-                        <Text style={[styles.whiteText, styles.appleLogo]}>
-                            
-                        </Text>
                     )}
                     <Text
                         style={[
@@ -91,10 +87,6 @@ const styles: { [key: string]: Object } = StyleSheet.create({
     },
     apple: {
         backgroundColor: Colors.black,
-    },
-    appleLogo: {
-        marginRight: 5,
-        fontSize: 20,
     },
     whiteText: {
         color: Colors.white,

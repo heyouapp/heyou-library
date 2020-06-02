@@ -36,7 +36,7 @@ const ListItem: React.FC<ListItemProps> = props => (
                 <Text style={styles.value}>{props.value}</Text>
             </View>
         )}
-        <Icon name="arrowRightBold" style={styles.icon} />
+        <Icon name="arrowRight" size={15} color={Colors.neutralLight} />
     </TouchableOpacity>
 );
 
@@ -54,9 +54,6 @@ const styles = StyleSheet.create({
     },
     value: {
         color: Colors.neutralLight,
-    },
-    icon: {
-        height: 10,
     },
 });
 

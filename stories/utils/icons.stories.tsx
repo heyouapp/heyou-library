@@ -3,7 +3,6 @@ import { StyleSheet, View } from 'react-native';
 
 // Library
 import { Text, Icon } from 'components/core';
-import { Icons } from 'utils';
 import { Container } from '../decorators';
 
 export default {
@@ -14,9 +13,44 @@ export default {
     decorators: [Container],
 };
 
+const iconsList = [
+    'arrowUp',
+    'arrowDown',
+    'arrowLeft',
+    'arrowRight',
+    'arrowBack',
+    'close',
+    'menu',
+    'home',
+    'notifications',
+    'profile',
+    'stream',
+    'refresh',
+    'camera',
+    'share',
+    'starEmpty',
+    'starFull',
+    'film',
+    'horn',
+    'gift',
+    'smile',
+    'search',
+    'filter',
+    'play',
+    'pause',
+    'volumeOff',
+    'volumeOn',
+    'google',
+    'facebook',
+    'instagram',
+    'apple',
+    'paypal',
+    'stripe',
+];
+
 export const list = () => (
     <View>
-        {Object.keys(Icons).map((icon: string, index: number) => (
+        {iconsList.map((icon: string, index: number) => (
             <View style={styles.item} key={index.toString()}>
                 <Icon name={icon} style={styles.icon} />
                 <Text type="semibold">{icon}</Text>

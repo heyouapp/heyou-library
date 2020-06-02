@@ -24,11 +24,7 @@ const Video: React.FC<VideoProps> = props => (
             {!props.playing && (
                 <View style={styles.icon}>
                     <View style={styles.icon_holder}>
-                        <Icon
-                            name="play"
-                            color={Colors.white}
-                            style={styles.icon_inner}
-                        />
+                        <Icon name="play" color={Colors.white} size={30} />
                     </View>
                 </View>
             )}
@@ -57,13 +53,9 @@ const styles = StyleSheet.create({
         backgroundColor: ColorOpacity(Colors.white, 0.2),
         height: 50,
         width: 50,
+        paddingLeft: 4,
         alignItems: 'center',
         justifyContent: 'center',
-    },
-    icon_inner: {
-        height: 20,
-        width: 20,
-        marginLeft: 3,
     },
 });
 

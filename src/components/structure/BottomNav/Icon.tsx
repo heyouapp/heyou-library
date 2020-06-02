@@ -2,8 +2,10 @@ import * as React from 'react';
 import { StyleSheet, TouchableOpacity, View } from 'react-native';
 
 // Library
-import { Icon, IconProps, Badge } from 'components/core';
+import { Icon, Badge } from 'components/core';
 import { Colors } from 'utils';
+
+type IconProps = typeof Icon;
 
 export interface BottomNavIconProps extends IconProps {
     active?: boolean;
@@ -23,7 +25,7 @@ const BottomNavIcon: React.FC<BottomNavIconProps> = props => (
             <Icon
                 {...props}
                 color={Colors[props.active ? 'primary' : 'grey']}
-                style={styles.icon}
+                size={20}
             />
         </View>
         {props.active && <View style={styles.dot} />}
@@ -36,9 +38,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         flex: 1,
-    },
-    icon: {
-        height: 20,
     },
     dot: {
         borderRadius: 4,

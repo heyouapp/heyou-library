@@ -12,7 +12,7 @@ const HeaderInput: React.FC<TextInputProps> = props => (
             style={styles.input_inner}
             {...props}
         />
-        <Icon name="search" color={Colors.white} style={styles.icon} />
+        <Icon name="search" color={Colors.white} size={15} />
     </View>
 );
 
@@ -33,10 +33,6 @@ const styles = StyleSheet.create({
         fontSize: 14,
         color: 'white',
         flex: 1,
-    },
-    icon: {
-        height: 15,
-        width: 15,
     },
 });
 

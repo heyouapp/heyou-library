@@ -71,7 +71,6 @@ const styles = StyleSheet.create({
         height: '100%',
         width: '100%',
         paddingHorizontal: 15,
-        color: Colors.greyDark,
         ...TextStyle,
     },
     input_normal: {
