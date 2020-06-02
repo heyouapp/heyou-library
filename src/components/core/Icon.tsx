@@ -11,7 +11,7 @@ const IconModel = createIconSetFromIcoMoon(
 
 type IconModelProps = (typeof IconModel) & TextProps;
 
-interface IconProps extends Partial<IconModelProps> {
+export interface IconProps extends Partial<IconModelProps> {
     name: string;
     size?: number;
     color?: string;

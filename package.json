@@ -50,7 +50,6 @@
         "@storybook/preset-typescript": "^1.2.0",
         "@storybook/react": "^5.3.8",
         "@storybook/storybook-deployer": "^2.8.1",
-        "@types/expo__vector-icons": "^9.0.1",
         "@types/react": "^16.9.0",
         "@types/react-datepicker": "^2.11.0",
         "@types/react-dom": "^16.9.0",

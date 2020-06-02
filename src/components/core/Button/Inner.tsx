@@ -33,7 +33,6 @@ const Inner: React.FC<InnerProps> = props => {
                             name={props.type}
                             style={styles.icon}
                             color={Colors.white}
-                            size={20}
                         />
                     )}
                     <Text
