@@ -34,7 +34,6 @@ const Review: React.FC<ReviewProps> = props => (
                     name={index < props.rating ? 'starFull' : 'starEmpty'}
                     color={Colors.primary}
                     style={styles.star}
-                    size={20}
                     key={index.toString()}
                 />
             ))}
