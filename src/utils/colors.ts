@@ -2,6 +2,7 @@ const Colors = {
     primary: '#361596',
     primaryLight: '#DDDCFF',
     secondary: '#FFCC3E',
+    neutralDark: '#1A264A',
     neutral: '#3B566E',
     neutralLight: '#6F8BA4',
     placeholder: '#C0D1E1',
@@ -13,7 +14,7 @@ const Colors = {
     greyDark: '#636363',
     black: '#000000',
     charity: '#96151D',
-    facebook: '#1877f2',
+    facebook: '#1877F2',
 };
 
 // Tools

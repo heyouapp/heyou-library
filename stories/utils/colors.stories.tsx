@@ -21,7 +21,9 @@ export const list = () => (
                 <View
                     style={[styles.color, { backgroundColor: Colors[color] }]}
                 />
-                <Text type="semibold">{color}</Text>
+                <Text type="semibold">
+                    {Colors[color]} - {color}
+                </Text>
             </View>
         ))}
     </View>
