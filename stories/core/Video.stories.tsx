@@ -22,7 +22,7 @@ export default {
 };
 
 export const normal = () => (
-    <Video>
-        <View />
-    </Video>
+    <View style={{ width: 300 }}>
+        <Video />
+    </View>
 );
