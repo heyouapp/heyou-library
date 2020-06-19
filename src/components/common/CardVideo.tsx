@@ -8,12 +8,12 @@ import {
 } from 'react-native';
 
 // Library
-import { Text, Card, Video, VideoProps } from 'components/core';
+import { Text, Card, Video } from 'components/core';
 import { ProfilePicture } from 'components/account';
 import { Share } from './Share';
 import { Colors } from 'utils';
 
-export interface CardVideoProps extends VideoProps {
+export interface CardVideoProps {
     createdLabel: string;
     recipientLabel: string;
     onShare?: () => void;
@@ -40,9 +40,7 @@ const CardVideo: React.FC<CardVideoProps> = props => (
             </View>
             {!!props.onShare && <Share onPress={props.onShare} />}
         </View>
-        <Video playing={props.playing} onPlay={props.onPlay}>
-            {props.children}
-        </Video>
+        <Video>{props.children}</Video>
     </Card>
 );
 

@@ -2,11 +2,11 @@ import * as React from 'react';
 import { StyleSheet, StyleProp, View, ViewStyle } from 'react-native';
 
 // Library
-import { Card, Video, VideoProps } from 'components/core';
+import { Card, Video } from 'components/core';
 import { Share } from './Share';
 import { Review, ReviewProps } from './Review';
 
-export interface RequestVideoProps extends VideoProps {
+export interface RequestVideoProps {
     review?: ReviewProps;
     completedLabel?: React.ReactNode;
     onShare?: () => void;
@@ -19,7 +19,7 @@ const RequestVideo: React.FC<RequestVideoProps> = props => (
             <View>{props.completedLabel}</View>
             {!!props.onShare && <Share onPress={props.onShare} />}
         </View>
-        <Video {...props} />
+        <Video>{props.children}</Video>
         {props.review && <Review {...props.review} style={styles.review} />}
     </Card>
 );
